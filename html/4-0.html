@@ -17,7 +17,7 @@
 <body>
 
 
-    <section id="join1">
+    <section id="appli1">
         <div class="group-title">
             <h2>신청내역조회(개통요청)</h2>
         </div>
@@ -25,35 +25,25 @@
         <div class="group-history">
             <form action="" method="">
                 <fieldset>
-                    <legend class="blind">SMS</legend>
+                    <legend class="blind">신청내역조회</legend>
                     <div class="form-area">
-                        <div class="title-wrap">
-                            <h3>SMS 인증</h3>
-                            <span class="caution-msg"><i>*</i>표시 필수 입력</span>
-                        </div>
                         <table>
                             <tr>
-                                <th><i>*</i>아이디 </th>
+                                <th><i>*</i>인증방법 </th>
                                 <td>
-                                    <div class="id-box">
-                                        <input type="text">
-                                        <button class="btn-double">중복확인</button>
+                                    <div class="from-box">
+                                        <input type="radio" name="method" id="method1" checked class="blind">
+                                        <label for="" id="method1">휴대폰</label>
+                                        <input type="radio" name="method" id="method2" class="blind">
+                                        <label for="" id="method2">이메일</label>
                                     </div>
                                 </td>     
                             </tr>
                             <tr>
-                                <th><i>*</i>비밀번호 </th>
+                                <th><i>*</i>신청자명 </th>
                                 <td>
                                     <div class="from-box">
-                                        <input type="password">
-                                    </div>
-                                </td>     
-                            </tr> 
-                            <tr>
-                                <th><i>*</i>비밀번호 확인 </th>
-                                <td>
-                                    <div class="from-box">
-                                        <input type="password">
+                                        <input type="text">
                                     </div>
                                 </td>     
                             </tr> 
@@ -67,59 +57,27 @@
                                         </select>-
                                         <input type="text" readonly>-
                                         <input type="text" readonly>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th><i>*</i>아이디 </th>
-                                <td>
-                                    <div class="id-wrap">
-                                        <select name="" id="">
-                                            <option value="010">010</option>
-                                            <option value="010">001</option>
-                                        </select>-
-                                        <input type="text">-
-                                        <input type="text">
                                         <button class="btn-auth">인증요청</button>
                                     </div>
                                 </td>
                             </tr>
                             <tr>
-                                <th><i>*</i>이메일</th>
+                                <th><i>*</i>인증번호 확인 </th>
                                 <td>
-                                    <input type="text">
-                                    <select name="" id="">
-                                        <option value="">직접입력</option>
-                                        <option value="010">001</option>
-                                    </select>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th><i>*</i>배송지 주소</th>
-                                <td>
-                                    <div class="addr-box">
-                                        <div><input type="text"><button class="btn-find">우편번호찾기</button></div>
-                                        <div><input type="text"></div>
-                                        <div><input type="text" placeholder="상세주소 입력"></div>
+                                    <div class="form-wrap">
+                                        <input type="text">
+                                        <button class="btn-auth">확인</button>
                                     </div>
                                 </td>
                             </tr>
                         </table>
                     </div>
                     <div class="btn-area">
-                        <button class="btn-normal">취소</button>
-                        <button class="btn-primary">다음</button>
+                        <button class="btn-primary">조회하기</button>
                     </div>
                 </fieldset>
-    
             </form>
-        
-          
         </div>
-        
-       
-
-
     </section>
 
 </body>
