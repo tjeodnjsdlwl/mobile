@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../asset/css/style.css"></script>
+
+
+    <script src="../asset/js/jquery-3.6.1.min.js"></script>
+    <script src="./asset/js/custom.js"></script>
+
+</head>
+<body>
+
+    <section id="phone2">
+
+            <div class="group-title">
+                <h2>납부방법 변경</h2>
+            </div>
+           
+            
+            <div class="content">
+
+                <div class="info-area1" >
+                    <div class="select-wrap">
+                        <select name="" id="">
+                            <option value="">010-33**-*66</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="info-area2">
+                    <h3>이용중인 납부방법</h3>
+                    <table>
+                        <tr>
+                            <th>납부방법</th>
+                            <td>신용카드</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="info-area2">
+                    <h3>변경 가능한 납부 방법</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>납부방법</th>
+                                <th>납부 기준일</th>
+                                <th>처리기준일<br><span>(입금 확인일)</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>은행계좌 자동이체</td>
+                                <td>매월 21일,<br>
+                                    25일, 27일</td>
+                                <td>1~3일 확인</td>
+                            </tr>
+                            <!--...-->
+                        </tbody>
+                    </table>
+                    <ul class="msg-1">
+                        <li><i>※</i>타인명의의 계좌 또는 신용/체크카드로 변경은, 고객센터 전화상담을 통해 가능합니다.</li>
+                        <li><i>※</i>이 경우에는 납부자(예금주) 신분증, 명의자 신분증, 납부자(예금자)가 서명한 동의서 원본 등 구비서류가 필요합니다.</li>
+                    </ul>
+                </div>
+                <div class="info-area2">
+                    <h3>납부방법 변경 적용 시점</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>이번달 적용</th>
+                                <th>다음달 적용</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>납부 기준일만 변경</td>
+                                <td>매월 3일까지 신청</td>
+                                <td>다음달부터 적용</td>
+                            </tr>
+                            <!--...-->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="info-area2">
+                    <h3>납부방법 변경 본인인증 동의</h3>
+                    <div class="label-box">
+                        <input type="checkbox" name="" id="">
+                        <label for="">본인인증 절차 동의</label>
+                    </div>
+                    <ul class="msg-1">
+                        <li><i>※</i>타인명의의 계좌 또는 신용/체크카드로 변경은, 고객센터 전화상담을 통해 가능합니다.</li>
+                    </ul>
+                    <div class="input-wrap">
+                        <label for="">SMS 본인인증 </label>
+                        <input type="text"  readonly value="010-1234-5678">
+                        <button class="btn-1">인증요청</button>
+                    </div>
+                    <div class="input-wrap">
+                        <label for="">인증번호</label>
+                        <input type="text" placeholder="인증번호">
+                        <button class="btn-1">확인</button>
+                    </div>
+                    <button class="btn-primary">확인</button>
+                    <ul class="msg-2">
+                        <li><i>※</i>SMS인증번호 발송이 지연되는 경우 인증번호 재전송 버튼을 선택해주세요.</li>
+                        <li><i>※</i>SMS(단문메세지)는 시스템 사정에 따라 다소 지연 될 수 있습니다.</li>
+                        <li><i>※</i>현재사용중인 휴대폰이 USIM단독 상태이거나 휴대폰과 USIM카드 가 분리된 상태에서는 SMS인증을 받으실 수 없습니다.</li>
+                    </ul>
+                
+                </div>
+                
+            </div>
+            <div class="caution-area">
+                <h3>※ 알려드립니다.</h3>
+                <ul>
+                    <li><i>-</i>자동납부(계좌/카드)를 이용하시는 경우, 당월 청구금액 납부 시 이중 납부가 될 수 있으니 납부일 및 계좌/카드 거래내역 확인 후 이용하시기 바랍니다.</li>
+                    <li><i>-</i>변경 요청 시점이 은행, 카드사로 당월 납부요청이 지난 후 에는 변경한 납부방법이 다음달로 예약됩니다.</li>
+                    <li><i>-</i>입금확인 일자는 은행,신용카드 등 에서 납부사실을 통보한 일자로, 납부하신  날짜와 입금확인 일자가 다소 차이가 날 수 있습니다.</li>
+                    <li><i>-</i>납부사실 통보에 소요되는 시간이 각 은행과 신용카드 기관별로 차이가 있기 때문에, 입금확인 일자가 서로 다를 수 있습니다.</li>
+                    <li><i>-</i>미납 요금계에 마이너스(-)로 표기된 경우는 지난달 과납 등으로 발생된 금액입니다.</li>
+                    <li><i>-</i>미납 요금을 납부한 고객일지라도, 명세서 상에 미납요금이 표기되어 있을 수 있습니다.  (청구시점와 현시점 상이할 수 있음)</li>
+                </ul>
+            </div>
+           
+    </section>
+</body>
+</html>
