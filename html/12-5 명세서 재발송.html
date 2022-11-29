@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../asset/css/style.css"></script>
+
+
+    <script src="../asset/js/jquery-3.6.1.min.js"></script>
+    <script src="./asset/js/custom.js"></script>
+
+</head>
+<body>
+
+    <section id="phone2">
+            <div class="group-title">
+                <h2>요금명세서</h2>
+            </div>
+            <div class="group-nav">
+                <a href="" class="active">명세서 재발송</a>            
+                <a href="">명세서 정보변경</a>            
+            </div>
+            <div class="content">
+
+                <div class="info-area1" >
+                    <div class="select-wrap">
+                        <select name="" id="">
+                            <option value="">010-33**-*66</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="info-area2">
+                    <h3>변경 가능한 납부 방법</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>청구서<span>(명세서 발행월)</span></th>
+                                <th>명세서 재발송<span>(이메일)</span></th>
+                                <th>명세서 재발송<span>(MMS)</span></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2022년 9월</td>
+                                <td>
+                                    <div class="radio-box">
+                                        <input type="radio">
+                                        <label for=""><span class="blind">이메일발송</span></label>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="radio-box">
+                                        <input type="radio">
+                                        <label for=""><span class="blind">mms발송</span></label>
+                                    </div>
+                                </td>
+                                <!-- ... -->
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="iofo-area3">
+                    <h3>명세서 발송 유형 선택</h3>
+                    <div class="info-wrap">
+                        <select name="" id="">
+                            <option value="">모바일(MMS)</option>
+                        </select>
+                        <input type="text" readonly value="010-30**-**66" >
+                    </div>
+                    <p class="msg-1"><i>※</i>모바일(MMS) 선택 시 청구 회선으로 명세서가 발송되며 수신번호 변경이 불가합니다.</p>
+                </div>
+
+                <button class="btn-primary">요금제 변경</button>
+
+            </div>
+           
+    </section>
+</body>
+</html>
