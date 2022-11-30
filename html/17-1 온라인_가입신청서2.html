@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../asset/css/style.css"></script>
+
+
+    <script src="../asset/js/jquery-3.6.1.min.js"></script>
+    <script src="./asset/js/custom.js"></script>
+
+</head>
+<body>
+
+    <section id="phone2">
+
+            <div class="group-title">
+                <h2>가입신청</h2>
+            </div>
+            <div class="group-step">
+                <h3>온라인 가입신청서</h3>
+                <p>고객님의 소중한 정보는 암호화되어 안전하게 보호됩니다.</p>
+                <ul class="step-list">
+                    <li>01. 이용약관</li>
+                    <li class="active">02. 신청서작성</li>
+                    <li>03. 신청완료</li>
+                </ul>
+            </div>
+            
+            <div class="group-pay">
+                <h3 class="blind">납부금액</h3>
+                <div class="pay-area">
+                    <h4>단말기 요금</h4>
+                    <div class="prc-box">월<em>25,000</em>원</div>
+                    <ul class="pay-list">
+                        <li>
+                            <span class="title">판매가</span>
+                            <span class="data">530,000 원</span>
+                        </li>
+                        <li class="c-primary">
+                            <span class="title">결합 지원금</span>
+                            <span class="data">230,000 원</span>
+                        </li>
+                        <li>
+                            <span class="title">할부원금</span>
+                            <span class="data">300,000 원</span>
+                        </li>
+                        <li>
+                            <span class="title">월 납부 할부금</span>
+                            <span class="data">25,000 원</span>
+                        </li>
+                        <li>
+                            <span class="title">할부수수료 <i>(년 5.9%)</i></span>
+                            <span class="data">0원</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ... -->
+                <div class="pay-area total">
+                    <h4>월 납부 금액 <span>(부가세 포함)</span></h4>
+                    <div class="prc-box">월<em>25,000</em>원</div>
+                    <ul class="pay-list">
+                        <li>
+                            <span class="title">가입비</span>
+                            <span class="data">면제</span>
+                        </li>
+                        <li>
+                            <span class="title">유심비</span>
+                            <span class="data">면제</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="group-write">
+                <h3>신청서작성</h3>
+                <div></div>
+                <div class="group-nav2">
+                    <a href="" class="active">일반회원<br> (만 19세 이상)</a>
+                    <a href="">미성년자회원<br> (만 19세 미만)</a>
+                    <a href="">외국인 (foreigner)</a>
+                </div>
+                <!-- form -->
+                <div class="inner">
+                    <div class="info">
+                        <div class="wrap">
+                            <label for="">신청자명</label>
+                            <input type="text">
+                        </div>
+                        <div class="wrap">
+                            <label for="">주민등록번호</label>
+                            <div class="input-wrap">
+                                <input type="text" ><i>-</i>
+                                <input type="text" placeholder="주민등록번호 뒤 7자리">
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <div class="flex">
+                                <span>실명 확인 증빙 자료</span>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">주민등록증</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">운전면허증</label>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="발급일자 입력 예)20180813">
+                            <ul class="msg">
+                                <li><i>※</i> 부정 가입 방지를 위해 신분증 진위 여부 확인 과정이 필요합니다.</li>
+                                <li><i>※</i> 정확한 정보를 입력해 주세요.</li>
+                            </ul>
+                            <div class="ex">
+                                <div class="img-box">
+                                    <img src="" alt="">
+                                    <span>· 주민등록증 예시</span>
+                                </div>
+                                <div class="img-box">
+                                    <img src="" alt="">
+                                    <span>· 운전면허증 예시</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <span>본인인증 방법</span>
+                            <div class="flex">
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">신용카드 인증</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">신용카드 인증</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">신용카드 인증</label>
+                                </div>
+                            </div>
+                            <ul class="msg">
+                                <li><i>※</i>본인명의의 신용카드(체크카드 불가) / 범용공인인증으로만 본인인증이 가능합니다. (은행개인용 인증서 불가)</li>
+                                <li><i>※</i>모바일환경에서는 범용공인인증이 불가합니다.</li>
+                                <li><i>※</i>법인카드, 가족카드, 선불카드는 본인확인이 불가능합니다.</li>
+                            </ul>
+                        </div>
+                        <button class="btn-1">본인인증하기</button>
+                    </div>
+                </div>
+                <div class="caution">
+                    <h4>유의사항</h4>
+                    <ul>
+                        <li>방송통신위원회고시 (영업상 목적을 위하여 이용자의 주민등록번호 수집, 이용이 불가피한 정보통신 서비스 제공자)에 의해 주민등록번호는 영업상 목적으로만 사용됩니다.   </li>
+                        <li>전자상거래법 제5조 2항에 의거, 본 온라인 신청서 상에서 고객님이 신용카드 인증을 통하여 전자서명하신 이후에는 특별한 사정없는 한 그 내용이 변경되지않습니다.</li>
+                        <li>고객님의 개인 정보는 항상 암호화되어 처리되고 본인인증으로만 사용되며, 보관하지 않습니다.</li>
+                        <li>개정 ‘주민등록법’에 의해 타인의 주민등록번호를 도용하는 경우 3년 이하의 징역 또는 1천만원 이하의 벌금이 부과될 수 있습니다.   </li>
+                        <li class="pink">관련법률 : 주민등록법 제 37조 (벌칙) 제 10조 (시행일 2009.04.01)</li>
+                    </ul>
+                </div>
+                <div class="inner">
+                    <div class="info">
+                        <div class="head">
+                            <h4>번호이동 정보</h4>
+                            <p>현재 사용중인 휴대폰 번호와 통신사 정보를 입력 해주세요.</p>
+                        </div>
+                        <div class="wrap">
+                            <span><i>*</i>기존 통신사</span>
+                            <div class="flex">
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">SKT</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">KT</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">LG U+</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">알뜰폰</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <span><i>*</i>번호 이동 할 번호</span>
+                            <div class="input-wrap">
+                                <input type="text"><i>-</i>
+                                <input type="text"><i>-</i>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <span><i>*</i>번호 이동 인증정보</span>
+                            <div class="flex">
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">계좌이체</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">신용카드</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">지로</label>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="뒤 4자리 입력">
+                            <ul class="msg">
+                                <li><i>※</i> 현재 이용 중인 통신사 납부방법 확인 후  입력 </li>
+                                <li><i>※</i> 계좌 로 납부 중 = 계좌번호 끝 번호 숫자 4자리 입력</li>
+                                <li><i>※</i> 카드 로 납부 중 = 카드번호 끝 번호 숫자 4자리 입력</li>
+                                <li><i>※</i> 정보가 일치하지 않을 경우 개통 업무가 지연될 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <div class="head">
+                            <h4>휴대폰 정보</h4>
+                            <p>휴대폰 정보를 입력해주세요.</p>
+                        </div>
+                        <div class="wrap">
+                            <span><i>*</i>휴대폰 정보 확인</span>
+                            <div class="flex">
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">자사폰 (LG U+ 향)</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">타사폰 (SK향, KT향)</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">자급제폰</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">아이폰</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">외산폰</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio">
+                                    <label for="">확인 불가 (사용할 휴대폰 유형을 정확히 모를 경우)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <span>휴대폰 모델번호 (선택)</span>
+                            <input type="text">
+                        </div>
+                        <ul class="msg">
+                            <li><i>※</i>휴대폰 모델번호 확인 방법은 휴대폰 설정 > 휴대전화 (디바이스) 정보에서  확인 하실 수 있습니다.</li>
+                            <li><i>※</i>휴대폰 출시 일자가 2015년 이후인 기종 (ex. 갤럭시 노트5, 아이폰6s)은 유심 호환이 가능합니다.</li>
+                            <li><i>※</i>휴대폰 출시 일자가 2015년 이전 기종은 LG U+용 LTE 기기만 호환됩니다.</li>
+                            <li><i>※</i>해외에서  구매하신 휴대폰의 경우 국내 제조사 기기기라도 호환이 되지 않습니다. (단, NEXUS X5 제외)</li>
+                            <li><i>※</i>휴대폰 유형 정보가 정확하지 않은 경우 정상 개통이 되지 않으며, 가까운 LG U+ 직영 대리점 방문하여 POS개통 (유심정보를 전산에 물리적으로 읽혀주는 작업)을 진행해야 합니다.</li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <div class="head">
+                            <h4>유심 수령 정보</h4>
+                            <p>입력된 정보는 우편물에 발송에 사용됩니다.</p>
+                        </div>
+                        <div class="wrap"></div>
+                        <div class="wrap"></div>
+                        <div class="wrap"></div>
+                    </div>
+                    <div class="info">
+                         <h4>납부정보</h4>
+                        <div class="wrap"></div>
+                        <div class="wrap"></div>
+                        <div class="wrap"></div>
+                        <div class="wrap"></div>
+                        <div class="wrap"></div>
+                        <div class="wrap"></div>
+                        <div class="wrap"></div>
+                        <div class="wrap"></div>
+                    </div>
+                 </div>
+                 <button class="btn-1">다 음</button>
+                <!--// form -->
+            </div>
+            
+    </section>
+</body>
+</html>

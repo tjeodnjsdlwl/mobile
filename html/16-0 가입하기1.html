@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="../asset/css/style.css"></script>
+    <script src="../asset/js/jquery-3.6.1.min.js"></script>
+    <script src="./asset/js/custom.js"></script>
+
+</head>
+<body>
+
+    <section id="phone2"> 
+            <div class="group-title">
+                <h2>가입신청</h2>
+            </div>
+           <!--  -->
+            <div class="content">
+
+               <div class="img-box">
+                    <img src="" alt="">
+               </div>
+
+               <div class="area1">
+                    <h3>LGU+후불유심</h3>
+
+                    <div class="wrap">
+                        <h4>가입유형</h4>
+                        <div class="btn-wrap2">
+                            <button class="active">번호이동</button>
+                            <button>신규가입</button>
+                        </div>
+                        <div class="msg-wrap" id="join1">
+                            <p class="title">사용중인 번호 그대로 가입</p>
+                            <p class="desc">ㄴ 번호이동은 기존통신사에 가입한 지 3개월 경과 필수</p>
+                        </div>
+                        <div class="msg-wrap" id="join2" style="display:none">
+                            <p class="title">새로운 번호로 가입</p>
+                            <p class="desc">ㄴ 신규가입 시 개통 후 배송</p>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <h4>유심보유</h4>
+                        <div class="btn-wrap2">
+                            <button class="active">유심 없음<span>(택배로 유심 받기 신청)</span></button>
+                            <button>유심 있음<span>(새로 수령한 알뜰폰 유심)</span></button>
+                        </div>
+                        <div class="msg-wrap" id="has1">
+                            <p class="desc">ㄴ 택배로 유심 수령 후 별도의 개통 신청이 필요</p>
+                            <p class="desc">ㄴ 이마트, 배민B마트에서 ‘원칩’ 즉시 구매 가능</p>
+                            <a href="" class="link-2">이벤트 자세히 보기</a>
+                        </div>
+                        <div class="msg-wrap" id="has2" style="display:none">
+                            <p class="desc">ㄴ 셀프개통 진행으로 유심번호 확인 필요</p>
+                            <p class="desc">ㄴ 마블링 유심이거나 ‘원칩’ 유심만 개통 가능</p>
+                        </div>
+                    </div>
+                    
+                    <div class="wrap" id="has1-1">
+                        <h4>유심유형</h4>
+                        <div class="btn-wrap2">
+                            <button class="active">일반유심<span>(무료)</span></button>
+                            <button>NFC유심<span>(7,700원)</span></button>
+                            <button>eSIM<span>(2,750원)</span></button>
+                        </div>
+                        <div class="msg-wrap" id="sim1-1">
+                            <p class="desc">일반유심은 통신 서비스만 이용 가능<br>
+                             (교통카드, 일부 본인 인증 서비스 이용 불가)</p>
+                        </div>
+                        <div class="msg-wrap" id="sim1-2">
+                            <p class="desc">통신 서비스, 교통카드, 본인 인증 서비스 등 이용 가능(이마트24, B마트 원칩 유심)</p>
+                        </div>
+                        <div class="msg-wrap" id="sim1-3">
+                            <p class="pink">하나의 휴대폰에 두 개의 번호를 동시에 이용할 수 있는 서비스</p>
+                            <p>ㄴ 물리적 삽입이나 교체 필요 없이 휴대폰에 가입자 정보를 다운로드하는 방식</p>
+                            <p>ㄴ eSIM 다운로드 비용 2,750원(부가세포함) 다음달 요금에 합산 청구</p>
+                        </div>
+                    </div>
+                    <div class="wrap" id="has1-2" style="display:none">
+                        <h4>유심유형</h4>
+                        <div class="btn-wrap2">
+                            <button class="active">일반유심<span>(무료)</span></button>
+                            <button>NFC유심, 원칩</button>
+                            <button>eSIM<span></span>(2,750원)</span></button>
+                        </div>
+                        <div class="msg-wrap" id="sim2-1">
+                            <p class="desc">일반유심은 통신 서비스만 이용 가능(교통카드, 일부 본인 인증 서비스 이용 불가)</p>
+                            <p class="desc">이마트24, B마트 유심(원칩)은 NFC유심을 선택해주세요.</p>
+                        </div>
+                        <div class="msg-wrap" id="sim2-2">
+                            <p class="desc">통신 서비스, 교통카드, 본인 인증 서비스 등 이용 가능(이마트24, B마트 원칩 유심)</p>
+                        </div>
+                        <div class="msg-wrap" id="sim2-3">
+                            <p class="pink">하나의 휴대폰에 두 개의 번호를 동시에 이용할 수 있는 서비스</p>
+                            <p>ㄴ 물리적 삽입이나 교체 필요 없이 휴대폰에 가입자 정보를 다운로드하는 방식</p>
+                            <p>ㄴ eSIM 다운로드 비용 2,750원(부가세포함) 다음달 요금에 합산 청구</p>
+                        </div>
+                    </div>
+
+                    <div class="wrap">
+                        <div class="wrap-header">
+                            <h4>요금제 선택</h4>
+                            <a href="" class="link-2">이벤트 자세히 보기</a>
+                        </div>
+                        <div class="plan">
+                            <strong>내맘대로(200분+15GB+)(5G)</strong>
+                            <ul>
+                                <li><img src="" alt="">3GB (+ 최대 1Mbps  무제한)</li>
+                                <li><img src="" alt="">집/이동전화 무제한 (부가통화 300분)</li>
+                                <li><img src="" alt="">무제한</li>
+                            </ul>
+                            <div class="price">
+                                <strong><em>6,600</em>원</strong>
+                                <p>6개월 이후  17,600원</p>
+                            </div>
+                            <div class="msg">
+                                [6개월 동안 특별할인 요금제] <br>
+                                9월 30일 개통건 까지만 특별할인 적용
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <h4>제휴카드 혜택</h4>
+                        <div class="btn-wrap2">
+                            <button class="active">일반유심<span>(무료)</span></button>
+                            <button>NFC유심<span>(7,700원)</span></button>
+                            <button>eSIM<span>(2,750원)</span></button>
+                            <a href="" class="link-2">이벤트 자세히 보기</a>
+                        </div>
+                        <div class="msg-wrap">
+                            <p class="title">U+알뜰폰파트너스 삼성카드 출시! 통신비 최대 22,000원 할인</p>
+                            <p class="desc">ㄴ 전월 실적 30만원 이상 사용 시 최대 20,000원 할인</p>
+                            <p class="desc">ㄴ 전월 실적 70만원 이상 사용 시 최대 22,000원 할인</p>
+                        </div>
+                        <div class="msg-box">
+                            <strong>개통에 필요한 정보누락 혹은 오입력시,<br>상담원이 전화를 드릴 수 있습니다.</strong>
+                            <p class="desc">(미수신시 개통취소 될 수 있습니다.)</p>
+                        </div>
+                        <div class="msg-box">
+                            <strong>프로모션(이벤트) 안내</strong>
+                            <p class="desc">(미수신시 개통취소 될 수 있습니다.)</p>
+                        </div>
+                    </div>
+
+                    <button class="btn-1">온라인 신청하기</button>
+
+                </div>
+            </div>
+            <!--  -->
+            <div class="content">
+                <div class="group-nav">
+                    <a href="" class="active ">유심안내</a>
+                    <a href="">가입안내</a>
+                </div>
+
+                <div class="detail">
+                    <img src="" alt="">
+                </div>
+            </div>
+            <!-- fix?! -->
+            <div class="fix-total">
+                <div class="head">
+                    <div class="info">
+                        <strong>월 예상 납부액</strong><p>
+                        </p>(휴대폰 요금 0원 + 통신 요금 24,750원)
+                    </div>
+
+                    <div class="price"><strong>24,750원</strong>(부가세 포함)</div>
+                </div>
+                <div class="btn-wrap">
+                    <button class="btn-1">셀프개통 진행하기</button>
+                    <button class="btn-1"><img src="" alt="상단으로"></button>
+                    <a>배송조회</a>
+                </div>
+            </div>
+        </section>
+</body>
+</html>
