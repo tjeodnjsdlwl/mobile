@@ -273,25 +273,113 @@
                             <p>입력된 정보는 우편물에 발송에 사용됩니다.</p>
                         </div>
                         <div class="wrap">
-                            <span><i>*</i>받는분 이름</span>
+                            <span>받는분 이름</span>
+                            <div class="flex">
+                                <input type="text">
+                                <div class="label-box">
+                                    <input type="checkbox" name="" id="">
+                                    <label for="">고객정보와 동일</label>
+                                </div>
+                            </div>
                         </div>
                         <div class="wrap">
-                            <span><i>*</i>받는분 이름</span>
+                            <span>받는분 전화번호</span>
+                            <div class="input-box">
+                                <input type="text"><i>-</i>
+                                <input type="text"><i>-</i>
+                                <input type="text">
+                            </div>
+                            <p class="msg-1">우편물 수령시 택배사와 연락가능한 번호를 추가로 입력 부탁드립니다.</p>
                         </div>
                         <div class="wrap">
-                            <span><i>*</i>받는분 이름</span>
+                            <span>받는분 주소</span>
+                            <div class="addr-box">
+                                <div><input type="text"><button class="btn-find">우편번호찾기</button></div>
+                                <div><input type="text"></div>
+                                <div><input type="text" placeholder="상세주소 입력"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="info">
                          <h4>납부정보</h4>
-                        <div class="wrap"></div>
-                        <div class="wrap"></div>
-                        <div class="wrap"></div>
-                        <div class="wrap"></div>
-                        <div class="wrap"></div>
-                        <div class="wrap"></div>
-                        <div class="wrap"></div>
-                        <div class="wrap"></div>
+                        <div class="wrap">
+                            <span><i>*</i>납부 방법</span>
+                            <div class="flex">
+                                <div class="radio-box">
+                                    <input type="radio" name="" id="">
+                                    <label for="">계좌이체</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="" id="">
+                                    <label for="">카드납부</label>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="wrap">
+                            <span><i>*</i>예금주</span>
+                            <input type="text">
+                        </div>
+                        <div class="wrap">
+                            <span><i>*</i>주민등록번호</span>
+                            <div class="input-box">
+                                <input type="text" placeholder="주민등록번호 앞 6자리"> <i>-</i>
+                                <input type="text" placeholder="주민등록번호 뒤 7자리">
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <span><i>*</i>은행명</span>
+                            <select name="" id="">
+                                <option value="선택하세요"></option>
+                            </select>
+                        </div>
+                        <div class="wrap">
+                            <span><i>*</i>계좌번호</span>
+                            <input type="text">
+                        </div>
+                        <div class="wrap">
+                            <span><i>*</i>가입자와의 관계</span>
+                            <div class="flex">
+                                <div class="radio-box">
+                                    <input type="radio" name="" id="">
+                                    <label for="">본인</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="" id="">
+                                    <label for="">부모</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="" id="">
+                                    <label for="">자녀</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="" id="">
+                                    <label for="">배우자</label>
+                                </div>
+                            </div>
+                            <div class="radio-box chk-1">
+                                <input type="radio" name="" id="">
+                                <label for="">본인(예금주 또는 회원)은 납부하여야 할 요금에 대해 별도의 통지 없이
+                                    위 본인의 지정계좌 (카드번호)에서 지정된 출금(결제)일에 인출(결제)
+                                    되는것에 동의합니다.</label>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <span><i>*</i>명세서 수령방법</span>
+                            <div class="radio-box">
+                                <input type="radio" name="" id="">
+                                <label for="">e-mail 명세서</label>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <span><i>*</i>이메일</span>
+                            <div class="email-box">
+                                <input type="text">
+                                <span>@</span>
+                                <select name="" id="">
+                                    <option value="">직접입력</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
                  </div>
                  <button class="btn-1">다 음</button>
