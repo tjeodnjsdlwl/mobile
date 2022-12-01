@@ -2,6 +2,42 @@
  
  /* header */
 
+ .header{
+    position: relative;
+    height: 63px;
+    border-bottom: 1px solid #D7D7D7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 17px 0 23px;
+ }
+ .header .logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+ }
+ .header .logo a{
+    display: block;
+ }
+
+ .header .btn-menu{}
+ .header .link-mypage{}
+
+.sidenav{
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.sidenav .group-head{}
+.sidenav .group-head .sub-area{}
+.sidenav .group-head .sub-area a{}
+.sidenav .group-head .btn-close{}
+
+
+
 
 
 
