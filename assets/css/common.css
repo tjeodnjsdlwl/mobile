@@ -12,3 +12,24 @@ body{
     font-family: 'Noto Sans KR', sans-serif;
     font-size: 12px;
 }
+
+
+/* btn영역 */
+.btn{
+    background: var(--pink01);
+    height: 35px;
+    line-height: 35px;
+    font-weight: bold;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 30px;
+}
+.btn-gray{
+    color: #9a9a9a;
+    background: #f3f3f3;
+    border: 1px solid #AFAFAF;
+}
+
+.btn-sm{
+    border-radius: 5px;
+}
