@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mobile</title>
 
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="../assets/css/style.css">
 
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
 
-    <script src="../asset/js/jquery-3.6.1.min.js"></script>
-    <script src="./asset/js/custom.js"></script>
+    <script src="../assets/js/custom.js"></script>
 
 </head>
 <body>
@@ -27,19 +31,19 @@
                     <a href="">로그인</a>
                     <a href="">회원가입</a>
                 </div>
-                <button class="btn-clsoe"><img src="../assets/images/close.svg" alt="닫기"></button>
+                <button class="btn-close"><img src="../assets/images/btn-close.svg" alt="닫기"></button>
             </div>
             <div class="group-direct">
                 <a href="">
-                    <img src="" alt="" width="">
+                    <div class="img-box"><img src="../assets/images/hd-cate01.svg" alt="" width=""></div>
                     <span class="text">요금제 찾기</span>
                 </a>
                 <a href="">
-                    <img src="" alt="" width="">
+                    <div class="img-box"><img src="../assets/images/hd-cate02.svg" alt="" width=""></div>
                     <span class="text">마이페이지</span>
                 </a>
                 <a href="">
-                    <img src="" alt="" width="">
+                    <div class="img-box"><img src="../assets/images/hd-cate03.svg" alt="" width=""></div>
                     <span class="text">셀프개통</span>
                 </a>
             </div>
@@ -47,12 +51,43 @@
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="" class="nav active">가입하기</a>
+                        <ul class="sub-list active">
+                            <li><a href="">가입하기</a></li>
+                            <li><a href="">가입접수</a></li>
+                            <li><a href="">셀프개통</a></li>
+                            <li><a href="">eSIM가입</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav ">요금제/휴대폰</a>
                         <ul class="sub-list">
                             <li><a href="">요금제/휴대폰</a></li>
-                            <li><a href="">요금제/휴대폰</a></li>
-                            <li><a href="">요금제/휴대폰</a></li>
-                            <li><a href="">요금제/휴대폰</a></li>
+                            <li><a href="">요금제</a></li>
+                            <li><a href="">휴대폰</a></li>
+                            <li><a href="">부가서비스</a></li>
                         </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav">이벤트</a>
+                        <ul class="sub-list">
+                            <li><a href="">이벤트</a></li>
+                            <li><a href="">지난이벤트</a></li>
+                            <li><a href="">사용후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav ">고객센터</a>
+                        <ul class="sub-list">
+                            <li><a href="">자주묻는질문</a></li>
+                            <li><a href="">공지사항</a></li>
+                            <li><a href="">1:1상담문의</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav ">셀프개통</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav ">신청내역조회</a>
                     </li>
                 </ul>
             </nav>
@@ -66,11 +101,16 @@
         <div id="main">
             <section class="sc-visual">
                 <h2 class="blind">메인슬라이드</h2>
-                <div class="swiper">
+                <div class="swiper slide1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="">
-                                <img src="" alt="">
+                                
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                
                             </a>
                         </div>
                     </div>
@@ -84,10 +124,11 @@
                 </h2>
 
                 <div class="group-nav">
-                    <a href="" class="active">인기요금제</a>
-                    <a href="">이달의 특가상품</a>
+                    <a href="#introTab1" class="active">인기요금제</a>
+                    <a href="#introTab2">이달의 특가상품</a>
                 </div>
-                <div class="swiper">
+
+                <div class="swiper slide2 active" id="introTab1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="">
@@ -98,26 +139,158 @@
                                 </div>
                                 <div class="info-area">
                                     <strong class="title">유심 데이터,통화 마음껏</strong>
-                                    <span class="origianl">49,990원</span>
+                                    <span class="original">49,990원</span>
                                     <p class="curr">월<em>000,000</em>원</span>
                                     <ul class="info-list">
                                         <li class="info-item">
                                             <div class="icon-box">
-                                                <img src="" alt="">
+                                                <div class="img-box"><img src="../assets/images/main-plan01.svg" alt=""></div>
                                                 <span>데이터</span>
                                             </div>
                                             <em>무제한</em>
                                         </li>
                                         <li class="info-item">
                                             <div class="icon-box">
-                                                <img src="" alt="">
+                                                <div class="img-box"><img src="../assets/images/main-plan02.svg" alt=""></div>
                                                 <span>통화</span>
                                             </div>
                                             <em>집/이동전화<br>무제한</em>
                                         </li>
                                         <li class="info-item">
                                             <div class="icon-box">
-                                                <img src="" alt="">
+                                                <div class="img-box"><img src="../assets/images/main-plan03.svg" alt=""></div>
+                                                <span>문자</span>
+                                            </div>
+                                            <em>기본</em>
+                                        </li>
+                                    </ul>
+                                    <div class="desc-wrap">
+                                        <span class="data">11GB+일/2GB</span>
+                                        <span class="desc">(소진시 최대 3Mbps속도로 계속 사용)</span>
+                                    </div>
+                                </div>
+                                <span class="link-apply">가입하기</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="badge-area">
+                                    <span class="hot">인기</span>
+                                    <span class="event">이벤트</span>
+                                    <span class="new">신규</span>
+                                </div>
+                                <div class="info-area">
+                                    <strong class="title">유심 데이터,통화 마음껏</strong>
+                                    <span class="original">49,990원</span>
+                                    <p class="curr">월<em>000,000</em>원</span>
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <div class="icon-box">
+                                                <div class="img-box"><img src="../assets/images/main-plan01.svg" alt=""></div>
+                                                <span>데이터</span>
+                                            </div>
+                                            <em>무제한</em>
+                                        </li>
+                                        <li class="info-item">
+                                            <div class="icon-box">
+                                                <div class="img-box"><img src="../assets/images/main-plan02.svg" alt=""></div>
+                                                <span>통화</span>
+                                            </div>
+                                            <em>집/이동전화<br>무제한</em>
+                                        </li>
+                                        <li class="info-item">
+                                            <div class="icon-box">
+                                                <div class="img-box"><img src="../assets/images/main-plan03.svg" alt=""></div>
+                                                <span>문자</span>
+                                            </div>
+                                            <em>기본</em>
+                                        </li>
+                                    </ul>
+                                    <div class="desc-wrap">
+                                        <span class="data">11GB+일/2GB</span>
+                                        <span class="desc">(소진시 최대 3Mbps속도로 계속 사용)</span>
+                                    </div>
+                                </div>
+                                <span class="link-apply">가입하기</span>
+                            </a>
+                        </div>
+                    </div> <!-- wrapper -->
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class="swiper slide2" id="introTab2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="badge-area">
+                                    <span class="hot">인기</span>
+                                    <span class="event">이벤트</span>
+                                    <span class="new">신규</span>
+                                </div>
+                                <div class="info-area">
+                                    <strong class="title">유심 데이터,통화 마음껏</strong>
+                                    <span class="original">49,990원</span>
+                                    <p class="curr">월<em>000,000</em>원</span>
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <div class="icon-box">
+                                                <div class="img-box"><img src="../assets/images/main-plan01.svg" alt=""></div>
+                                                <span>데이터</span>
+                                            </div>
+                                            <em>무제한</em>
+                                        </li>
+                                        <li class="info-item">
+                                            <div class="icon-box">
+                                                <div class="img-box"><img src="../assets/images/main-plan02.svg" alt=""></div>
+                                                <span>통화</span>
+                                            </div>
+                                            <em>집/이동전화<br>무제한</em>
+                                        </li>
+                                        <li class="info-item">
+                                            <div class="icon-box">
+                                                <div class="img-box"><img src="../assets/images/main-plan03.svg" alt=""></div>
+                                                <span>문자</span>
+                                            </div>
+                                            <em>기본</em>
+                                        </li>
+                                    </ul>
+                                    <div class="desc-wrap">
+                                        <span class="data">11GB+일/2GB</span>
+                                        <span class="desc">(소진시 최대 3Mbps속도로 계속 사용)</span>
+                                    </div>
+                                </div>
+                                <span class="link-apply">가입하기</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="badge-area">
+                                    <span class="hot">인기</span>
+                                    <span class="event">이벤트</span>
+                                    <span class="new">신규</span>
+                                </div>
+                                <div class="info-area">
+                                    <strong class="title">유심 데이터,통화 마음껏</strong>
+                                    <span class="original">49,990원</span>
+                                    <p class="curr">월<em>000,000</em>원</span>
+                                    <ul class="info-list">
+                                        <li class="info-item">
+                                            <div class="icon-box">
+                                                <div class="img-box"><img src="../assets/images/main-plan01.svg" alt=""></div>
+                                                <span>데이터</span>
+                                            </div>
+                                            <em>무제한</em>
+                                        </li>
+                                        <li class="info-item">
+                                            <div class="icon-box">
+                                                <div class="img-box"><img src="../assets/images/main-plan02.svg" alt=""></div>
+                                                <span>통화</span>
+                                            </div>
+                                            <em>집/이동전화<br>무제한</em>
+                                        </li>
+                                        <li class="info-item">
+                                            <div class="icon-box">
+                                                <div class="img-box"><img src="../assets/images/main-plan03.svg" alt=""></div>
                                                 <span>문자</span>
                                             </div>
                                             <em>기본</em>
@@ -139,30 +312,35 @@
             <section class="sc-direct">
                 <h2 class="blind">바로가기</h2>
                 <a href="" class="link-direct">
-                    <img src="" alt="">
+                    <img src="../assets/images/main-direct01.svg" alt="">
                     <strong>신청/배송 조회</strong>
                     <p>가입신청 내역을 조회하고<br> 배송상태를 확인합니다.</p>
                 </a>
                 <a href="" class="link-direct">
-                    <img src="" alt="">
+                    <img src="../assets/images/main-direct02.svg" alt="">
                     <strong>요금제</strong>
                     <p>합리적인 요금제를<br> 확인할 수 있습니다.</p>
                 </a>
                 <a href="" class="link-direct">
-                    <img src="" alt="">
+                    <img src="../assets/images/main-direct03.svg" alt="">
                     <strong>온라인 고객상담</strong>
                     <p>자주하는 질문 및 1:1 문의를<br>확인할 수 있습니다.</p>
                 </a>
                 <a href="" class="link-direct">
-                    <img src="" alt="">
+                    <img src="../assets/images/main-direct04.svg" alt="">
                     <strong>실시간 사용현황</strong>
                     <p>사용량을 실시간으로 <br>확인할 수 있습니다.</p>
                 </a>
             </section>
             <section class="sc-banner">
                 <h2 class="blind">배너슬라이드</h2>
-                <div class="swiper">
+                <div class="swiper slide1">
                     <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="" alt="">
+                            </a>
+                        </div>
                         <div class="swiper-slide">
                             <a href="">
                                 <img src="" alt="">
@@ -172,12 +350,18 @@
                     <div class="swiper-pagination"></div>
                 </div>
             </section>
-            <section class="sc-intro">
+            <section class="sc-intro intro2">
                 <h2>
                     합리적인 중고폰 결합
                     <strong>요금제와 같이 사용하면 특급 혜택이!</strong>
                 </h2>
-                <div class="swiper">
+
+                <div class="group-nav">
+                    <a href="#introTab1-1" class="active">인기 중고폰 결합 상품</a>
+                    <a href="#introTab2-1">이달의 특가상품</a>
+                </div>
+
+                <div class="swiper slide2 active" id="introTab1-1">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <a href="">
@@ -188,7 +372,29 @@
                                 </div>
                                 <div class="info-area">
                                     <div class="prd-wrap">
-                                        <img src="" alt="" class="">
+                                        <img src="../assets/images/dummy/main-prd1.png" alt="" class="">
+                                        <p class="prd-name">[중고] 아이폰 11 Pro Max 256GB</p>
+                                    </div>
+                                    <p class="curr">월<em>488,000</em>원</span>
+                                </div>
+                                <span class="link-apply">가입하기</span>
+                            </a>
+                        </div>
+                    </div> <!-- wrapper -->
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper slide2 " id="introTab2-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="badge-area">
+                                    <span class="hot">인기</span>
+                                    <span class="event">이벤트</span>
+                                    <span class="new">신규</span>
+                                </div>
+                                <div class="info-area">
+                                    <div class="prd-wrap">
+                                        <img src="../assets/images/dummy/main-prd1.png" alt="" class="">
                                         <p>[중고] 아이폰 11 Pro Max 256GB</p>
                                     </div>
                                     <p class="curr">월<em>000,000</em>원</span>

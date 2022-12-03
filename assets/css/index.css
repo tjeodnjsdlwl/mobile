@@ -1,0 +1,79 @@
+
+
+#main .sc-visual { } 
+#main .slide1 { padding: 30px 10px 15px; } 
+#main .slide1 .swiper-slide { height: 170px; background: #D9D9D9; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); border-radius: 15px; } 
+#main .slide1 .swiper-pagination { bottom: 0;} 
+#main .slide1 .swiper-pagination-bullet { width: 13.29px; height: 6.04px; background: #D9D9D9; border-radius: 20px; opacity: 1; } 
+#main .slide1 .swiper-pagination-bullet-active { width: 28.38px; } 
+
+
+
+
+.sc-intro { margin-top: 30px; } 
+.sc-intro h2 { text-align: center; font-size: 18px; line-height: 26px; margin-bottom: 21px; } 
+.sc-intro h2 strong { display: block; font-weight: bold; } 
+
+.sc-intro .group-nav { display: flex; text-align: center; } 
+.sc-intro .group-nav a { flex: 1; font-weight: bold; font-size: 15px; color: #d9d9d9; position: relative; padding: 11px 0; } 
+.sc-intro .group-nav a.active { color: #ff1c9b; } 
+.sc-intro .group-nav a.active::after { position: absolute; bottom: 0; left: 0; width: 100%; content: ''; background: linear-gradient(329.02deg, #55E1FF -7.75%, #FF1C9B 66.73%); height: 4px; } 
+
+
+
+
+.sc-intro .swiper { padding: 16px 0 34px; background: #F8F8F8; display: none; } 
+.sc-intro .swiper.active { display: block; } 
+.sc-intro .swiper-pagination { } 
+.sc-intro .swiper-pagination-bullet { background: #E7E7E7; width: 40px; height: 5px; border-radius: 2px; } 
+.sc-intro .swiper-pagination-bullet-active { background: #acacac; } 
+
+.sc-intro .swiper-slide { width: 226px; background: #FFFFFF; border-radius: 20px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15); padding: 15px 0; text-align: center; } 
+.sc-intro .swiper-slide a { display: block; } 
+.sc-intro .badge-area { display: flex; justify-content: center; gap: 5px; } 
+.sc-intro .badge-area span { width: 52px; height: 20px; line-height: 20px; border-radius: 10px; color: #fff; font-size: 10px; } 
+.sc-intro .badge-area .hot { background: var(--pink01); } 
+.sc-intro .badge-area .event { background: #0094ff; } 
+.sc-intro .badge-area .new { background: #8b47f9; } 
+
+.sc-intro .info-area { } 
+.sc-intro .info-area .title { margin: 15px 0 18px; font-weight: 500; font-size: 16px; line-height: 23px; display: block; } 
+.sc-intro .info-area .original { color: #9C9C9C; text-decoration: line-through; } 
+.sc-intro .info-area .curr { font-size: 20px;line-height: 29px;font-weight: 500;margin-top: 20px; } 
+.sc-intro .info-area .curr em { font-weight: bold;font-size: 30px;display: inline-block;margin: 0 13px 0 14px; } 
+
+.sc-intro .info-area .info-list { display: flex; justify-content: center; font-size: 10px;}
+.sc-intro .info-area .info-item { flex: 1; padding-top: 10px; margin-top: 25px; } 
+.sc-intro .info-area .info-item+.info-item { border-left: 1px solid #E9E9E9; } 
+.sc-intro .info-area .info-item .icon-box { } 
+.sc-intro .info-area .info-item .icon-box .img-box { width: 20px; height: 20px; display: flex; justify-content: center; align-items: center; margin: 0 auto; } 
+.sc-intro .info-area .info-item .icon-box img { } 
+.sc-intro .info-area .info-item .icon-box span { color: #9c9c9c; } 
+.sc-intro .info-area .info-item em { margin-top: 10px; display: block; line-height: 14px; } 
+
+.sc-intro .info-area .desc-wrap { margin-top: 14px; } 
+.sc-intro .info-area .desc-wrap .data { font-weight: 500;font-size: 12px;line-height: 17px;color: #9C9C9C;display: block;margin-bottom: 8px; } 
+.sc-intro .info-area .desc-wrap .desc { color: #FF0000; display: block; margin-bottom: 10px; } 
+
+.sc-intro .link-apply { display: block; height: 33px;left: 95px;top: 702px; border: 1px solid #000000;border-radius: 20px;margin: 0 34px 0 31px;line-height: 31px;font-size: 15px;font-weight: 500; } 
+
+
+
+
+
+
+.sc-direct { padding: 30px 10px; display: grid; grid-template-columns: repeat(2,1fr); grid-template-rows:auto; grid-gap: 3px; } 
+
+.sc-direct .link-direct { border: 0.5px solid #CCCCCC; border-radius: 20px; padding: 14px 6px 19px; text-align: center; } 
+.sc-direct .link-direct img { margin: 0 auto; } 
+.sc-direct .link-direct strong { display: block; font-weight: 700; font-size: 15px;margin-top: 9px; } 
+.sc-direct .link-direct p { font-size: 12px;line-height: 17px;color: #ACACAC;margin-top: 10px;}
+
+
+
+
+.sc-intro.intro2 {}
+.sc-intro.intro2 .info-area{}
+.sc-intro.intro2 .info-area img{margin: 0 auto;}
+.sc-intro.intro2 .info-area .prd-name{font-size: 15px;
+    line-height: 17px;font-weight: 500;}
