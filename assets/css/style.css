@@ -419,30 +419,106 @@
 
 
 
-#userinfo3 .info-header{
-    
-}
-#userinfo3 .info-header .inner{
-    padding: 0 20px;
+#userinfo3 .info-header { } 
+#userinfo3 .info-header .inner { padding: 0 20px; } 
+#userinfo3 .info-header h3 { font-weight: 700; font-size: 15px; line-height: 22px; text-align: center; margin: 25px 0 13px; border-bottom: 0.5px solid #9A9A9A; padding-bottom: 13px; } 
+#userinfo3 .info-header ul { background: #F8F8F8; padding: 9px 20px; } 
 
-}
-#userinfo3 .info-header h3{
-    font-weight: 700;
-    font-size: 15px;
-    line-height: 22px;
-    text-align: center;
-    margin: 25px 0 13px;
-    border-bottom: 0.5px solid #9A9A9A;
-    padding-bottom: 13px;
-}
-#userinfo3 .info-header ul{
-    background: #F8F8F8;
-    padding: 9px 20px;
-}
+#userinfo3 .content { padding: 10px 20px 30px; } 
+#userinfo3 .wrap { border-top:0.5px solid #9A9A9A; } 
 
-#userinfo3 .content{
-    padding: 10px 20px 30px;
-}
-#userinfo3 .wrap{
-    border-top:0.5px solid #9A9A9A;
-}
+
+
+
+#mypage1 { } 
+
+#mypage1 .group-title { padding: 24px 0 28px; text-align: center; border-bottom: 1px solid #FF1C9B; } 
+#mypage1 .group-title h2 { font-weight: 500; font-size: 18px; line-height: 26px; } 
+#mypage1 .content { padding: 30px 20px 30px; } 
+
+
+#mypage1 .info-area1 { text-align: center; border-bottom: 0.5px solid #9A9A9A; } 
+#mypage1 .info-area1 .intro { text-align: center; line-height: 22px; font-size: 15px; margin: 8px 0 28px; } 
+#mypage1 .info-area1 .intro em { font-weight: 700; font-size: 15px; display: inline-block; margin-right: 12px; } 
+#mypage1 .info-area1 .sub-wrap { display: flex; justify-content: center; gap: 10px; margin-bottom: 30px; } 
+#mypage1 .info-area1 .sub-wrap a { border: 0.5px solid #9A9A9A; border-radius: 20px; width: 120px; height: 35px; line-height: 33px; color: #9A9A9A; } 
+
+#mypage1 .info-area1 .sub-list { text-align: left; margin-bottom: 16px; } 
+#mypage1 .info-area1 .sub-list .sub-item { display: flex; align-items: center; } 
+#mypage1 .info-area1 .sub-list .sub-item+.sub-item { margin-top: 5px; } 
+#mypage1 .info-area1 .sub-list .title { } 
+#mypage1 .info-area1 .sub-list i { margin: 0 5px; font-size: 10px; } 
+#mypage1 .info-area1 .sub-list .date { color: #9A9A9A; } 
+
+#mypage1 .info-area1 .sub-list a { margin-left: auto; background: #F3F3F3; border-radius: 20px; width: 120px; height: 25px; line-height: 25px; text-align: center; color: #9A9A9A; } 
+
+
+
+
+#mypage1 .info-area2 { } 
+#mypage1 .content h3 { font-weight: 700; font-size: 15px; line-height: 22px; padding: 10px 0 8px; } 
+#mypage1 .info-area2 .frame { background: #FFFFFF; border: 0.5px solid #9A9A9A; border-radius: 5px; padding: 0 15px; } 
+#mypage1 .info-area2 .item { } 
+#mypage1 .info-area2 .item+.item { border-top:0.5px solid #9A9A9A; } 
+#mypage1 .info-area2 .title-box { display: flex; align-items: center; justify-content: space-between; } 
+
+#mypage1 .info-area2 .title-box p { font-weight: 500; line-height: 26px; padding: 13px 0 11px; } 
+#mypage1 .info-area2 .title-box strong { font-weight: 500; font-size: 15px; } 
+#mypage1 .info-area2 .title-box strong.pink { color: #FF1C9B; } 
+#mypage1 .info-area2 .title-box strong span { font-weight: 700; font-size: 18px; } 
+#mypage1 .info-area2 .data-box { display: flex; align-items: flex-start; padding-bottom: 20px; } 
+#mypage1 .info-area2 .data-box .date { margin-right: auto; font-size: 10px; color: #9A9A9A; } 
+#mypage1 .info-area2 .data-box a { background: #F3F3F3; border-radius: 20px; width: 75px; height: 25px; line-height: 25px; text-align: center; color: #9A9A9A; } 
+#mypage1 .info-area2 .data-box a+a { margin-left: 5px; } 
+
+
+
+
+
+#mypage1 .info-area3 { margin-top: 10px; } 
+#mypage1 .head { display: flex; align-items: center; } 
+#mypage1 .head h3 { margin-right: auto; } 
+#mypage1 .head a { background: #F3F3F3; border-radius: 20px; font-size: 10px; width: 75px; height: 25px; line-height: 25px; text-align: center; color: #9A9A9A; } 
+#mypage1 .head a+a { margin-left: 5px; } 
+
+
+#mypage1 .info-area3 .frame { background: #FFFFFF;border: 0.5px solid #9A9A9A;border-radius: 10px;padding: 0 10px 24px; } 
+#mypage1 .info-area3 .frame p { font-weight: 500;font-size: 15px;line-height: 22px;padding: 14px 0 12px; border-bottom: 0.5px solid #FF1C9B; } 
+#mypage1 .info-area3 .frame .plan-list { display: flex; } 
+#mypage1 .info-area3 .frame li { flex: 1; text-align: center; } 
+#mypage1 .info-area3 .frame li .img-box { width: 16px; height: 16px; margin: 20px auto 5px; } 
+#mypage1 .info-area3 .frame li .img-box img { } 
+#mypage1 .info-area3 .frame li .title { font-weight: 700;font-size: 12px;line-height: 17px;display: block;min-height: 34px;}
+#mypage1 .info-area3 .frame li .desc { font-size: 10px; color: #989898; white-space: nowrap; display: block; margin-top: 9px;}
+
+
+
+
+
+
+
+#mypage1 .info-area4 { } 
+#mypage1 .info-area4 .frame{ } 
+#mypage1 .info-area4 .frame ul{ } 
+#mypage1 .info-area4 .frame li{ } 
+#mypage1 .info-area4 .frame li+li{ } 
+#mypage1 .info-area4 .frame .title{ } 
+#mypage1 .info-area4 .frame .desc{ } 
+
+
+
+#mypage1 .info-area5 { } 
+#mypage1 .info-area5 .frame{ 
+    display: flex;
+} 
+#mypage1 .info-area5 .frame .count{ } 
+#mypage1 .info-area5 .frame .count{ } 
+#mypage1 .info-area5 .frame a {
+    margin-left: auto;
+    background: #F3F3F3; border-radius: 20px; font-size: 10px;width: 105px; height: 25px; line-height: 25px; text-align: center; color: #9A9A9A; 
+} 
+
+
+
+#mypage1 .info-area6 { } 
+#mypage1 .info-area7 { } 
