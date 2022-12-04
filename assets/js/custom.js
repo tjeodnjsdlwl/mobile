@@ -36,6 +36,12 @@ $(function(){
             el:'.swiper-pagination'
         }
      });
+     var swiper = new Swiper("#main .intro2 .slide1", {
+        spaceBetween:20,
+        pagination:{
+            el:'.swiper-pagination'
+        }
+     });
 
      $('#main .sc-intro .group-nav a').click(function(e){
         e.preventDefault();
@@ -56,5 +62,13 @@ $(function(){
         }
      });
 
+
+    // 
+     $('#pay1 .radio-box label').click(function(){
+        val = $(this).data('val');
+        $('.method-wrap').css('display','none');
+        $('#method'+val).css('display','block');
+
+     })
 
 })

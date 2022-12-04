@@ -1,36 +1,180 @@
-.blind{
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0,0,0,0);
-    margin: -1px;
-}
+.blind { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); margin: -1px; } 
 
 /* body 세팅 */
-body{
-    font-family: 'Noto Sans KR', sans-serif;
-    font-size: 12px;
-    list-style: -0.05em;
-}
+body { font-family: 'Noto Sans KR', sans-serif; font-size: 12px; letter-spacing: -0.05em; } 
+
+
+/* 보더부모 */
+.btn-area1 { display: flex; gap: 4px; } 
+.btn-area1 .btn { flex: 1; border-radius: 5px; } 
 
 
 /* btn영역 */
-.btn{
-    background: var(--pink01);
-    height: 35px;
-    line-height: 35px;
-    font-weight: bold;
-    font-size: 15px;
-    color: #fff;
-    border-radius: 30px;
+.btn { display: block; width: 100%; background: var(--pink01); height: 35px; line-height: 33px; font-weight: bold; font-size: 15px; color: #fff; border-radius: 30px; text-align: center; } 
+.btn-gray { color: #9a9a9a; background: #f3f3f3; border: 1px solid #AFAFAF; } 
+.btn-gray1 { color: #fff; background: #AFAFAF; border: 1px solid #AFAFAF; } 
+.btn-gray3 { background: #F3F3F3; color: #9A9A9A; } 
+.btn-sm { height: 20px; background: #FF1C9B; border-radius: 10px; color: #fff; line-height: 20px; font-size: 10px; font-weight: 500; width: 70px; text-align: center; } 
+
+
+/* 핑크보더버튼 */
+.btn1 { width: 72px; height: 35px; background: #FFFFFF; border: 1px solid #FF1C9B; color: #ff1c9b; font-weight: 500; } 
+.btn1 { width: 72px; height: 35px; background: #FFFFFF; border: 1px solid #FF1C9B; color: #ff1c9b; font-weight: 500; } 
+
+/* 회샏 보더 부모 */
+.btn2 { width: 140px; height: 25px; border: 0.5px solid #AFAFAF; border-radius: 20px; color: #9A9A9A; font-weight: 500; font-size: 10px; } 
+
+/* input */
+.input1 { width: 100%; background: #FFFFFF; border: 0.5px solid #AFAFAF; height: 35px; padding-left: 10px; outline: none; } 
+.input1::placeholder { color: #AFAFAF; } 
+
+
+/* bar */
+.bar { width: 1px; height: 10px; background: #AFAFAF; } 
+
+
+/*checkbox label */
+.label-box { } 
+.label-box label { display: flex; align-items: center; font-weight: 500; } 
+.label-box input[type=checkbox] { } 
+.label-box input[type=checkbox]+label::before { content: ''; display: inline-block; width: 12px; height: 12px; background: #FFFFFF; border: 0.5px solid #AFAFAF; margin-right: 3px; } 
+.label-box input[type=checkbox]:checked+label::before { background: url(../images/chk-on-sm.svg) center no-repeat; } 
+
+/*checkbox label-1 */
+.label-box1 { } 
+.label-box1 label { display: flex; align-items: center; font-weight: 500; font-size: 10px; } 
+.label-box1 input[type=checkbox] { } 
+.label-box1 input[type=checkbox]+label::before { content: ''; display: inline-block; width: 18px; height: 18px; background: #FFFFFF; border: 0.5px solid #AFAFAF; margin-right: 3px; } 
+.label-box1 input[type=checkbox]:checked+label::before { background: url(../images/chk-on.svg) center no-repeat; } 
+
+
+
+/*radio label */
+.radio-wrap { display: flex; align-items: center; gap: 14px; } 
+.radio-box { } 
+.radio-box label { display: flex; align-items: center; position: relative; font-weight: 500; } 
+.radio-box input[type=radio] { } 
+.radio-box input[type=radio]+label::before { content: ''; display: inline-block; width: 18px; height: 18px; background: #FFFFFF; border:1px solid #9A9A9A; margin-right: 6px; border-radius: 50%; } 
+.radio-box input[type=radio]:checked+label::after { content: ''; top: 50%; transform: translateY(-50%); left: 4px; position: absolute; width: 10px; height: 10px; border-radius: 50%; background: #FF1C9B; } 
+
+ 
+/* tel */
+.tel-box1 { display: flex; align-items: center; } 
+.tel-box1 select { flex: 1; border: 0.5px solid #AFAFAF; color: #afafaf; height: 35px; padding-left: 6px; } 
+.tel-box1 input { flex: 1; padding-left: 6px; } 
+.tel-box1 .btn1 { flex-shrink: 0; margin-left: 3px; } 
+/* tel */
+.tel-box2 { display: flex; align-items: center; gap: 1px; } 
+.tel-box2 select { flex: 1; border: 0.5px solid #AFAFAF; color: #afafaf; height: 35px; padding-left: 6px; } 
+.tel-box2 input { flex: 1; padding-left: 6px; } 
+/* .tel-box2 select:read-only { background: #d7d7d7; color: #000; }  */
+.tel-box2 input:read-only { background: #d7d7d7; color: #000; } 
+/* mail */
+.mail-box1 { display: flex; align-items: center; gap: 5px; } 
+.mail-box1 select { flex: 1; border: 0.5px solid #AFAFAF; color: #afafaf; height: 35px; padding-left: 6px; } 
+.mail-box1 input { flex: 1; padding-left: 6px; } 
+.mail-box1 .btn1 { flex-shrink: 0; margin-left: 3px; } 
+
+/* addr-box */
+.addr-box { } 
+.addr-box .input-box1 .btn1 { margin-left: 5px; } 
+.addr-box > * { margin-top: 10px; } 
+
+
+
+/* input-box1 */
+.input-box1 { display: flex; } 
+.input-box1 input { flex: 1; } 
+.input-box1 .btn1 { margin-left: 3px; } 
+
+/* input-box3 */
+.input-box3{
+    display: flex;
+    gap: 4px;
+
 }
-.btn-gray{
-    color: #9a9a9a;
-    background: #f3f3f3;
-    border: 1px solid #AFAFAF;
+.input-box3 .box{
+    flex: 1;
+}
+.input-box3 select{width: 100%;height: 35px;
+    background: #FFFFFF;
+    border: 0.5px solid #AFAFAF;
+    border-radius: 30px;
+    text-align: center;
+    background:#fff url(../images/box3-arrow.svg) right 16px center no-repeat;
+}
+.input-box3 input{width: 100%;height: 35px;
+    border: 0.5px solid #AFAFAF;
+    border-radius: 30px;
+    text-align: center;
+}
+.input-box3 p.title{
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 8px;
 }
 
-.btn-sm{
-    border-radius: 5px;
-}
+input:read-only { background:#F3F3F3}
+
+/* select-style1 */
+.select1 { border: 0.5px solid #9A9A9A; border-radius: 25px; width: 120px; height: 20px; text-align: center; padding-right: 25px; background: #FFFFFF url(../images/select-arrow.svg) right 8px center no-repeat; font-weight: 700;
+ color: #000; } 
+
+select { width: 100%; height: 35px; border: 0.5px solid #AFAFAF; color: #afafaf; padding-left: 6px; } 
+
+/* arrow */
+.btn-arrow { padding-right: 13px; background: url(../images/arrow1.svg) no-repeat; background-position: right center; } 
+.btn-arrow2 { padding-right: 13px; background: url(../images/arrow2.svg) no-repeat; background-position: right center; } 
+
+
+
+/* link */
+.link-pink1 { color: #FF1C9B; text-decoration-line: underline; } 
+
+
+/* @msg */
+.msg-box1 { } 
+.msg-box1 strong { font-weight: 700; font-size: 11px; line-height: 16px; display: block; margin-bottom: 10px; } 
+.msg-box1 h3 { font-weight: 700; font-size: 11px; line-height: 16px; display: block; margin-bottom: 10px; } 
+.msg-box1 ul { } 
+.msg-box1 li { font-size: 10px; line-height: 14px; padding-left: 5px; position: relative; } 
+.msg-box1 li::before { position: absolute; top: 0; left: 0; content: '-'; } 
+
+.msg-box2 { } 
+.msg-box2 strong { font-weight: 700; font-size: 11px; line-height: 16px; display: block; margin-bottom: 10px; } 
+.msg-box2 h3 { font-weight: 700; font-size: 11px; line-height: 16px; display: block; margin-bottom: 10px; } 
+.msg-box2 ul { } 
+.msg-box2 li { font-size: 10px; line-height: 14px; padding-left: 15px; position: relative; } 
+.msg-box2 li::before { position: absolute; top: 0; left: 0; content: '※'; } 
+
+/* @msg1 */
+.msg1 { position: relative; padding-left: 15px; } 
+.msg1::before { position: absolute; top: 0; left: 0; content: '※'; } 
+
+ 
+
+
+
+/* popup */
+.popup { } 
+.popup .btn-close { position: absolute; top: 10px; right: 10px; } 
+.popup .title-point { position: relative; font-weight: 500; font-size: 18px; color: #FF1C9B; text-align: center; } 
+.popup .title-point::before { content: ''; display: inline-block; vertical-align: top; width: 20px; height: 20px; background: url(../images/title-point.svg) no-repeat; margin-right: 16px; } 
+
+
+.mt30 { margin-top: 30px !important; } 
+
+
+
+/* table1 */
+.table1 { width: 100%; font-size: 10px; } 
+.table1 tr { line-height: 30px; border-top: 0.5px solid #AFAFAF; border-bottom: 0.5px solid #AFAFAF; } 
+.table1 th { width: 90px; background: #F8F8F8; color: #9A9A9A; font-weight: 500; } 
+.table1 td { padding-left: 16px; } 
+
+
+
+.table2 { width: 100%; } 
+.table2 tr { border-top: 0.5px solid #AFAFAF; border-bottom: 0.5px solid #AFAFAF; } 
+.table2 th { font-weight: bold; background: #F3F3F3; width: calc(100%/3); height: 40px; } 
+.table2 td { text-align: center; font-size: 10px; min-height: 40px; line-height: 14px; padding: 10px 0; } 

@@ -6,95 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-   <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../asset/js/jquery-3.6.1.min.js"></script>
-    <script src="./asset/js/custom.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/js/jquery-3.6.1.min.js"></script>
+
+
+  <script src="../assets/js/custom.js"></script>
 
 </head>
 <body>
 
-    <section id="phone2"> 
+    <section id="userinfo3"> 
             <div class="group-title">
                 <h2>회원탈퇴 신청</h2>
             </div>
            
-            <div class="content">
-                <div class="info-area1">
-                    <div class="info-header">
+            <div class="info-area1">
+                <div class="info-header">
+                    <div class="inner">
                         <h3>회원탈퇴 안내사항</h3>
-                        <ul>
-                            <li><i>※</i>탈퇴 즉시 회원님의 온라인 정보는 삭제 됩니다.</li>
-                            <li><i>※</i> 사용하셨던 해당 아이디는 회원 탈퇴 후 사용이 불가능 합니다.</li>
-                            <li><i>※</i> 회원탈퇴 이후 재가입은 바로 가능합니다.</li>
-                            <li><i>※</i> 탈퇴처리 이후에는 어떠한 방법으로도 회원님의 개인정보를 복원 할 수 없습니다.</li>
-                        </ul>
                     </div>
+                    <ul class="msg-box2">
+                        <li>탈퇴 즉시 회원님의 온라인 정보는 삭제 됩니다.</li>
+                        <li> 사용하셨던 해당 아이디는 회원 탈퇴 후 사용이 불가능 합니다.</li>
+                        <li> 회원탈퇴 이후 재가입은 바로 가능합니다.</li>
+                        <li> 탈퇴처리 이후에는 어떠한 방법으로도 회원님의 개인정보를 복원 할 수 없습니다.</li>
+                    </ul>
+                </div>
+                <div class="content">
                     <form action="" method="post">
                         <fieldset>
-                            <legend>회원탈퇴</legend>
-                            
-                            <table>
-                                <tr>
-                                    <th>아이디 </th>
-                                    <td>
-                                        <input type="text" disabled value="abcd******">
-                                    </td>     
-                                </tr>
-                                <tr>
-                                    <th>비밀번호 </th>
-                                    <td>
-                                        <input type="text" value="abcd*****">
-                                    </td>     
-                                </tr>
-                                <tr>
-                                    <td colspan="2">
-                                        <span>탈퇴사유(필수)</span>
-                                        <div>
-                                            <span>이메일</span>
-                                            <div class="radio-box">
-                                                <input type="radio">
-                                                <label for="">다른 ID 변경</label>
-                                            </div>
-                                            <div class="radio-box">
-                                                <input type="radio">
-                                                <label for="">개인정보의 유출 우려</label>
-                                            </div>
-                                            <div class="radio-box">
-                                                <input type="radio">
-                                                <label for="">타사로 전환</label>
-                                            </div>
-                                            <div class="radio-box">
-                                                <input type="radio">
-                                                <label for="">서비스 불만족</label>
-                                            </div>
-                                            <div class="radio-box">
-                                                <input type="radio">
-                                                <label for="">시스템 장애 (속도 저조, 잦은 에러 등)</label>
-                                            </div>
-                                            <div class="radio-box">
-                                                <input type="radio">
-                                                <label for="">이용빈도 낮음</label>
-                                            </div>
-                                            <div class="radio-box">
-                                                <input type="radio">
-                                                <label for="">알뜰폰 서비스 중단</label>
-                                            </div>
-                                            <div class="radio-box">
-                                                <input type="radio">
-                                                <label for="">기타</label>
-                                            </div>
+                            <legend class="blind">회원탈퇴</legend>
+                            <div class="wrap">
+                                <div class="flex">
+                                    <span class="title">아이디</span>
+                                    <div class="area">
+                                        <input type="text" disabled value="홍길*" class="input1">
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <span class="title">비밀번호</span>
+                                    <div class="area">
+                                        <input type="password"  class="input1">
+                                    </div>
+                                </div>
+                                <div class="flex flex3">
+                                    <span class="title">탈퇴사유(필수)</span>
+                                    <div class="area">
+                                        <div class="radio-box">
+                                            <input type="radio" class="blind" checked>
+                                            <label for="">다른 ID 변경</label>
                                         </div>
-                                      
-                                    </td>
-                                </tr>
-                            </table>
-                            <button class="btn-primary">회원탈퇴 신청</button>
+                                        <div class="radio-box">
+                                            <input type="radio" class="blind">
+                                            <label for="">개인정보의 유출 우려</label>
+                                        </div>
+                                        <div class="radio-box">
+                                            <input type="radio" class="blind">
+                                            <label for="">타사로 전환</label>
+                                        </div>
+                                        <div class="radio-box">
+                                            <input type="radio" class="blind">
+                                            <label for="">서비스 불만족</label>
+                                        </div>
+                                        <div class="radio-box">
+                                            <input type="radio" class="blind">
+                                            <label for="">시스템 장애 (속도 저조, 잦은 에러 등)</label>
+                                        </div>
+                                        <div class="radio-box">
+                                            <input type="radio" class="blind">
+                                            <label for="">이용빈도 낮음</label>
+                                        </div>
+                                        <div class="radio-box">
+                                            <input type="radio" class="blind">
+                                            <label for="">알뜰폰 서비스 중단</label>
+                                        </div>
+                                        <div class="radio-box">
+                                            <input type="radio" class="blind">
+                                            <label for="">기타</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            
+                            <button class="btn mt30">회원탈퇴 신청</button>
 
                         </fieldset>
                     </form>
                 </div>
-                
             </div>
+                
     </section>
 </body>
 </html>

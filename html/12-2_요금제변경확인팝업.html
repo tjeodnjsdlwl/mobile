@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <!-- swiper -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="../assets/css/style.css">
+
+ <!-- swiper js -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="../assets/js/jquery-3.6.1.min.js"></script>
+
+
+ <script src="../assets/js/custom.js"></script>
+
+</head>
+<body>
+
+    <div class="popup" id="planChange">
+        <h3 class="title-point">요금제 변경 확인</h3>
+        <form action="">
+            <fieldset>
+                <legend class="blind">요금제 변경</legend>
+                <strong class="title-info">변경정보</strong>
+                <div class="table-wrap">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>요금제</th>
+                                <th>이용요금</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="title">변경 전</td>
+                                <td class="data">데이터 통화 맘껏 슈퍼 안심 5GB+</td>
+                                <td class="data price">16,900 원</td>
+                            </tr>
+                            <tr>
+                                <td class="title">변경 후</td>
+                                <td class="data">데이터 통화 맘껏 슈퍼 안심 100GB+</td>
+                                <td class="data price">25,900 원</td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="last">
+                                    ※ 이용요금은 VAT포함 입니다.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="msg1">요금제 변경 시 할인받으셨던 금액(요금할인, 단말할인 등)이 위약금으로 발생할 수 있습니다.</p>
+        
+                <div class="btn-area1">
+                    <button class="btn btn1">예약 (익월 1일)</button>
+                    <button class="btn btn-gray3">즉시변경</button>
+                </div> 
+                <div class="label-box1">
+                    <input type="checkbox" name="" id="agree">
+                    <label for="agree">요금제 변경에 대한 안내사항을 확인하였으며, 변경 진행에 동의합니다.</label>
+                </div>
+                <div class="msg-box2">
+                    <ul> 
+                        <li>요금제 변경 시 월정액과 사용량 일할 계산되어 추가요금 발생 될 수 있으며 세부내역은 실시간 요금조회 또는 고객센터를 통해 확인 가능합니다.</li>
+                        <li>데이터 추가제공을(프로모션 등)받는 고객님께서 요금제를 변경하실 경우 추가제공 되는 데이터는 중단될 수 있으며 중단 시 다시 제공되지 않습니다.</li>
+                        <li>3G > LTE요금제로, LTE > 3G요금제로 변경을 희망 하시는 고객님께서는 요금제에 맞는 단말기를 사용하셔야 요금제 변경 가능합니다.</li>
+                    </ul>
+                </div> 
+                <button class="btn">요금제 변경</button>
+            </fieldset>
+        </form>
+       
+
+        <a href="" class="btn-close"><img src="../assets/images/btn-close.svg" alt=""></a>
+    </div>
+
+</body>
+</html>

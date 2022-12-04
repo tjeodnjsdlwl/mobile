@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-   <link rel="stylesheet" href="../assets/css/style.css">
+ <!-- swiper -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="../assets/css/style.css">
+
+ <!-- swiper js -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
 
-    <script src="../asset/js/jquery-3.6.1.min.js"></script>
-    <script src="./asset/js/custom.js"></script>
+ <script src="../assets/js/custom.js"></script>
 
 </head>
 <body>
 
-    <section id="phone2">
+    <section id="pay1">
             <div class="group-title">
                 <h2>납부방법 변경</h2>
             </div>
@@ -23,7 +28,7 @@
             <div class="content">
                 <div class="info-area1" >
                     <div class="select-wrap">
-                        <select name="" id="">
+                        <select name="" id="" class="select1">
                             <option value="">010-33**-*66</option>
                         </select>
                     </div>
@@ -31,10 +36,30 @@
 
                 <div class="info-area2">
                     <h3>이용중인 납부방법</h3>
-                    <table>
+                    <table class="table1">
                         <tr>
                             <th>납부방법</th>
                             <td>신용카드</td>
+                        </tr>
+                        <tr>
+                            <th>카드(계좌번호)</th>
+                            <td>1234-12**-****-**34</td>
+                        </tr>
+                        <tr>
+                            <th>카드만료기간</th>
+                            <td>2023-06-30</td>
+                        </tr>
+                        <tr>
+                            <th>명세서유형</th>
+                            <td>이메일 명세서</td>
+                        </tr>
+                        <tr>
+                            <th>메일주소</th>
+                            <td>adcdefg@naver.com</td>
+                        </tr>
+                        <tr>
+                            <th>납부기준일</th>
+                            <td>말일</td>
                         </tr>
                     </table>
                 </div>
@@ -47,106 +72,118 @@
                         <div class="inner">
                             <div class="radio-wrap">
                                 <div class="radio-box">
-                                    <input type="radio" name="" id="">
-                                    <label for="">신용/체크카드 자동납부</label>
+                                    <input type="radio" name="method" id="chk1" checked>
+                                    <label for="chk1" data-val="1">신용/체크카드 자동납부</label>
                                 </div>
                                 <div class="radio-box">
-                                    <input type="radio" name="" id="">
-                                    <label for="">은행계좌 자동이체</label>
+                                    <input type="radio" name="method" id="chk2">
+                                    <label for="chk2" data-val="2">은행계좌 자동이체</label>
                                 </div>
                                 <div class="radio-box">
-                                    <input type="radio" name="" id="" checked>
-                                    <label for="">네이버페이 (준비중)</label>
+                                    <input type="radio" name="method" id="chk3" >
+                                    <label for="chk3" data-val="3">네이버페이 (준비중)</label>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- 납부정보 신용/체크 -->
-                    <div class="info-wrap" id="method1">
+                    <div class="info-wrap method-wrap" id="method1">
                         <h4>납부정보 입력</h4>
                         <div class="inner">
-                            <div class="input-box">
-                                <label for="">카드사명</label>
-                                <select name="" id="">
+                            <div class="flex-box">
+                                <label for="" class="title">카드사명</label>
+                                <select name="" id="" class="select">
                                     <option value="">선택하세요</option>
                                 </select>
                             </div>
-                            <div class="input-box">
-                                <label for="">카드번호</label>
-                                <div class="wrap">
-                                    <input type="text"><i>-</i>
-                                    <input type="text"><i>-</i>
-                                    <input type="text"><i>-</i>
-                                    <input type="text">
+                            <div class="flex-box">
+                                <label for="" class="title">카드번호</label>
+                                <div class="input-box1 number">
+                                    <input type="text" class="input1"><i>-</i>
+                                    <input type="text" class="input1"><i>-</i>
+                                    <input type="text" class="input1"><i>-</i>
+                                    <input type="text" class="input1">
                                 </div>
                             </div>
-                            <div class="input-box">
-                                <label for="">카드 유효기간</label>
-                                <div class="wrap">
-                                    <input type="text" placeholder="MM"><i>/</i>
-                                    <input type="text" placeholder="YY">
+                            <div class="flex-box">
+                                <label for="" class="title">카드 유효기간</label>
+                                <div class="input-box1 number">
+                                    <input type="text" class="input1" placeholder="MM"><i>/</i>
+                                    <input type="text" class="input1" placeholder="YY">
                                 </div>
                             </div>
                         </div>
-                        <button class="btn-4">신용카드 유효성 체크</button>
+                        <div class="auth">
+                            <button class="btn">신용카드 유효성 체크</button>
+                        </div>
                     </div>
                     <!-- 납부정보 은행계좌 자동이체 -->
-                    <div class="info-wrap" id="method2">
-                        <div class="info-item">
-                            <div class="box">
-                                <label for="">이름</label>
-                                <input type="text">
-                            </div>
-                            <div class="box">
-                                <label for="">주민등록번호</label>
-                                <div class="wrap">
-                                    <input type="text" placeholder="주민등록번호 앞 6자리"><i>-</i>
-                                    <input type="text" placeholder="주민등록번호 앞 7자리">
-                                    <button class="btn-4">신용카드 인증</button>
+                    <div class="info-wrap method-wrap" id="method2" style="display: none;">
+                        <div class="info-item item1">
+                            <div class="flex">
+                                <label for="" class="title">이름</label>
+                                <div class="area">
+                                    <input type="text" class="input1">
                                 </div>
                             </div>
+                            <div class="flex-box">
+                                <label for="" class="title">주민등록번호</label>
+                                <div class="input-box1">
+                                    <input type="text" class="input1" placeholder="주민등록번호 앞 6자리"><i>-</i>
+                                    <input type="text" class="input1" placeholder="주민등록번호 앞 7자리">
+                                </div>
+                            </div>
+                            <button class="btn">신용카드 인증</button>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item item2">
                             <h4>계좌 정보 입력</h4>
-                            <div class="box">
-                                <label for="">은행명</label>
-                                <select name="" id="">
-                                    <option value="">선택하세요</option>
-                                </select>
+                            <div class="flex-wrap">
+                                <div class="flex">
+                                    <label for="" class="title">은행명</label>
+                                    <div class="area">
+                                        <select name="" id="" class="select">
+                                            <option value="">선택하세요</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="flex">
+                                    <label for="" class="title">계좌번호</label>
+                                    <div class="area"><input type="text" class="input1"></div>
+                                </div>
                             </div>
-                            <div class="box">
-                                <label for="">계좌번호</label>
-                                <input type="text">
-                            </div>
-                            <button class="btn-4">계좌번호 유효성 체크</button>
+                            <button class="btn">계좌번호 유효성 체크</button>
                         </div>
-                        <div class="info-item">
+                        <div class="info-item item2">
                             <h4>납부 기준일</h4>
-                            <div class="box">
-                                <label for="">은행명</label>
-                                <select name="" id="">
-                                    <option value="">선택하세요</option>
-                                </select>
+                            <div class="flex-wrap">
+                                <div class="flex">
+                                    <label for="" class="title">은행명</label>
+                                    <div class="area">
+                                        <select name="" id="" class="select">
+                                            <option value="">선택하세요</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
-                    <div class="btn-area">
-                        <button class="btn-normal">취소</button>
-                        <button class="btn-primary">납부방법 변경</button>
+                    <div class="btn-area1 mt30">
+                        <button class="btn btn-gray">취소</button>
+                        <button class="btn">납부방법 변경</button>
                     </div> 
 
                 </div>
             </div>
-            <div class="caution-area">
+            <div class="msg-box1 new">
                 <h3>※ 알려드립니다.</h3>
                 <ul>
-                    <li><i>-</i>자동납부(계좌/카드)를 이용하시는 경우, 당월 청구금액 납부 시 이중 납부가 될 수 있으니 납부일 및 계좌/카드 거래내역 확인 후 이용하시기 바랍니다.</li>
-                    <li><i>-</i>변경 요청 시점이 은행, 카드사로 당월 납부요청이 지난 후 에는 변경한 납부방법이 다음달로 예약됩니다.</li>
-                    <li><i>-</i>입금확인 일자는 은행,신용카드 등 에서 납부사실을 통보한 일자로, 납부하신  날짜와 입금확인 일자가 다소 차이가 날 수 있습니다.</li>
-                    <li><i>-</i>납부사실 통보에 소요되는 시간이 각 은행과 신용카드 기관별로 차이가 있기 때문에, 입금확인 일자가 서로 다를 수 있습니다.</li>
-                    <li><i>-</i>미납 요금계에 마이너스(-)로 표기된 경우는 지난달 과납 등으로 발생된 금액입니다.</li>
-                    <li><i>-</i>미납 요금을 납부한 고객일지라도, 명세서 상에 미납요금이 표기되어 있을 수 있습니다.  (청구시점와 현시점 상이할 수 있음)</li>
+                    <li>자동납부(계좌/카드)를 이용하시는 경우, 당월 청구금액 납부 시 이중 납부가 될 수 있으니 납부일 및 계좌/카드 거래내역 확인 후 이용하시기 바랍니다.</li>
+                    <li>변경 요청 시점이 은행, 카드사로 당월 납부요청이 지난 후 에는 변경한 납부방법이 다음달로 예약됩니다.</li>
+                    <li>입금확인 일자는 은행,신용카드 등 에서 납부사실을 통보한 일자로, 납부하신  날짜와 입금확인 일자가 다소 차이가 날 수 있습니다.</li>
+                    <li>납부사실 통보에 소요되는 시간이 각 은행과 신용카드 기관별로 차이가 있기 때문에, 입금확인 일자가 서로 다를 수 있습니다.</li>
+                    <li>미납 요금계에 마이너스(-)로 표기된 경우는 지난달 과납 등으로 발생된 금액입니다.</li>
+                    <li>미납 요금을 납부한 고객일지라도, 명세서 상에 미납요금이 표기되어 있을 수 있습니다.  (청구시점와 현시점 상이할 수 있음)</li>
                 </ul>
             </div>
            

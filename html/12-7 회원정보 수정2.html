@@ -6,14 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-   <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../asset/js/jquery-3.6.1.min.js"></script>
-    <script src="./asset/js/custom.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script src="../assets/js/jquery-3.6.1.min.js"></script>
+
+
+  <script src="../assets/js/custom.js"></script>
 
 </head>
 <body>
 
-    <section id="phone2"> 
+    <section id="userinfo2"> 
             <div class="group-title">
                 <h2>회원정보 수정</h2>
             </div>
@@ -22,90 +29,94 @@
                 <div class="info-area1">
                     <div class="info-header">
                         <h3>홍길*님의 정보</h3>
-                        <a href="">회원탈퇴</a>
+                        <a href="" class="link-pink1">회원탈퇴</a>
                     </div>
-                    <table>
-                        <tr>
-                            <th>고객명 </th>
-                            <td>
-                                <input type="text" disabled value="홍길*">
-                            </td>     
-                        </tr>
-                        <tr>
-                            <th>아이디 </th>
-                            <td>
-                                <input type="text" disabled value="abcd*****">
-                            </td>     
-                        </tr>
-                        <tr>
-                            <th>비밀번호 확인 </th>
-                            <td>
-                                <input type="password" disabled >
-                                <a href="">비밀번호 변경</a>
-                            </td>     
-                        </tr> 
-                        <tr>
-                            <th>휴대폰번호 </th>
-                            <td>
-                                <div class="from-wrap">
-                                    <select name="" id="" readonly>
+                    <div class="wrap">
+                        <div class="flex">
+                            <span class="title">고객명</span>
+                            <div class="area">
+                                <input type="text" disabled value="홍길*" class="input1">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <span class="title">아이디</span>
+                            <div class="area">
+                                <input type="text" disabled value="abcd*****" class="input1">
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <span class="title">비밀번호</span>
+                            <div class="area">
+                                <input type="password" disabled  class="input1">
+                                <div class="link-box"><a href="" class="link-pink1">회원탈퇴</a></div>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <span class="title">휴대폰 번호</span>
+                            <div class="area">
+                                <div class="tel-box2">
+                                    <select name="" id="" >
                                         <option value="010">010</option>
-                                        <option value="010">001</option>
+                                        <option value="010" selected>010</option>
                                     </select>-
-                                    <input type="text" readonly>-
-                                    <input type="text" readonly>
+                                    <input type="text"  class="input1" value="1234">-
+                                    <input type="text"  class="input1" value="1234">
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>이메일 </th>
-                            <td>
-                                <div class="id-wrap">
-                                   <input type="text" value="abcdefg@naver.com">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <span>배송지 주소</span>
+                            </div>
+                        </div>
+                        <div class="flex">
+                            <span class="title">이메일</span>
+                            <div class="area">
+                                <input type="text" value="abcdefg@naver.com" class="input1">
+                            </div>
+                        </div>
+                        <div class="flex2">
+                            <span class="title">배송지 주소</span>
+                            <div class="area">
                                 <div class="addr-box">
-                                    <div><input type="text"><button class="btn-find">우편번호찾기</button></div>
-                                    <div><input type="text"></div>
-                                    <div><input type="text" placeholder="상세주소 입력"></div>
+                                    <div class="input-box1"><input type="text" class="input1"><button class="btn1">우편번호찾기</button></div>
+                                    <div class="input-box1"><input type="text" class="input1"></div>
+                                    <div class="input-box1"><input type="text" class="input1" placeholder="상세주소 입력"></div>
                                 </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">
-                                <span>마케팅정보 수신 동의</span>
-                                <div>
-                                    <span>이메일</span>
+                            </div>
+                        </div>
+                        <div class="flex3">
+                            <span class="title">마케팅정보 수신 동의</span>
+
+                            <div class="radio-wrap">
+                                <span class="sub-title">이메일</span>
+                                <div class="area">
                                     <div class="radio-box">
-                                        <input type="radio">
+                                        <input type="radio" id="" class="blind" checked>
                                         <label for="">수신</label>
                                     </div>
                                     <div class="radio-box">
-                                        <input type="radio">
+                                        <input type="radio" id="" class="blind">
                                         <label for="">수신거부</label>
                                     </div>
                                 </div>
-                                <div>
-                                    <span>이메일</span>
+                            </div>
+                            <div class="radio-wrap">
+                                <span class="sub-title">SMS</span>
+                                <div class="area">
                                     <div class="radio-box">
-                                        <input type="radio">
+                                        <input type="radio" id="" class="blind" checked>
                                         <label for="">수신</label>
                                     </div>
                                     <div class="radio-box">
-                                        <input type="radio">
+                                        <input type="radio" id="" class="blind">
                                         <label for="">수신거부</label>
                                     </div>
                                 </div>
-                            </td>
-                        </tr>
-                    </table>
-                    <div class="btn-area">
-                        <button class="btn-normal">취소</button>
-                        <button class="btn-primary">정보수정</button>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                      
+                    <div class="btn-area1 mt30">
+                        <button class="btn btn-gray">취소</button>
+                        <button class="btn">정보수정</button>
                     </div>
                 </div>
                 

@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-   <link rel="stylesheet" href="../assets/css/style.css">
+ <!-- swiper -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="../assets/css/style.css">
+
+ <!-- swiper js -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
 
-
-    <script src="../asset/js/jquery-3.6.1.min.js"></script>
-    <script src="./asset/js/custom.js"></script>
+ <script src="../assets/js/custom.js"></script>
 
 </head>
 <body>
 
-    <div class="popup appli-popup" id="appliPopup">
+    <div class="popup" id="appliPopup">
         <h3>신청 상세 내역</h3>
 
-        <table>
+        <table class="table1">
             <tr>
                 <th>신청일</th>
                 <td>2022.09.26</td>
@@ -45,9 +49,10 @@
                 <td>3333-3333-3333</td>
             </tr>
         </table>
-        <div class="btn-area">
-            <button class="btn-normal">확인</button>
-        </div>
+
+        <button class="btn btn-gray1 ">확인</button>
+
+        <button class="btn-close"><img src="../assets/images/btn-close.svg" alt=""></button>
     </div>
     
 
