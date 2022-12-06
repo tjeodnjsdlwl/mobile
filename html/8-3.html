@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <section id="phone2">
+    <section id="review3"   class="event_wrap">
 
         <div class="group-title">
             <h2>사용후기</h2>
@@ -33,7 +33,7 @@
                 <fieldset>
                     <legend class="blind">후기작성</legend>  
 
-                    <div class="input-wrap">
+                    <div class="input-wrap recm">
                         <label for="">추천정도</label>
                         <div class="grade">
                             <span class="on">★</span>
@@ -48,34 +48,28 @@
                         <p>휴대폰 번호</p>
                         <select name="" id="">
                             <option value="">선택하세요</option>
+                            <option value="">선택하세요1</option>
                         </select>
                     </div>
-                    <div class="input-wrap">
+                    <div class="input-wrap rev">
                         <label for="">사용후기</label>
                         <div class="textarea">
-                            <textarea name="" id="" cols="30" rows="10">
-                            </textarea>
+                            <textarea name="" id="" cols="30" rows="10"placeholder="※ 사용 후기는 가입 고객만 작성 가능합니다.&#13;&#10;※ 욕설/비방/광고성 글이나 부적절한 내용의 경우 삭제될 수 있습니다."></textarea>
                             <span class="byte">0/800</span>
                         </div>
                     </div>
-                    <div class="input-wrap">
-                        <label for="">SNS 공유 URL (선택)</label>
-                        <input type="text">
+                    <div class="input-wrap sns_url">
+                        <label for="">SNS 공유 URL <span>(선택)</span></label>
+                        <input type="text" id="sns_url" placeholder="공유된 후기의 url을 입력 해주세요.">
                     </div>
-                    <div class="input-wrap">
-                        <label for="">이미지 업로드 (필수)</label>
-                        <input type="file">
-                        <input type="file">
-
-                        <div class="img">
-                            <span>사진<br>
-                                0/2 </span>
-                        </div>
-                        <div class="img">
-                            <span>사진<br>
-                                0/2 </span>
-                        </div>
-
+                    <div class="input-wrap img_upload">
+                        <label for="">이미지 업로드 <span>(필수)</span></label>
+                       <div class="upload_wrap">
+                        <label for="file1"><span>사진<br>0/2</span></label> 
+                        <input type="file" id="file1">
+                        <label for="file2"><span>사진<br>0/2</span></label> 
+                        <input type="file" id="file2">
+                       </div>
                         <p>※  1장당 2MB 이내의 jpg, gif, png 형식으로 최대 2장까지 등록 가능</p>
                     </div>
 

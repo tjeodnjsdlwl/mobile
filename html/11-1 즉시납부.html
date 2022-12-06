@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <section id="phone2">
+    <section id="pay2">
 
             <div class="group-title">
                 <h2>즉시납부</h2>
@@ -28,7 +28,7 @@
                         <legend class="blind">즉시납부</legend>
 
                         <div class="info-area1">
-                            <select name="" id="">
+                            <select name="" id="" class="select1">
                                 <option value="">010-33**-*66</option>
                             </select>
                             <div class="frame">
@@ -51,10 +51,10 @@
                             </div>
                             <div class="input-wrap">
                                 <label for="">납부 금액 입력</label>
-                                <input type="text" placeholder="숫자만 입력">
+                                <input type="text" placeholder="숫자만 입력" class="input1">
                                 <div class="label-box">
-                                    <input type="checkbox">
-                                    <label for="">전액 납부</label>
+                                    <input type="checkbox" id="all" class="blind">
+                                    <label for="all">전액 납부</label>
                                 </div>
                             </div>
                         </div>
@@ -62,62 +62,62 @@
                             <h3>본인인증 </h3>
                             <div class="radio-wrap">
                                 <div class="radio-box">
-                                    <input type="radio" name="" id="">
-                                    <label for="">신용카드 인증</label>
+                                    <input type="radio" name="" id="auth1" class="blind">
+                                    <label for="auth1">신용카드 인증</label>
                                 </div>
                                 <div class="radio-box">
-                                    <input type="radio" name="" id="">
-                                    <label for="">범용공인 인증</label>
+                                    <input type="radio" name="" id="auth2" class="blind">
+                                    <label for="auth2">범용공인 인증</label>
                                 </div>
                                 <div class="radio-box">
-                                    <input type="radio" name="" id="" checked>
-                                    <label for="">전자서명 인증</label>
+                                    <input type="radio" name="" id="auth3" class="blind" checked>
+                                    <label for="auth3">전자서명 인증</label>
                                 </div>
                             </div>
-                            <input type="text" placeholder="휴대폰 번호  예)010-1234-5678">
+                            <input type="text" placeholder="휴대폰 번호  예)010-1234-5678" class="input1">
                             <p class="msg">※ 전자서명을 위한 휴대폰 번호를 입력해주세요</p>
-                            <button class="btn-primary">본인인증하기</button>
+                            <button class="btn">본인인증하기</button>
                         </div>
                         <div class="info-area4">
                             <h3>납부방법 선택</h3>
                             <div class="radio-wrap">
                                 <div class="radio-box">
-                                    <input type="radio" name="" id="">
-                                    <label for="">신용/체크카드</label>
+                                    <input type="radio" name="" id="method1" class="blind">
+                                    <label for="method1">신용/체크카드</label>
                                 </div>
-                                <div class="radio-box">
-                                    <input type="radio" name="" id="">
-                                    <label for="">네이버 페이 (준비중)</label>
+                                <div class="radio-box ready">
+                                    <input type="radio" name="" id="method2" class="blind">
+                                    <label for="method2">네이버 페이 (준비중)</label>
                                 </div>
                             </div>
                         </div>
                         <div class="info-area5">
                             <h3>납부정보 입력</h3>
                             <div class="input-wrap">
-                                <label for="">카드번호</label>
-                                <div class="input-box">
-                                    <input type="text">
+                                <label for="" class="title">카드번호</label>
+                                <div class="input-box box1">
+                                    <input type="text" class="input1">
                                     <span>-</span>
-                                    <input type="text">
+                                    <input type="text" class="input1">
                                     <span>-</span>
-                                    <input type="text">
+                                    <input type="text" class="input1">
                                     <span>-</span>
-                                    <input type="text">
+                                    <input type="text" class="input1">
                                 </div>
 
                             </div>
                             <div class="input-wrap">
-                                <label for="">카드 유효기간</label>
-                                <div class="input-box">
-                                    <input type="text">
+                                <label for="" class="title">카드 유효기간</label>
+                                <div class="input-box box2">
+                                    <input type="text" class="input1">
                                     <span>/</span>
-                                    <input type="text">
+                                    <input type="text" class="input1">
                                 </div>
                             </div>
                             <div class="input-wrap">
-                                <label for="">카드 비밀번호 (앞 두자리)</label>
-                                <div class="input-box">
-                                    <input type="text">
+                                <label for="" class="title">카드 비밀번호 (앞 두자리)</label>
+                                <div class="input-box box3">
+                                    <input type="text" class="input1">
                                     <div class="dot-box">
                                         <span class="dot"></span>
                                         <span class="dot"></span>
@@ -125,24 +125,26 @@
                                 </div>
                             </div>
                             <div class="input-wrap">
-                                <label for="">할부기간</label>
-                                <div class="input-wrap">
+                                <div class="head">
+                                    <label for="" class="title">할부기간</label>
                                     <div class="msg">※ 5만원 이상인 경우 선택 가능</div>
-                                    <select name="" id="">
+                                </div>
+                                <div class="input-wrap">
+                                    <select name="" id="" >
                                         <option value="">일시불</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="label-box">
-                                <input type="checkbox" name="" id="">
-                                <label for="">본인(예금주)은 납부해야 할 요금에 대해 위 카드 번호에서 인출(결제)
+                            <div class="label-box2">
+                                <input type="checkbox" name="" id="agree">
+                                <label for="agree">본인(예금주)은 납부해야 할 요금에 대해 위 카드 번호에서 인출(결제)
                                     되는 것에 동의합니다.</label>
                             </div>
                         </div>
 
-                        <div class="btn-area">
-                            <button class="btn-normal">취소</button>
-                            <button class="btn-primary">즉시납부</button>
+                        <div class="btn-area1 mt30">
+                            <button class="btn btn-gray">취소</button>
+                            <button class="btn">즉시납부</button>
                         </div> 
                     </fieldset>
                 </form>

@@ -71,4 +71,21 @@ $(function(){
 
      })
 
+
+    //  #monthly
+
+    $('#monthly .info-area2 .arrow').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).siblings('.sub-list').toggle()
+    })
+
+    $('#monthly .info-area3 .title').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).parents('.wrap').find('.table').toggleClass('on');
+    })
+
+
+
 })

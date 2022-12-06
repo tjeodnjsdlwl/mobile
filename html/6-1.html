@@ -9,13 +9,15 @@
    <link rel="stylesheet" href="../assets/css/style.css">
 
 
-    <script src="../asset/js/jquery-3.6.1.min.js"></script>
+    <script src="/assets/js/jquery-3.6.1.min.js"></script>
     <script src="./asset/js/custom.js"></script>
-
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
 <body>
 
-    <section id="phone2">
+    <section id="used2" class="event_wrap">
 
         <div class="content1">
             <div class="group-title">
@@ -24,12 +26,15 @@
             <div class="group-info">
                 <div class="img-area">
                     <div class="swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="" alt="">
-                                </div>
-                            </div>
-                            <div class="swiper-pagination"></div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="/assets/images/phone_thumb01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/assets/images/phone_thumb01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/assets/images/phone_thumb01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/assets/images/phone_thumb01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/assets/images/phone_thumb01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="/assets/images/phone_thumb01.png" alt=""></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
                 <div class="info-area">
@@ -61,9 +66,9 @@
                         <label for="">기기변경</label>
                     </div>
                 </div>
-                <div class="choice-area">
-                    <h3>요금제 선택</h3>
-                    <div class="sub-wrap">
+                <div class="choice-area cost_select">
+                    <h3>할부기간</h3>
+                    <div class="sub-wrap ">
                         <label for=""  class="active">12개월</label>
                         <label for="">24개월</label>
                         <label for="">30개월 </label>
@@ -82,13 +87,13 @@
                         </div>
                         <ul class="plan-list">
                             <li>
-                                <img src="" alt="">3GB (+ 최대 1Mbps  무제한)
+                                <img src="/assets/images/icon_cost01.png" alt="">3GB (+ 최대 1Mbps  무제한)
                             </li>
                             <li>
-                                <img src="" alt="">집/이동전화 무제한 (부가통화 300분)
+                                <img src="/assets/images/icon_cost02.png" alt="">집/이동전화 무제한 (부가통화 300분)
                             </li>
                             <li>
-                                <img src="" alt="">무제한
+                                <img src="/assets/images/icon_cost03.png" alt="">무제한
                             </li>
                         </ul>
                     </div>
@@ -130,12 +135,30 @@
                         </li>
                     </ul>
                 </div>
+                <div class="pay-area">
+                    <h4>통신요금</h4>
+                    <div class="prc-box">월<em>9,000</em>원</div>
+                    <ul class="pay-list">
+                        <li>
+                            <span class="title">기본료 (부가세 포함)</span>
+                            <span class="data">12,000 원</span>
+                        </li>
+                        <li>
+                            <span class="title ">총 요금할인</span>
+                            <span class="data c_pink">-3,000 원</span>
+                        </li>
+                        <li>
+                            <span class="title">ㄴ선택약정 할인 (25%)</span>
+                            <span class="data c_pink">-3,000 원</span>
+                        </li>
+                    </ul>
+                </div>
                 <!-- ... -->
                 <div class="total-area">
                     <strong>월 납부 금액 <span>(부가세 포함)</span></strong>
                     <div class="prc">
                         월<em>34,000</em>원
-                    </div>
+                    </div> 
                 </div>
             </div>
             <a href="" class="btn-primary">온라인 신청</a>
@@ -154,8 +177,18 @@
                 </tr>
             </table>
         </div>
-     
-       
     </section>
+
+    <script>
+        $(function(){
+            var used2 = new Swiper("#used2 .swiper", {
+                pagination: {
+                el: ".swiper-pagination",
+                },
+            });
+
+        });
+    </script>
+
 </body>
 </html>
