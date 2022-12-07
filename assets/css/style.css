@@ -1073,72 +1073,28 @@
 #exservice2 .info-area1 .select-wrap { text-align: center; padding-bottom: 30px; border-bottom: 0.5px solid #9A9A9A; margin-bottom: 15px; } 
 
 #exservice2 .info-area2 { } 
-#exservice2 .info-area2 h3 {
-    font-weight: 700;
-font-size: 15px;
-  } 
-#exservice2 .info-area2 .radio-wrap {
-    border-bottom: 0.5px solid #9A9A9A;
-    padding: 15px 0;
-    gap: 30px;
-  } 
+#exservice2 .info-area2 h3 { font-weight: 700;font-size: 15px; } 
+#exservice2 .info-area2 .radio-wrap { border-bottom: 0.5px solid #9A9A9A; padding: 15px 0; gap: 30px; } 
 #exservice2 .info-area2 .radio-wrap .radio-box { } 
 #exservice2 .info-area2 .radio-wrap .radio-box+.radio-box { } 
  
-#exservice2 .info-area2 .list { 
-    border-bottom: 0.5px solid #9A9A9A;
-    margin-bottom: 30px;
-
-} 
-#exservice2 .info-area2 .list li{
-    padding: 10px 0;
-    position: relative;
-}
+#exservice2 .info-area2 .list { border-bottom: 0.5px solid #9A9A9A; margin-bottom: 30px;}
+#exservice2 .info-area2 .list li { padding: 10px 0; position: relative; } 
 #exservice2 .info-area2 .list li+li { 
-    
-    border-top:0.5px solid #9A9A9A;
-} 
+ border-top:0.5px solid #9A9A9A; } 
 
-#exservice2 .info-area2 .list .wrap { 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 32px;
-    position: relative;
-} 
-#exservice2 .info-area2 .list .more{ content: ''; position: absolute;
-     width: 10px; height: 6px;
-      background: url(../images/arrow3.svg) center no-repeat; 
-      right: 0px; top: 0px; 
-        width: 30px;
-        height: 38px;
-    } 
+#exservice2 .info-area2 .list .wrap { display: flex; justify-content: space-between; align-items: center; padding-right: 32px; position: relative; } 
+#exservice2 .info-area2 .list .more { content: ''; position: absolute; width: 10px; height: 6px; background: url(../images/arrow3.svg) center no-repeat; right: 0px; top: 0px; width: 30px; height: 38px; } 
 
-#exservice2 .info-area2 .list .more.active{ transform: rotate(-180deg); } 
+#exservice2 .info-area2 .list .more.active { transform: rotate(-180deg); } 
 
-#exservice2 .info-area2 .desc-wrap{
-    padding: 0 105px 0 30px;
-    display: none;
-    color: #636363;
-    font-size: 10px;
-line-height: 12px;
-}
-#exservice2 .info-area2 .desc-wrap.on{
-    display: block;
-    margin-top: 6px;
-}
-#exservice2 .msg-box1{
-    padding: 0 5px;
-    margin-top: 25px;
-}
-#exservice2 .msg-box1 li+li{
-    margin-top: 2px
-}
+#exservice2 .info-area2 .desc-wrap { padding: 0 105px 0 30px; display: none; color: #636363; font-size: 10px;line-height: 12px; } 
+#exservice2 .info-area2 .desc-wrap.on { display: block; margin-top: 6px; } 
+#exservice2 .msg-box1 { padding: 0 5px; margin-top: 25px; } 
+#exservice2 .msg-box1 li+li { margin-top: 2px}
 
 
-#servicePopup{
-    padding: 0 20px 30px
-}
+#servicePopup { padding: 0 20px 30px}
 
 #servicePopup .title-point { padding: 33px 0 27px; } 
 #servicePopup .title-info { text-align: center; display: block; font-weight: 500; font-size: 18px; line-height: 26px; padding-bottom: 15px; } 
@@ -1150,12 +1106,41 @@ line-height: 12px;
 #servicePopup table tbody tr { border-top: 0.5px solid #9A9A9A; border-bottom: 0.5px solid #9A9A9A; } 
 #servicePopup table tbody tr:last-child { border-bottom: 0; } 
 #servicePopup table tr { line-height: 30px; } 
-#servicePopup table td { text-align: center; font-weight: 500;color: #000;} 
-#servicePopup table .last td{
-    font-size: 7px;
-    color: #9A9A9A;
-} 
+#servicePopup table td { text-align: center; font-weight: 500; color: #000; } 
+#servicePopup table .last td { font-size: 7px; color: #9A9A9A; } 
 
-#servicePopup .msg-box1 {
-    margin: 28px 0;
-} 
+#servicePopup .msg-box1 { margin: 28px 0; } 
+
+
+
+
+
+#joinFrom1{}
+
+#joinFrom1 .group-title { padding: 24px 0 28px; text-align: center; } 
+#joinFrom1 .group-title h2 { font-weight: 500; font-size: 18px; line-height: 26px; }
+
+
+#joinFrom1 .group-nav { display: flex; } 
+#joinFrom1 .group-nav a { flex: 1; text-align: center; background: #D9D9D9; height: 30px; font-weight: 700; line-height: 30px; border: 0.5px solid #D6D5D5; border-radius: 20px 20px 0px 0px; } 
+#joinFrom1 .group-nav .active { background: #ff1c9b; color: #fff; border:0.5px solid #D6D5D5; } 
+
+
+
+#joinFrom1 .content{}
+#joinFrom1 .content1{}
+#joinFrom1 .content2{}
+
+#joinFrom1 .thumb-box{}
+#joinFrom1 .thumb-box img{width: 100%;}
+
+
+#joinFrom1 .area1{}
+#joinFrom1 .area1 h3{}
+
+#joinFrom1 .area1 .wrap{}
+#joinFrom1 .area1 .wrap h4{}
+
+#joinFrom1 .area1 .msg-wrap{}
+#joinFrom1 .area1 .msg-wrap .title{}
+#joinFrom1 .area1 .msg-wrap .desc{}
