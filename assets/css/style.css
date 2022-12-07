@@ -1627,7 +1627,7 @@ text-align: center;
 #self1 .area1 { 
  
     padding: 0 20px 30px;
-    border: 5px solid #F6F6F6;
+    border-bottom: 5px solid #F6F6F6;
 } 
 #self1 .area1  .frame{
     background: #FFFAFD;
