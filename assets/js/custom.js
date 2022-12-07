@@ -85,6 +85,11 @@ $(function(){
         $(this).toggleClass('active');
         $(this).parents('.wrap').find('.table').toggleClass('on');
     })
+    $('#exservice2 .list .more').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).siblings('.desc-wrap').toggleClass('on');
+    })
 
 
 

@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <!-- swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="../assets/css/style.css">
+ <!-- swiper -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="../assets/css/style.css">
 
-    <!-- swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="../assets/js/jquery-3.6.1.min.js"></script>
+ <!-- swiper js -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
 
-    <script src="../assets/js/custom.js"></script>
+ <script src="../assets/js/custom.js"></script>
 
 </head>
 <body>
 
-    <section id="phone2">
+    <section id="live">
 
             <div class="group-title">
                 <h2>실시간 요금조회</h2>
@@ -34,7 +34,7 @@
 
                 <div class="info-area1" >
                     <div class="select-wrap">
-                        <select name="" id="">
+                        <select name="" id="" class="select1">
                             <option value="">010-33**-*66</option>
                         </select>
                     </div>
@@ -43,12 +43,16 @@
                         <strong>슈퍼 마음껏 모두 다 10GB+ </strong>입니다.
                     </div>
                     <div class="frame-wrap">
-                        실시간요금 18,352원
+                        <span class="price">실시간요금 <strong class="pink"><em>18,352</em>원</strong></span>
                         <div class="gauge">
-                            <span class="bar" data-curr="20" data-total="31"></span>
-                            <i class="start">1일</i>
-                            <i class="end">말일</i>
-                            <i class="curr">20일</i>
+                            <span class="bar">
+                                <i class="curr" style="width:30%"><i class="curr pink">20일</i></i>
+                            </span>
+                            <div class="info">
+                                <i class="start">1일</i>
+                                <i class="end">말일</i>
+                            </div>
+                            
                         </div>
                     </div>
                    
@@ -56,7 +60,7 @@
                 
                 <div class="info-area2">
 
-                    <div class="info-header">
+                    <div class="head">
                         <h3>요금상세내역</h3>
                         <span>2022.09.01 ~ 2022.09.20 </span>
                     </div>
@@ -78,29 +82,29 @@
                             <span class="title">부가세</span>
                             <span class="result">33,636 원</span>
                         </li>
-                        <li class="result">
+                        <li class="detail-item result">
                             <span class="title">실시간 요금계</span>
-                            <span class="result">16,016 원</span>
+                            <span class="result pink">16,016 원</span>
                         </li>
                     </ul>
 
                 </div>
-                <div class="caution-area">
+                <div class="msg-box1">
                     <h3>※ 알려드립니다.</h3>
                     <ul>
-                        <li><i>-</i>현재 사용요금은 조회 반영 시점에 따라 최종요금과 다소 차이가 있을 수 있습니다.</li>
-                        <li><i>-</i>실시간 요금조회는 정확한 금액이 아니며, 청구서에 표기되는 금액과 다를 수
+                        <li>현재 사용요금은 조회 반영 시점에 따라 최종요금과 다소 차이가 있을 수 있습니다.</li>
+                        <li>실시간 요금조회는 정확한 금액이 아니며, 청구서에 표기되는 금액과 다를 수
                             있으므로 참고용으로 확인 부탁 드립니다.</li>
-                        <li><i>-</i>요금제 및 부가서비스에 포함되는 각종 무료 제공 혜택(음성/데이터/ 문자 등)은
+                        <li>요금제 및 부가서비스에 포함되는 각종 무료 제공 혜택(음성/데이터/ 문자 등)은
                             청구항목으로 표기되나, 실제 청구 시 에는 요금할인액으로(-)처리되어 부가되지
                             않을 수 있습니다.</li>
-                        <li><i>-</i>- 요금제/부가서비스/데이터 상품 월중 신청 시 해당 월정액 및 제공 혜택은 각각 일할
+                        <li>요금제/부가서비스/데이터 상품 월중 신청 시 해당 월정액 및 제공 혜택은 각각 일할
                             적용됩니다. (무선인터넷 1MB = 1,024kb)</li>
-                        <li><i>-</i>국제 로밍 이용료 실시간 요금 조회는 해외 통신 사업자의 사정상 1일 ~ 2일 이상
+                        <li>국제 로밍 이용료 실시간 요금 조회는 해외 통신 사업자의 사정상 1일 ~ 2일 이상
                             차이가 날 수 있습니다.</li>
-                        <li><i>-</i>실시간 요금은 익월 10일 이후부터 납부가 가능합니다.</li>
-                        <li><i>-</i>당월 명의변경 고객님은 가입일(변경일)부터의 요금으로 산정됩니다.</li>
-                        <li><i>-</i>월 중 번호변경 잔여가입비와 핸드폰 분납금은 변경 된 번호로 조회 됩니다.</li>
+                        <li>실시간 요금은 익월 10일 이후부터 납부가 가능합니다.</li>
+                        <li>당월 명의변경 고객님은 가입일(변경일)부터의 요금으로 산정됩니다.</li>
+                        <li>월 중 번호변경 잔여가입비와 핸드폰 분납금은 변경 된 번호로 조회 됩니다.</li>
                     </ul>
                 </div>
 
