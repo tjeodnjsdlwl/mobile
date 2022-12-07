@@ -15,7 +15,7 @@
 </head>
 <body>
 
-    <section id="phone2">
+    <section id="joinForm4">
 
             <div class="group-title">
                 <h2>가입신청</h2>
@@ -25,43 +25,74 @@
                 <p>고객님의 소중한 정보는 암호화되어 안전하게 보호됩니다.</p>
                 <ul class="step-list">
                     <li>01. 이용약관</li>
-                    <li class="active">02. 신청서작성</li>
-                    <li>03. 신청완료</li>
+                    <li>02. 신청서작성</li>
+                    <li class="active">03. 신청완료</li>
                 </ul>
             </div>
             
             <div class="group-pay">
-                <h3 class="blind">납부금액</h3>
+                <div class="pay-area">
+                    <h4>요금제</h4>
+                    <div class="prc-box">내맘대로 (300분+3.5GB)</div>
+                    <ul class="pay-list">
+                        <li>
+                            <span class="title">가입유형</span>
+                            <span class="data">번호이동</span>
+                        </li>
+                        <li class="c-primary">
+                            <span class="title">약정여부</span>
+                            <span class="data">무약정</span>
+                        </li>
+                    </ul>
+                </div>
                 <div class="pay-area">
                     <h4>단말기 요금</h4>
-                    <div class="prc-box">월<em>25,000</em>원</div>
+                    <div class="prc-box">월<em>0</em>원</div>
                     <ul class="pay-list">
                         <li>
                             <span class="title">판매가</span>
-                            <span class="data">530,000 원</span>
+                            <span class="data">0 원</span>
                         </li>
                         <li class="c-primary">
-                            <span class="title">결합 지원금</span>
-                            <span class="data">230,000 원</span>
+                            <span class="title">단말 지원금</span>
+                            <span class="data pink">0 원</span>
                         </li>
                         <li>
                             <span class="title">할부원금</span>
-                            <span class="data">300,000 원</span>
+                            <span class="data">0 원</span>
                         </li>
                         <li>
                             <span class="title">월 납부 할부금</span>
-                            <span class="data">25,000 원</span>
+                            <span class="data">0 원</span>
                         </li>
                         <li>
                             <span class="title">할부수수료 <i>(년 5.9%)</i></span>
-                            <span class="data">0원</span>
+                            <span class="data">0 원</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pay-area">
+                    <h4>통신요금</h4>
+                    <div class="prc-box">월<em>24,750</em>원</div>
+                    <ul class="pay-list">
+                        <li>
+                            <span class="title">기본료 (부가세 포함)</span>
+                            <span class="data">24,750 원</span>
+                        </li>
+                        <li class="c-primary">
+                            <span class="title">총 요금할인</span>
+                            <span class="data pink">-14,750 원</span>
+                        </li>
+                        <li class="c-primary">
+                            <span class="title">ㄴ9월 특별할인 적용<br><span class="mt10">(6개월 동안)</span></span>
+                            <span class="data pink">14,750 원</span>
                         </li>
                     </ul>
                 </div>
                 <!-- ... -->
                 <div class="pay-area total">
                     <h4>월 납부 금액 <span>(부가세 포함)</span></h4>
-                    <div class="prc-box">월<em>25,000</em>원</div>
+                    <div class="prc-box">월<em class="pink">25,000</em>원</div>
                     <ul class="pay-list">
                         <li>
                             <span class="title">가입비</span>
@@ -76,100 +107,43 @@
             </div>
 
 
-            <div class="group-write">
-                <h3>신청서작성</h3>
-                <div></div>
-                <div class="group-nav2">
-                    <a href="">일반회원<br> (만 19세 이상)</a>
-                    <a href="">미성년자회원<br> (만 19세 미만)</a>
-                    <a href="" class="active">외국인 (foreigner)</a>
-                </div>
-                <!-- form -->
-                <div class="inner">
-                    <div class="info">
-                        <div class="wrap">
-                            <label for="">이름</label>
-                            <input type="text">
-                        </div>
-                        <div class="wrap">
-                            <label for="">외국인 번호</label>
-                            <div class="input-wrap">
-                                <input type="text" placeholder="외국인 번호 앞 6자리"><i>-</i>
-                                <input type="text" placeholder="외국인 번호 뒤 7자리">
-                            </div>
-                        </div>
-                        <div class="wrap">
-                            <label for="">국적</label>
-                            <input type="text" placeholder="국적을 입력해주세요.">
-                        </div>
-                        <div class="wrap">
-                            <div class="flex">
-                                <span>실명 확인 증빙 자료</span>
-                                <div class="radio-box">
-                                    <input type="radio">
-                                    <label for="">외국인등록증</label>
-                                </div>
-                                <div class="radio-box">
-                                    <input type="radio">
-                                    <label for="">운전면허증</label>
-                                </div>
-                            </div>
-                            <input type="text" placeholder="발급일자 입력 예)20180813">
-                            <ul class="msg">
-                                <li><i>※</i> 부정 가입 방지를 위해 신분증 진위 여부 확인 과정이 필요합니다.</li>
-                                <li><i>※</i> 정확한 정보를 입력해 주세요.</li>
-                            </ul>
-                            <div class="ex">
-                                <div class="img-box">
-                                    <img src="" alt="">
-                                    <span>· 주민등록증 예시</span>
-                                </div>
-                                <div class="img-box">
-                                    <img src="" alt="">
-                                    <span>· 운전면허증 예시</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="wrap">
-                            <span>본인인증 방법</span>
-                            <div class="flex">
-                                <div class="radio-box">
-                                    <input type="radio">
-                                    <label for="">신용카드 인증</label>
-                                </div>
-                                <div class="radio-box">
-                                    <input type="radio">
-                                    <label for="">범용공인 인증</label>
-                                </div>
-                                <div class="radio-box">
-                                    <input type="radio">
-                                    <label for="">전자서명 인증</label>
-                                </div>
-                            </div>
-                            <ul class="msg">
-                                <li><i>※</i>본인명의의 신용카드(체크카드 불가) / 범용공인인증으로만 본인인증이 가능합니다. (은행개인용 인증서 불가)</li>
-                                <li><i>※</i>모바일환경에서는 범용공인인증이 불가합니다.</li>
-                                <li><i>※</i>법인카드, 가족카드, 선불카드는 본인확인이 불가능합니다.</li>
-                            </ul>
-                        </div>
-                        <button class="btn-1">본인인증하기</button>
-                    </div>
+            <div class="complete">
+                <h3>신청완료</h3>
+                <table class="table1">
+                    <tr>
+                        <th>신청일자</th>
+                        <td>2022년 09월 26일</td>
+                    </tr>
+                    <tr>
+                        <th>가입유형</th>
+                        <td>신규가입</td>
+                    </tr>
+                    <tr>
+                        <th>휴대폰정보</th>
+                        <td>유심</td>
+                    </tr>
+                    <tr>
+                        <th>요금제</th>
+                        <td>내맘대로 (300분+3.5 GB)</td>
+                    </tr>
+                    <tr>
+                        <th>단말기요금 (A)</th>
+                        <td>월 20,000 원 (월 할부 수수료 포함)</td>
+                    </tr>
+                    <tr>
+                        <th>통신요금 (B)</th>
+                        <td>월 20,000 원 (부가가치세 포함)</td>
+                    </tr>
+                </table>
+
+                <div class="pay-area result2">
+                    <span class="total-title">월 납부금액 (A) + (B)</span>
+                    <div class="prc-box">월<em class="pink">40,000</em>원</div>
                 </div>
 
-                 <button class="btn-1">본인인증하기</button>
-                <!--// form -->
+                <a href="" class="btn mt30">메인으로 이동</a>
             </div>
-
-            <div class="caution">
-                <h4>유의사항</h4>
-                <ul>
-                    <li>방송통신위원회고시 (영업상 목적을 위하여 이용자의 주민등록번호 수집, 이용이 불가피한 정보통신 서비스 제공자)에 의해 주민등록번호는 영업상 목적으로만 사용됩니다.   </li>
-                    <li>전자상거래법 제5조 2항에 의거, 본 온라인 신청서 상에서 고객님이 신용카드 인증을 통하여 전자서명하신 이후에는 특별한 사정없는 한 그 내용이 변경되지않습니다.</li>
-                    <li>고객님의 개인 정보는 항상 암호화되어 처리되고 본인인증으로만 사용되며, 보관하지 않습니다.</li>
-                    <li>개정 ‘주민등록법’에 의해 타인의 주민등록번호를 도용하는 경우 3년 이하의 징역 또는 1천만원 이하의 벌금이 부과될 수 있습니다.   </li>
-                    <li class="pink">관련법률 : 주민등록법 제 37조 (벌칙) 제 10조 (시행일 2009.04.01)</li>
-                </ul>
-            </div>
+          
             
     </section>
 </body>

@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-   <link rel="stylesheet" href="../assets/css/style.css">
-    <script src="../asset/js/jquery-3.6.1.min.js"></script>
-    <script src="./asset/js/custom.js"></script>
+ <!-- swiper -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="../assets/css/style.css">
+
+ <!-- swiper js -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="../assets/js/jquery-3.6.1.min.js"></script>
+
+
+ <script src="../assets/js/custom.js"></script>
 
 </head>
 <body>
 
-   <div class="pop">
+   <div class="popup" id="onlinePopup1">
         <div class="wrap">
-            <h3>화면에서 나가시겠습니까?</h3>
-            <strong>신청서 작성이 남아 있습니다.</strong>
+            <h3 class="title-point">화면에서 나가시겠습니까?</h3>
+            <strong class="pink">신청서 작성이 남아 있습니다.</strong>
             <p>
                 화면 이탈시 입력 내용은 ‘신청조회’ 메뉴에서<br>
                 이어 작성 할 수 있습니다.<br>
                 (입력 정보는 7일간 보관됩니다.)
             </p>
         </div>
-        <div class="btn-wrap1">
-            <button class="btn-1">나가기</button>
-            <button class="btn-1">계속하기</button>
+        <div class="btn-area1 mt30">
+            <button class="btn btn-gray">나가기</button>
+            <button class="btn">계속하기</button>
         </div>
    </div>
 </body>

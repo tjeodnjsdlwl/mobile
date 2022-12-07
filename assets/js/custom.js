@@ -92,5 +92,22 @@ $(function(){
     })
 
 
+    $('#joinForm1 .btn-arrow').click(function(e){
+        e.preventDefault();
+
+        $(this).toggleClass('active');
+        $(this).parents('li').find('.desc').toggle()
+
+    })
+
+    $('#join1 .btn-arrow').click(function(e){
+        e.preventDefault();
+
+        $(this).toggleClass('active');
+        $(this).parents('li').find('.desc').toggle()
+
+    })
+
+
 
 })

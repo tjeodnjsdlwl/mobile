@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-   <link rel="stylesheet" href="../assets/css/style.css">
+ <!-- swiper -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="../assets/css/style.css">
+
+ <!-- swiper js -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
 
-    <script src="../asset/js/jquery-3.6.1.min.js"></script>
-    <script src="./asset/js/custom.js"></script>
+ <script src="../assets/js/custom.js"></script>
 
 </head>
 <body>
 
-    <section id="phone2">
+    <section id="joinForm1">
 
             <div class="group-title">
                 <h2>가입신청</h2>
@@ -31,7 +36,33 @@
             </div>
             
             <div class="group-pay">
-                <h3 class="blind">납부금액</h3>
+              
+                <div class="pay-area">
+                    <h4>내맘대로 (300분+3.5GB)</h4>
+                    <div class="prc-box">+ (중고) 갤럭시 노트9 128GB</div>
+                    <ul class="pay-list">
+                        <li>
+                            <span class="title">색상</span>
+                            <span class="data">퍼플</span>
+                        </li>
+                        <li class="c-primary">
+                            <span class="title">가입유형</span>
+                            <span class="data">번호이동</span>
+                        </li>
+                        <li>
+                            <span class="title">할부기간</span>
+                            <span class="data">12개월</span>
+                        </li>
+                        <li>
+                            <span class="title">할인유형</span>
+                            <span class="data">공시지원금</span>
+                        </li>
+                        <li>
+                            <span class="title">약정여부</span>
+                            <span class="data">약정</span>
+                        </li>
+                    </ul>
+                </div>
                 <div class="pay-area">
                     <h4>단말기 요금</h4>
                     <div class="prc-box">월<em>25,000</em>원</div>
@@ -41,8 +72,8 @@
                             <span class="data">530,000 원</span>
                         </li>
                         <li class="c-primary">
-                            <span class="title">결합 지원금</span>
-                            <span class="data">230,000 원</span>
+                            <span class="title">단말 지원금</span>
+                            <span class="data pink">230,000 원</span>
                         </li>
                         <li>
                             <span class="title">할부원금</span>
@@ -61,7 +92,7 @@
                 <!-- ... -->
                 <div class="pay-area total">
                     <h4>월 납부 금액 <span>(부가세 포함)</span></h4>
-                    <div class="prc-box">월<em>25,000</em>원</div>
+                    <div class="prc-box">월<em class="pink">25,000</em>원</div>
                     <ul class="pay-list">
                         <li>
                             <span class="title">가입비</span>
@@ -74,50 +105,78 @@
                     </ul>
                 </div>
             </div>
-            <form action="">
-                <fieldset>
-                    <legend class="blind">약관동의</legend>
-                    <div class="terms-area">
-                        <div class="title-wrap">
-                            <h3>약관동의</h3>
-                            <span class="caution-msg"><i>*</i>표시 필수 입력</span>
-                        </div>
-                        <div class="terms-wrap">
-                            <div class="all-box">
-                                <input type="checkbox" id="termsAll" class="blind">
-                                <label for="termsAll">전체 약관에 동의합니다.</label>
+
+            
+            <div class="content2">
+                <form action="">
+                    <fieldset>
+                        <legend class="blind">약관동의</legend>
+                        <div class="terms-area">
+                            <div class="title-wrap">
+                                <h3>약관동의</h3>
+                                <span class="msg"><i>*</i>표시 필수 입력</span>
                             </div>
-                            <ul>
-                                <li>
-                                    <span class="title"><i>*</i>서비스 이용약관</span>
-                                    <a href="" class="btn-more">전문보기</a>
-                                    <input type="checkbox" id="terms1" class="blind">
-                                    <label for="terms1">동의</label>
-                                </li>
-                                <li>
-                                    <span class="title"><i>*</i>서비스 이용약관</span>
-                                    <a href="" class="btn-more">전문보기</a>
-                                    <input type="checkbox" id="terms1" class="blind">
-                                    <label for="terms1">동의</label>
-                                </li>
-                                <li>
-                                    <span class="title"><i>*</i>서비스 이용약관</span>
-                                    <a href="" class="btn-more">전문보기</a>
-                                    <input type="checkbox" id="terms1" class="blind">
-                                    <label for="terms1">동의</label>
-                                </li>
-                            </ul>
-                            <div class="terms-msg">
-                                <p>※ [선택]동의는 거부할 수 있으며, 거부에 따른 불이익은 없습니다.</p>
-                                <p>※ 각 약관에 대한 [전문보기]를 클릭하시면 약관 내용을 자세히 보실 수 있습니다.</p>
+                            <div class="terms-wrap">
+                                <div class="all-box">
+                                    <div class="label-box">
+                                        <input type="checkbox" id="termsAll" class="blind">
+                                        <label for="termsAll">전체 약관에 동의합니다.</label>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="wrap">
+                                            <span class="title"><i>*</i>서비스 이용약관</span>
+                                            <a href="" class="btn-arrow">전문보기</a>
+                                            <div class="label-box">
+                                                <input type="checkbox" id="terms1" class="blind">
+                                                <label for="terms1">동의</label>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>내용1</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wrap">
+                                            <span class="title"><i>*</i>서비스 이용약관</span>
+                                            <a href="" class="btn-arrow">전문보기</a>
+                                            <div class="label-box">
+                                                <input type="checkbox" id="terms2" class="blind">
+                                                <label for="terms2">동의</label>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>내용1</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wrap">
+                                            <span class="title"><i>*</i>서비스 이용약관</span>
+                                            <a href="" class="btn-arrow">전문보기</a>
+                                            <div class="label-box">
+                                                <input type="checkbox" id="terms3" class="blind">
+                                                <label for="terms3">동의</label>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>내용1</p>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-                    </div>
-                    <div class="btn-area">
-                        <button class="btn-primary">온라인 신청</button>
-                    </div>
-                </fieldset>
-            </form>
+                        <ul class="msg-box2">
+                            <li>[선택]동의는 거부할 수 있으며, 거부에 따른 불이익은 없습니다.</li>
+                            <li>각 약관에 대한 [전문보기]를 클릭하시면 약관 내용을 자세히 보실 수 있습니다.</li>
+                        </ul>
+                        <div class="btn-area mt30">
+                            <button class="btn">온라인 신청</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
     </section>
 </body>
 </html>
