@@ -6,16 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-   <link rel="stylesheet" href="../assets/css/style.css">
+ <!-- swiper -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="../assets/css/style.css">
+
+ <!-- swiper js -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
 
-    <script src="../asset/js/jquery-3.6.1.min.js"></script>
-    <script src="./asset/js/custom.js"></script>
+ <script src="../assets/js/custom.js"></script>
 
 </head>
 <body>
 
-    <section id="phone2">
+    <section id="opening1">
 
             <div class="group-title">
                 <h2>셀프개통 가입신청서</h2>
@@ -28,57 +33,77 @@
             </div>
 
             <nav class="group-step">
-                <span>01. 개통요청</span>
+                <span class="active">01. 개통요청</span>
                 <span>02. 개통결과</span>
             </nav>
 
-            개통 신청 정보를 꼭 확인해주세요.
+            <p class="txt1">개통 신청 정보를 꼭 확인해주세요.</p>
 
-            <table>
-                <tr>
-                    <th>상품유형</th>
-                    <td>유심 요금제 + 단말기</td>
-                </tr>
-                <tr>
-                    <th>가입유형</th>
-                    <td>신규가입</td>
-                </tr>
-                <tr>
-                    <th>요금제</th>
-                    <td>내맘대로 (300분+3.5GB)</td>
-                </tr>
-            </table>
-
-            ※ 무선서비스 표준계약서 확인
-            무선서비스 표준계약서는 가입하신 신청정보 계약서로 꼭 확인이 필요합니다.
-
-            <button class="btn-1">내용확인</button>
+            <div class="inner">
+                <table class="table1">
+                    <tr>
+                        <th>상품유형</th>
+                        <td>유심 요금제 + 단말기</td>
+                    </tr>
+                    <tr>
+                        <th>가입유형</th>
+                        <td>신규가입</td>
+                    </tr>
+                    <tr>
+                        <th>요금제</th>
+                        <td>내맘대로 (300분+3.5GB)</td>
+                    </tr>
+                </table>
+                <div class="sub-title2">
+                    <strong>※ 무선서비스 표준계약서 확인</strong>
+                    <p>무선서비스 표준계약서는 가입하신 신청정보 계약서로 꼭 확인이 필요합니다.</p>
+                </div>
+                <button class="btn btn4">내용확인</button>
+            </div>
 
             <div class="area">
                 <div class="head">
                     <h3>가입 정보 입력</h3>
-                    <span>표시 필수 입력</span>
+                    <span><i>*</i>표시 필수 입력</span>
                 </div>
 
+                <div class="wrap wrap1">
+                    <div class="flex">
+                        <span class="title"><i>*</i>유심모델/일련번호</span>
+                        <input type="text" class="input1" placeholder="유심 일련번호 끝 8자리">
+                    </div>
+                    <div class="msg pink">※ 유심 일련번호 끝 8자리 입력 후, 하단 번호를 확인해 주세요.</div>
 
+                    <div class="radio-box">
+                        <input type="radio" class="blind" checked>
+                        <label for="">8982-0685-8801-8839-831F</label>
+                    </div>
+
+                    <div class="img-box">
+                        <img src="../assets/images/usim-img.jpg" alt="">
+                    </div>
+
+                </div>
+
+                <div class="wrap wrap2">
+                    <span class="title"><i>*</i>사용할 번호 뒤 4자리</span>
+                    <div class="input-wrap">
+                        <input type="text" class="input1" placeholder="희망번호 뒤 4자리">
+                        <button class="btn1">번호조회</button>
+                    </div>
+
+                    <ul class="msg-box2 pink">
+                        <li>사용하실 휴대폰 번호 뒤 4자리를 입력하여 조회해주세요.</li>
+                        <li>선택하신 휴대폰 번호로 셀프 개통 처리되며, 상담사 전환 개통시 다른 번호로 개통될 수 있습니다.</li>
+                    </ul>
+                </div>
                 <!-- 동일 영역있음 -->
 
-
-                사용할 번호 뒤 4자리
-                <div class="wrap">
-                    <input type="text">
-                    <button>번호조회</button>
-                </div>
-                <ul>
-                    <li>※ 사용하실 휴대폰 번호 뒤 4자리를 입력하여 조회해주세요.</li>
-                    <li>※ 선택하신 휴대폰 번호로 셀프 개통 처리되며, 상담사 전환 개통시 다른 번호로개통될 수 있습니다.</li>
-                </ul>
-
-                <p>
-                    개통요청 버튼 클릭시 개통요청이 시작됩니다.
+                <p class="txt2">
+                    개통요청 버튼 클릭시 개통요청이 시작됩니다.<br>
                     신중하게 진행 부탁드립니다.
                 </p>
-                <button class="btn-1">개통요청</button>
+                <button class="btn">개통요청</button>
 
             </div>
             

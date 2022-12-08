@@ -6,70 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-   <link rel="stylesheet" href="../assets/css/style.css">
+ <!-- swiper -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="../assets/css/style.css">
+
+ <!-- swiper js -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
 
-    <script src="../asset/js/jquery-3.6.1.min.js"></script>
-    <script src="./asset/js/custom.js"></script>
-
-</head>
-<body>
-
-    <section id="phone2">
-
-            <div class="group-title">
-                <h2><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-   <link rel="stylesheet" href="../assets/css/style.css">
-
-
-    <script src="../asset/js/jquery-3.6.1.min.js"></script>
-    <script src="./asset/js/custom.js"></script>
+ <script src="../assets/js/custom.js"></script>
 
 </head>
 <body>
 
-    <div class="pop">
 
-            <div class="group-title">
-                <h2>희망번호 조회 및 선택</h2>
+
+    <div class="pop" id="openingPopup">
+       
+        <div class="group-title">
+            <h2>희망번호 조회 및 선택</h2>
+        </div>
+        <div class="content">
+
+            <div class="wrap1">
+                <p>희망하시는 핸드폰 번호 뒤 4자리를 입력 후 번호를 선택해주세요.</p>
+                <div class="input-wrap">
+                    <input type="text" placeholder="희망번호 뒤 4자리" class="input1">
+                    <button class="btn1">번호조회</button>
+                </div>
             </div>
-            
-            <p>희망하시는 핸드폰 번호 뒤 4자리를 입력 후 번호를 선택해주세요.</p>
 
-            <input type="text" placeholder="희망번호 뒤 4자리">
-            <button>번호조회</button>
-
-            <div>
-                <p>010-1234-5678</p>
+            <div class="list-wrap">
+                <p class="msg">총 333 건이 검색되었습니다.</p>
                 <ul class="list">
                     <li>
                         <div class="radio-box">
-                            <input type="radio">
+                            <input type="radio" class="blind">
                             <label for="">010-1234-5678</label>
                         </div>
                     </li>
                     <li>
                         <div class="radio-box">
-                            <input type="radio">
+                            <input type="radio" class="blind">
                             <label for="">010-1234-5678</label>
                         </div>
                     </li>
                     <li>
                         <div class="radio-box">
-                            <input type="radio">
+                            <input type="radio" class="blind">
                             <label for="">010-1234-5678</label>
                         </div>
                     </li>
                     <li>
                         <div class="radio-box">
-                            <input type="radio">
+                            <input type="radio" class="blind">
                             <label for="">010-1234-5678</label>
                         </div>
                     </li>
@@ -77,11 +68,12 @@
             </div>
 
 
-            <div class="btn-wrap">
-                <button class="btn btn-1">취소</button>
-                <button class="btn btn-1">확인</button>
-            </div>
-       
+        <div class="btn-area1">
+            <button class="btn btn-gray">취소</button>
+            <button class="btn btn-1">확인</button>
         </div>
+    </div>
+    
+    </div>
 </body>
 </html>

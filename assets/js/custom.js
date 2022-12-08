@@ -110,4 +110,16 @@ $(function(){
 
 
 
+    $('#self1 .qna-wrap .tab').click(function (e) { 
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $(this).siblings('.sub-area').toggleClass('active');
+    });
+
+
+    $('.radio-chk').click(function (e) { 
+        $(this).addClass('active').siblings('.radio-chk').removeClass('active');
+    });
+
+
 })

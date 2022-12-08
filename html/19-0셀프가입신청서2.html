@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+ <!-- swiper -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="../assets/css/style.css">
+
+ <!-- swiper js -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="../assets/js/jquery-3.6.1.min.js"></script>
+
+
+ <script src="../assets/js/custom.js"></script>
+
+</head>
+<body>
+
+    <section id="joinForm1" class="selfform">
+
+            <div class="group-title">
+                <h2>가입신청(셀프개통)</h2>
+            </div>
+            <div class="group-step">
+                <h3>셀프개통 가입신청서</h3>
+                <p>고객님의 소중한 정보는 암호화되어 안전하게 보호됩니다.</p>
+                <ul class="step-list">
+                    <li class="active">01. 이용약관</li>
+                    <li>02. 신청서작성</li>
+                    <li>03. 신청완료</li>
+                </ul>
+            </div>
+            
+            <div class="group-pay">
+              
+                <div class="pay-area">
+                    <h4>요금제</h4>
+                    <div class="prc-box">내맘대로 (300분+3.5GB)</div>
+                    <ul class="pay-list">
+                        <li>
+                            <span class="title">가입유형</span>
+                            <span class="data">번호이동</span>
+                        </li>
+                        <li class="c-primary">
+                            <span class="title">약정여부</span>
+                            <span class="data">무약정</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pay-area">
+                    <h4>단말기 요금</h4>
+                    <div class="prc-box">월<em>0</em>원</div>
+                    <ul class="pay-list">
+                        <li>
+                            <span class="title">판매가</span>
+                            <span class="data">0 원</span>
+                        </li>
+                        <li class="c-primary">
+                            <span class="title">단말 지원금</span>
+                            <span class="data pink">0 원</span>
+                        </li>
+                        <li>
+                            <span class="title">할부원금</span>
+                            <span class="data">0 원</span>
+                        </li>
+                        <li>
+                            <span class="title">월 납부 할부금</span>
+                            <span class="data">0 원</span>
+                        </li>
+                        <li>
+                            <span class="title">할부수수료 <i>(년 5.9%)</i></span>
+                            <span class="data">0원</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="pay-area">
+                    <h4>통신요금</h4>
+                    <div class="prc-box">월<em>24,750</em>원</div>
+                    <ul class="pay-list">
+                        <li>
+                            <span class="title">기본료 (부가세 포함)</span>
+                            <span class="data">24,750 원</span>
+                        </li>
+                        <li class="c-primary">
+                            <span class="title">총 요금할인</span>
+                            <span class="data pink">-14,750 원</span>
+                        </li>
+                        <li>
+                            <span class="title">ㄴ선택 약정 할인 25%<br><span class="pl10 mt10 ">(6개월 동안)</span></span>
+                            <span class="data pink">-14,750 원</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- ... -->
+                <div class="pay-area total">
+                    <h4>월 납부 금액 <span>(부가세 포함)</span></h4>
+                    <div class="prc-box">월<em class="pink">10,000</em>원</div>
+                    <ul class="pay-list">
+                        <li>
+                            <span class="title">가입비</span>
+                            <span class="data">면제</span>
+                        </li>
+                        <li>
+                            <span class="title">유심비</span>
+                            <span class="data">면제</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="self-msg">
+                <h4>셀프개통 유의사항</h4>
+                <ul>
+                    <li><i>1)</i> 범용공인인증의 경우 PC환경에서 진행해주세요. (모바일에서 인증 불가)  </li>
+                    <li>
+                        <i>2)</i> 반드시 WIFI 환경에서 진행해주세요. <br>
+                             (셀프개통 작업중 모바일 통신이 단절될 수 있음)
+                    </li>
+                    <li><i>3)</i> 19세 이상 성인만 개통이 가능합니다.</li>
+                    <li><i>4)</i> 실명 확인을 위해 주민등록증 또는 운전면허증을 준비해주세요.</li>
+                    <li><i>5)</i> 본인 확인을 위해 신용카드 또는 법용공인인증서르 준비해주세요. (체크카드 불가)</li>
+                </ul>
+            </div>
+            
+            <div class="content2">
+                <form action="">
+                    <fieldset>
+                        <legend class="blind">약관동의</legend>
+                        <div class="terms-area">
+                            <div class="title-wrap">
+                                <h3>약관동의</h3>
+                                <span class="msg"><i>*</i>표시 필수 입력</span>
+                            </div>
+                            <div class="terms-wrap">
+                                <div class="all-box">
+                                    <div class="label-box">
+                                        <input type="checkbox" id="termsAll" class="blind">
+                                        <label for="termsAll">전체 약관에 동의합니다.</label>
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <div class="wrap">
+                                            <span class="title"><i>*</i>서비스 이용약관</span>
+                                            <a href="" class="btn-arrow">전문보기</a>
+                                            <div class="label-box">
+                                                <input type="checkbox" id="terms1" class="blind">
+                                                <label for="terms1">동의</label>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>내용1</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wrap">
+                                            <span class="title"><i>*</i>개인정보 수집/이용</span>
+                                            <a href="" class="btn-arrow">전문보기</a>
+                                            <div class="label-box">
+                                                <input type="checkbox" id="terms2" class="blind">
+                                                <label for="terms2">동의</label>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>내용1</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wrap">
+                                            <span class="title"><i>*</i>개인신용 정보 조회에 관한 동의</span>
+                                            <a href="" class="btn-arrow">전문보기</a>
+                                            <div class="label-box">
+                                                <input type="checkbox" id="terms3" class="blind">
+                                                <label for="terms3">동의</label>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>내용1</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wrap">
+                                            <span class="title"><i>*</i>개인정보 제3자 제공 동의 </span>
+                                            <a href="" class="btn-arrow">전문보기</a>
+                                            <div class="label-box">
+                                                <input type="checkbox" id="terms3" class="blind">
+                                                <label for="terms3">동의</label>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>내용1</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wrap">
+                                            <span class="title"><i>*</i>고유식별 정보 처리 동의</span>
+                                            <a href="" class="btn-arrow">전문보기</a>
+                                            <div class="label-box">
+                                                <input type="checkbox" id="terms3" class="blind">
+                                                <label for="terms3">동의</label>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>내용1</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wrap">
+                                            <span class="title"><i>*</i>단말기 할부 판매 매매 약관 동의</span>
+                                            <a href="" class="btn-arrow">전문보기</a>
+                                            <div class="label-box">
+                                                <input type="checkbox" id="terms3" class="blind">
+                                                <label for="terms3">동의</label>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>내용1</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="wrap">
+                                            <span class="title">정보광고 수신동의 [선택]</span>
+                                            <a href="" class="btn-arrow">전문보기</a>
+                                            <div class="label-box">
+                                                <input type="checkbox" id="terms3" class="blind">
+                                                <label for="terms3">동의</label>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <p>내용1</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="msg-box2">
+                            <li>[선택]동의는 거부할 수 있으며, 거부에 따른 불이익은 없습니다.</li>
+                            <li>각 약관에 대한 [전문보기]를 클릭하시면 약관 내용을 자세히 보실 수 있습니다.</li>
+                        </ul>
+                        <div class="btn-area mt30">
+                            <button class="btn">셀프개통 신청</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+    </section>
+</body>
+</html>

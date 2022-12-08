@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-   <link rel="stylesheet" href="../assets/css/style.css">
+ <!-- swiper -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+ <link rel="stylesheet" href="../assets/css/style.css">
+
+ <!-- swiper js -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+ <script src="../assets/js/jquery-3.6.1.min.js"></script>
 
 
-    <script src="/assets/js/jquery-3.6.1.min.js"></script>
-    <script src="./asset/js/custom.js"></script>
-    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+ <script src="../assets/js/custom.js"></script>
 </head>
 <body>
 
@@ -44,35 +46,42 @@
                 <div class="choice-area">
                     <h3>색상</h3>
                     <div class="sub-wrap">
-                        <input type="select" id="color1">
-                        <input type="select" id="color2">
-                        <input type="select" id="color3">
-                        <input type="select" id="color4">
-                        <input type="select" id="color5">
-                        <input type="select" id="color6">
-                        <label for="color1" class="active">스타라이트</label>
-                        <label for="color2">스페이스 그레이</label>
-                        <label for="color3">아우라 블루</label>
-                        <label for="color4">블랙</label>
-                        <label for="color5">화이트</label>
-                        <label for="color6">레드</label>
+                        <input type="radio" name="color" id="color1" class="blind" checked>
+                        <input type="radio" name="color" id="color2" class="blind">
+                        <input type="radio" name="color" id="color3" class="blind">
+                        <input type="radio" name="color" id="color4" class="blind">
+                        <input type="radio" name="color" id="color5" class="blind">
+                        <input type="radio" name="color" id="color6" class="blind">
+                        <label for="color1" class="radio-chk active">스타라이트</label>
+                        <label for="color2" class="radio-chk">스페이스 그레이</label>
+                        <label for="color3" class="radio-chk">아우라 블루</label>
+                        <label for="color4" class="radio-chk">블랙</label>
+                        <label for="color5" class="radio-chk">화이트</label>
+                        <label for="color6" class="radio-chk">레드</label>
                     </div>
                 </div>
                 <div class="choice-area">
                     <h3>가입유형</h3>
                     <div class="sub-wrap">
-                        <label for="" class="active">번호이동</label>
-                        <label for="">신규가입</label>
-                        <label for="">기기변경</label>
+                        <input type="radio" name="cate" id="cate1" class="blind" checked>
+                        <input type="radio" name="cate" id="cate2" class="blind">
+                        <input type="radio" name="cate" id="cate3" class="blind">
+                        <label for="cate1" class="radio-chk active">번호이동</label>
+                        <label for="cate2" class="radio-chk">신규가입</label>
+                        <label for="cate3" class="radio-chk">기기변경</label>
                     </div>
                 </div>
                 <div class="choice-area cost_select">
                     <h3>할부기간</h3>
                     <div class="sub-wrap ">
-                        <label for=""  class="active">12개월</label>
-                        <label for="">24개월</label>
-                        <label for="">30개월 </label>
-                        <label for="">일시불</label>
+                        <input type="radio" name="term" id="term1" class="blind" checked>
+                        <input type="radio" name="term" id="term2" class="blind">
+                        <input type="radio" name="term" id="term3" class="blind">
+                        <input type="radio" name="term" id="term4" class="blind">
+                        <label for="term1" class="radio-chk active" >12개월</label>
+                        <label for="term2" class="radio-chk" >24개월</label>
+                        <label for="term3" class="radio-chk" >30개월 </label>
+                        <label for="term4" class="radio-chk" >일시불</label>
                     </div>
                 </div>
                 <div class="plan-area">
@@ -102,8 +111,14 @@
                 <div class="sale-area">
                     <h3>할인유형 선택</h3>
                     <div class="sub-wrap">
-                        <a href="" class="btn-sale active" ><em>휴대폰 가격 할인</em>(공시지원금)</a>
-                        <a href="" class="btn-sale"><em>24개월 요금 할인</em>(통신료할인)</a>
+                        <input type="radio" name="saleCate" id="saleCate1" class="blind" checked>
+                        <input type="radio" name="saleCate" id="saleCate2" class="blind">
+                        <label for="saleCate1" class="radio-chk btn-sale active" >
+                            <em>휴대폰 가격 할인</em>(공시지원금)
+                        </label>
+                        <label for="saleCate2" class="radio-chk btn-sale">
+                            <em>24개월 요금 할인</em>(통신료할인)
+                        </label>
                     </div>
                 </div>
             </div>
@@ -170,10 +185,51 @@
                 <a href="" class="active">스팩</a>            
                 <a href="">가입안내</a>            
             </div>
-            <table class="tb-style1">
+            <table class="table1">
                 <tr>
                     <th>크기</th>
                     <td>161.9 x 76.4 x 8.8 mm</td>
+                </tr>
+                <tr>
+                    <th>배터리</th>
+                    <td>4,000mAh</td>
+                </tr>
+                <tr>
+                    <th>색상</th>
+                    <td>라벤더 퍼플, 미드나잇 블랙, 메탈릭 코퍼</td>
+                </tr>
+                <tr>
+                    <th>CPU</th>
+                    <td>Octa-Core (2.7 GHz, 1.7 GHz)</td>
+                </tr>
+                <tr>
+                    <th>메모리</th>
+                    <td>6GB RAM/128GB</td>
+                </tr>
+                <tr>
+                    <th>디스플레이</th>
+                    <td>Infinity Display</td>
+                </tr>
+                <tr>
+                    <th>카메라</th>
+                    <td>후면 : 1,200만 화소 / 전면 : 800만 화소</td>
+                </tr>
+                <tr>
+                    <th>기타 (옵션)</th>
+                    <td>빅스비, 홍채인식, 지문인식, 삼성페이, 
+                        방수방진 (IP68), 스테레오 스피커</td>
+                </tr>
+                <tr>
+                    <th>무게</th>
+                    <td>201g</td>
+                </tr>
+                <tr>
+                    <th>OS</th>
+                    <td>Android</td>
+                </tr>
+                <tr>
+                    <th>출시일</th>
+                    <td>2022.10.23</td>
                 </tr>
             </table>
         </div>
