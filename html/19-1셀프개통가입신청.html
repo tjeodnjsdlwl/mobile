@@ -153,18 +153,31 @@
                         </div>
                     </div>
                     <div class="wrap wrap1">
-                        <div class="head1">
+
+                        <div class="head1 id-radio4">
                             <span class="title"><i>*</i>실명 확인 증빙 자료</span>
                             <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">주민등록증</label>
+                                <input type="radio" name="userId" id="userId1" class="blind" value="id01" checked>
+                                <label for="userId1">주민등록증</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">운전면허증</label>
+                                <input type="radio" name="userId" id="userId2" class="blind" value="id02">
+                                <label for="userId2">운전면허증</label>
                             </div>
                         </div>
-                        <input type="text" class="input1" placeholder="발급일자 입력 예)20180813">
+                        <div class="wrapper">
+                            <div id="id01">
+                                <input type="text" class="input1" placeholder="발급일자 입력 예)20180813">
+                            </div>
+                            <div id="id02" style="display: none;">
+                                <input type="text" class="input1" placeholder="운전면허 번호 예)21-19-174133-01">
+                                <input type="text" class="input1 mt10" placeholder="발급일자 입력 예)20180813">
+                            </div>
+                        </div>
+
+
+                        
+
                         <ul class="msg-box2">
                             <li>부정 가입 방지를 위해 신분증 진위 여부 확인 과정이 필요합니다.</li>
                             <li>정확한 정보를 입력해 주세요.</li>
@@ -182,26 +195,46 @@
                     </div>
                     <div class="wrap wrap2">
                         <span class="title"><i>*</i>본인인증 방법</span>
-                        <div class="flex">
+
+                        <div class="flex auth4-chk">
                             <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">신용카드 인증</label>
+                                <input type="radio" id="auth1" name="auth" class="blind" value="authbox1" checked>
+                                <label for="auth1">신용카드 인증</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">범용공인 인증</label>
+                                <input type="radio" id="auth2" name="auth" class="blind" value="authbox2">
+                                <label for="auth2">범용공인 인증</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">전자서명 인증</label>
+                                <input type="radio" id="auth3" name="auth" class="blind" value="authbox3">
+                                <label for="auth3">전자서명 인증</label>
                             </div>
                         </div>
-                        <ul class="msg-box2">
-                            <li>본인명의의 신용카드(체크카드 불가) / 범용공인인증으로만 본인인증이 가능합니다. (은행개인용 인증서 불가)</li>
-                            <li>모바일환경에서는 범용공인인증이 불가합니다.</li>
-                            <li>미성년자 고객의 경우, 법정대리인이 직접 본인인증 해주셔야 합니다.</li>
-                            <li>법인카드, 가족카드, 선불카드는 본인확인이 불가능합니다.</li>
-                        </ul>
+                        <div class="wrapper">
+                            <div id="authbox1">
+                                <ul class="msg-box2">
+                                    <li>본인명의의 신용카드(체크카드 불가) / 범용공인인증으로만 본인인증이 가능합니다. (은행개인용 인증서 불가)</li>
+                                    <li>모바일환경에서는 범용공인인증이 불가합니다.</li>
+                                    <li>미성년자 고객의 경우, 법정대리인이 직접 본인인증 해주셔야 합니다.</li>
+                                    <li>법인카드, 가족카드, 선불카드는 본인확인이 불가능합니다.</li>
+                                </ul>
+                            </div>
+                            <div id="authbox2" style="display: none;">
+                                <ul class="msg-box2 bt1 pt10">
+                                    <li>본인명의의 범용공인인증서만 인증이 가능합니다.</li>
+                                    <li>한국전자인증, 한국정보인증, 코스콤에서 발급받은 인증서 (4,000원/연간)로 사용 가능합니다.</li>
+                                    <li>범용 외 용도 제한이 있는 인증서의 경우, 본인 인증이 불가합니다.</li>
+                                </ul>
+                            </div>
+                            <div id="authbox3" style="display: none;">
+                                <input type="text" class="input1 mt10" placeholder="휴대폰 번호  예)010-1234-5678">
+                                <ul class="msg-box2">
+                                    <li>전자서명을 위한 휴대폰 번호를 입력해주세요</li>
+                                </ul>
+                            </div>
+                        </div>
+
+
                     </div>
                     <button class="btn">본인인증하기</button>
                 </div>
@@ -218,6 +251,25 @@
             </div>
             <div class="inner">
                 <div class="info info2">
+                       <!-- ←셀프개통에서
+                    가입유형을 신규 가입으로
+                    선택한사람은 번호이동 정보 자리에
+                    이게 떠야합니다. -->
+                   
+                    <div class="info new-area1">
+                        <div class="head">
+                            <h4>신규가입 정보</h4>
+                            <p>희망번호 뒤 4자리를 입력해주세요. (최대 3개)</p>
+                        </div>
+                        <span class="title"><i>*</i>신규 가입 희망번호</span>
+                        <div class="input-wrap">
+                            <input type="text" placeholder="1순위" class="input1"><span>-</span>
+                            <input type="text" placeholder="1순위" class="input1"><span>-</span>
+                            <input type="text" placeholder="1순위" class="input1">
+                        </div>
+                        <p class="msg mt8">※ 3개의 희망번호 모두 불가시 번호가 임의로 지정될 수 있습니다.</p>
+                    </div>
+
                     <div class="head">
                         <h4>번호이동 정보</h4>
                         <p>현재 사용중인 휴대폰 번호와 통신사 정보를 입력 해주세요.</p>
@@ -226,20 +278,20 @@
                         <span class="title"><i>*</i>기존 통신사</span>
                         <div class="flex">
                             <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">SKT</label>
+                                <input type="radio" class="blind" id="agency1" name="agency">
+                                <label for="agency1">SKT</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">KT</label>
+                                <input type="radio" class="blind" id="agency2" name="agency">
+                                <label for="agency2">KT</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">LG U+</label>
+                                <input type="radio" class="blind" id="agency3" name="agency">
+                                <label for="agency3">LG U+</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">알뜰폰</label>
+                                <input type="radio" class="blind" id="agency4" name="agency">
+                                <label for="agency4">알뜰폰</label>
                             </div>
                         </div>
                     </div>
@@ -255,16 +307,16 @@
                         <span class="title"><i>*</i>번호 이동 인증정보</span>
                         <div class="flex">
                             <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">계좌이체</label>
+                                <input type="radio" class="blind" id="authInfo1" name="authInfo">
+                                <label for="authInfo1">계좌이체</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">신용카드</label>
+                                <input type="radio" class="blind" id="authInfo2" name="authInfo">
+                                <label for="authInfo2">신용카드</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">지로</label>
+                                <input type="radio" class="blind" id="authInfo3" name="authInfo">
+                                <label for="authInfo3">지로</label>
                             </div>
                         </div>
                         <input type="text" class="input1" placeholder="뒤 4자리 입력">
@@ -285,28 +337,28 @@
                         <span class="title"><i>*</i>휴대폰 정보 확인</span>
                         <div class="flex">
                             <div class="radio-box box1">
-                                <input type="radio" class="blind">
-                                <label for="">자사폰 (LG U+ 향)</label>
+                                <input type="radio" class="blind" id="phone1" name="phone">
+                                <label for="phone1">자사폰 (LG U+ 향)</label>
                             </div>
                             <div class="radio-box box2">
-                                <input type="radio" class="blind">
-                                <label for="">타사폰 (SK향, KT향)</label>
+                                <input type="radio" class="blind" id="phone2" name="phone">
+                                <label for="phone2">타사폰 (SK향, KT향)</label>
                             </div>
                             <div class="radio-box box3">
-                                <input type="radio" class="blind">
-                                <label for="">자급제폰</label>
+                                <input type="radio" class="blind" id="phone3" name="phone">
+                                <label for="phone3">자급제폰</label>
                             </div>
                             <div class="radio-box box4">
-                                <input type="radio" class="blind">
-                                <label for="">아이폰</label>
+                                <input type="radio" class="blind" id="phone4" name="phone">
+                                <label for="phone4">아이폰</label>
                             </div>
                             <div class="radio-box box5">
-                                <input type="radio" class="blind">
-                                <label for="">외산폰</label>
+                                <input type="radio" class="blind" id="phone5" name="phone">
+                                <label for="phone5">외산폰</label>
                             </div>
                             <div class="radio-box box6">
-                                <input type="radio" class="blind">
-                                <label for="">확인 불가 (사용할 휴대폰 유형을 정확히 모를 경우)</label>
+                                <input type="radio" class="blind" id="phone6" name="phone">
+                                <label for="phone6">확인 불가 (사용할 휴대폰 유형을 정확히 모를 경우)</label>
                             </div>
                         </div>
                     </div>
@@ -322,34 +374,10 @@
                         </ul>
                     </div>
                 </div>
-            
-                <!-- @유심 정보 -->
-                <div class="info info5">
-                    <div class="head">
-                        <h4>유심 정보</h4>
-                    </div>
 
-                    <div class="wrap wrap1">
-                        <div class="flex">
-                            <span class="title"><i>*</i>유심모델/일련번호</span>
-                            <input type="text" class="input1" placeholder="유심 일련번호 끝 8자리">
-                        </div>
-                        <div class="msg pink">※ 유심 일련번호 끝 8자리 입력 후, 하단 번호를 확인해 주세요.</div>
-    
-                        <div class="radio-box">
-                            <input type="radio" class="blind" checked="">
-                            <label for="">8982-0685-8801-8839-831F</label>
-                        </div>
-                        <div class="img-box">
-                            <img src="../assets/images/usim-img.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-                <!--  -->
-
-                 <!-- @e-SIM으로 선택시 휴대폰정보 -->
-                 <div class="info sim-area">
+                   <!-- @← 이건 셀프개통 > 가입신청서 에서 유심유형중 eSIM을 
+                    선택했을 경우에 노출되는 휴대폰 정보입니다.  -->
+                   <div class="info sim-area">
                     <div class="head">
                         <h4>휴대폰 정보</h4>
                         <p>eSIM</p>
@@ -358,12 +386,12 @@
                         <span class="title"><i>*</i>휴대폰 정보 확인</span>
                         <div class="flex">
                             <div class="radio-box">
-                                <input type="radio">
-                                <label for="">애플</label>
+                                <input type="radio" id="phoneInfo1" name="phoneInfo" checked>
+                                <label for="phoneInfo1">애플</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio">
-                                <label for="">삼성</label>
+                                <input type="radio" id="phoneInfo2" name="phoneInfo">
+                                <label for="phoneInfo2">삼성</label>
                             </div>
                         </div>
                     </div>
@@ -402,6 +430,34 @@
                 </div>
 
 
+            
+                <!-- ← 유심정보 > 유심 일련번호 자동입력시 노출되는 부분 -->
+                <div class="info info5">
+                    <div class="head">
+                        <h4>유심 정보</h4>
+                    </div>
+
+                    <div class="wrap wrap1">
+                        <div class="flex">
+                            <span class="title"><i>*</i>유심 일련번호</span>
+                            <input type="text" class="input1" placeholder="유심 일련번호 끝 8자리">
+                        </div>
+                        <div class="msg pink">※ 유심 일련번호 끝 8자리 입력 후, 하단 번호를 확인해 주세요.</div>
+    
+                        <div class="radio-box">
+                            <input type="radio" class="blind" checked="">
+                            <label for="">8982-0685-8801-8839-831F</label>
+                        </div>
+                        <div class="img-box">
+                            <img src="../assets/images/usim-img.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!--  -->
+
+              
+
 
                 
 
@@ -415,54 +471,113 @@
                         <span class="title"><i>*</i>납부 방법</span>
                         <div class="flex no-sb method-area">
                             <div class="radio-box">
-                                <input type="radio" name="" id="" class="blind">
-                                <label for="">계좌이체</label>
+                                <input type="radio" id="method1-1" name="method1" value="methodbox1" class="blind" checked>
+                                <label for="method1-1">계좌이체</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" name="" id="" class="blind">
-                                <label for="">카드납부</label>
+                                <input type="radio" id="method1-2" name="method1" value="methodbox2" class="blind">
+                                <label for="method1-2">카드납부</label>
                             </div>
                         </div>
                     </div> 
-                    <div class="wrap">
-                        <span class="title"><i>*</i>예금주</span>
-                        <input type="text" class="input1">
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>주민등록번호</span>
-                        <div class="input-wrap">
-                            <input type="text" class="input1" placeholder="주민등록번호 앞 6자리"> <i>-</i>
-                            <input type="text" class="input1" placeholder="주민등록번호 뒤 7자리">
+
+
+
+                
+
+
+
+
+
+                    <div class="wrapper">
+                        <div id="methodbox1">
+                            <div class="wrap">
+                                <span class="title"><i>*</i>예금주</span>
+                                <input type="text" class="input1">
+                            </div>
+                            <div class="wrap">
+                                <span class="title"><i>*</i>주민등록번호</span>
+                                <div class="input-wrap">
+                                    <input type="text" class="input1" placeholder="주민등록번호 앞 6자리"> <i>-</i>
+                                    <input type="text" class="input1" placeholder="주민등록번호 뒤 7자리">
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <span class="title"><i>*</i>은행명</span>
+                                <select name="" id="" class="select3">
+                                    <option value="">선택하세요</option>
+                                </select>
+                            </div>
+                            <div class="wrap">
+                                <span class="title"><i>*</i>계좌번호</span>
+                                <input type="text" class="input1" placeholder="‘-’ 없이 입력해주세요.">
+                            </div>
+    
+                        </div>
+                        <div id="methodbox2" style="display: none;">
+                            <div class="wrap">
+                                <span class="title"><i>*</i>카드 번호</span>
+                                <div class="input-wrap gap5">
+                                    <input type="text" class="input1"><i>-</i>
+                                    <input type="text" class="input1"><i>-</i>
+                                    <input type="text" class="input1"><i>-</i>
+                                    <input type="text" class="input1">
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <span class="title"><i>*</i>카드 유효기간</span>
+                                <div class="input-wrap">
+                                    <input type="text" class="input1 w68" placeholder="MM"><i>/</i>
+                                    <input type="text" class="input1 w68" placeholder="YY">
+                                </div>
+                            </div>
+                            <div class="wrap password">
+                                <span class="title"><i>*</i>카드 비밀번호(앞 두자리)</span>
+                                <div class="input-wrap box3">
+                                    <input type="text" class="input1" maxlength="2">
+                                    <div class="dot-box">
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                          
+                            <div class="wrap Installment">
+                                <span class="title"><i>*</i>할부기간</span>
+                                <div class="input-wrap">
+                                    <span class="msg">※ 5만원 이상인 경우 선택 가능</span>
+                                    <select name="" id="" class="select2">
+                                        <option value="">일시불</option>
+                                    </select>
+                                </div>
+                            </div>
+                          
+                          
                         </div>
                     </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>은행명</span>
-                        <select name="" id="">
-                            <option value="">선택하세요</option>
-                        </select>
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>계좌번호</span>
-                        <input type="text" class="input1" placeholder="‘-’ 없이 입력해주세요.">
-                    </div>
+
+
+
+
                     <div class="wrap">
                         <span class="title"><i>*</i>가입자와의 관계</span>
                         <div class="flex">
                             <div class="radio-box">
-                                <input type="radio" name="" id="" class="blind">
-                                <label for="">본인</label>
+                                <input type="radio" name="relate" id="relate1" class="blind">
+                                <label for="relate1">본인</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" name="" id="" class="blind">
-                                <label for="">부모</label>
+                                <input type="radio" name="relate" id="relate2" class="blind">
+                                <label for="relate2">부모</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" name="" id="" class="blind">
-                                <label for="">자녀</label>
+                                <input type="radio" name="relate" id="relate3" class="blind">
+                                <label for="relate3">자녀</label>
                             </div>
                             <div class="radio-box">
-                                <input type="radio" name="" id="" class="blind">
-                                <label for="">배우자</label>
+                                <input type="radio" name="relate" id="relate4" class="blind">
+                                <label for="relate4">배우자</label>
                             </div>
                         </div>
                         <div class="label-box2">
@@ -475,8 +590,8 @@
                     <div class="wrap">
                         <span class="title"><i>*</i>명세서 수령방법</span>
                         <div class="radio-box">
-                            <input type="radio" name="" id="" class="blind">
-                            <label for="">e-mail 명세서</label>
+                            <input type="radio" name="" id="mail" class="blind">
+                            <label for="mail">e-mail 명세서</label>
                         </div>
                     </div>
                     <div class="wrap">
@@ -484,7 +599,7 @@
                         <div class="email-wrap">
                             <input type="text" class="input1">
                             <span>@</span>
-                            <select name="" id="">
+                            <select name="" id="" class="select2">
                                 <option value="">직접입력</option>
                             </select>
                         </div>

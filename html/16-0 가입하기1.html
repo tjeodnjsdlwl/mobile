@@ -34,114 +34,123 @@
                <div class="area1">
                     <h3>LGU+후불유심</h3>
 
-                    <div class="wrap wrap1">
+                    <div class="wrap wrap1" id="sort">
                         <h4>가입유형</h4>
                         <div class="radio-wrap2">
                             <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind" checked>
-                                <label for="">번호이동</label>
+                                <input type="radio" id="change1" name="change" value="chk1" class="blind" checked>
+                                <label for="change1">번호이동</label>
                             </div>
                             <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind">
-                                <label for="">번호이동</label>
+                                <input type="radio" id="change2" name="change" value="chk2" class="blind">
+                                <label for="change2">신규가입</label>
                             </div>
                         </div>
-                        <div class="msg-wrap" id="chk1">
-                            <p class="title">사용중인 번호 그대로 가입</p>
-                            <p class="desc">ㄴ 번호이동은 기존통신사에 가입한 지 3개월 경과 필수</p>
-                        </div>
-                        <div class="msg-wrap" id="chk2" style="display:none">
-                            <p class="title">새로운 번호로 가입</p>
-                            <p class="desc">ㄴ 신규가입 시 개통 후 배송</p>
+                        <div class="msg-wrapper">
+                            <div class="msg-wrap" id="chk1">
+                                <p class="title">사용중인 번호 그대로 가입</p>
+                                <p class="desc">ㄴ 번호이동은 기존통신사에 가입한 지 3개월 경과 필수</p>
+                            </div>
+                            <div class="msg-wrap" id="chk2" style="display:none">
+                                <p class="title">새로운 번호로 가입</p>
+                                <p class="desc">ㄴ 신규가입 시 개통 후 배송</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="wrap wrap2"> 
+                    <div class="wrap wrap2" id="isSim"> 
                         <h4>유심보유</h4>
 
                         <div class="radio-wrap2">
                             <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind" checked>
-                                <label for="">유심 없음<span>(택배로 유심 받기 신청)</span></label>
+                                <input type="radio" id="usim1" name="usim" value="has1" class="blind" checked>
+                                <label for="usim1">유심 없음<span>(택배로 유심 받기 신청)</span></label>
                             </div>
                             <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind">
-                                <label for="">유심 있음<span>(새로 수령한 알뜰폰 유심)</span></label>
+                                <input type="radio" id="usim2" name="usim" value="has2" class="blind">
+                                <label for="usim2">유심 있음<span>(새로 수령한 알뜰폰 유심)</span></label>
                             </div>
                         </div>
-
-                        <div class="msg-wrap" id="has1"> 
-                            <p class="desc">ㄴ 택배로 유심 수령 후 별도의 개통 신청이 필요</p>
-                            <p class="desc">ㄴ 이마트, 배민B마트에서 ‘원칩’ 즉시 구매 가능</p>
-                            <a href="" class="link-pink1">이벤트 자세히 보기</a>
-                        </div>
-                        <div class="msg-wrap" id="has2" style="display:none">
-                            <p class="desc">ㄴ 셀프개통 진행으로 유심번호 확인 필요</p>
-                            <p class="desc">ㄴ 마블링 유심이거나 ‘원칩’ 유심만 개통 가능</p>
+                        <div class="msg-wrapper">
+                            <div class="msg-wrap" id="has1"> 
+                                <p class="desc">ㄴ 택배로 유심 수령 후 별도의 개통 신청이 필요</p>
+                                <p class="desc">ㄴ 이마트, 배민B마트에서 ‘원칩’ 즉시 구매 가능</p>
+                                <a href="" class="link-pink1">이벤트 자세히 보기</a>
+                            </div>
+                            <div class="msg-wrap" id="has2" style="display:none">
+                                <p class="desc">ㄴ 셀프개통 진행으로 유심번호 확인 필요</p>
+                                <p class="desc">ㄴ 마블링 유심이거나 ‘원칩’ 유심만 개통 가능</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="wrap wrap3" id="has1-1">
-                        <h4>유심유형</h4>
-                       
-
-                        <div class="radio-wrap2">
-                            <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind" checked>
-                                <label for="">일반유심<span>(무료)</span></label>
-                            </div>
-                            <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind">
-                                <label for="">NFC유심<span>(7,700원)</span></label>
-                            </div>
-                            <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind">
-                                <label for="">eSIM<span>(2,750원)</span></label>
-                            </div>
-                        </div>
-
+                    <div class="sort-wrapper">
+                        <div class="wrap wrap3" id="has1-1">
+                            <h4>유심유형</h4>
                         
-                        <div class="msg-wrap" id="sim1-1">
-                            <p class="desc">일반유심은 통신 서비스만 이용 가능<br> (교통카드, 일부 본인 인증 서비스 이용 불가)</p>
+
+                            <div class="radio-wrap2">
+                                <div class="radio-box2">
+                                    <input type="radio" id="simtype1" name="simtype" class="blind" value="sim1-1" checked>
+                                    <label for="simtype1">일반유심<span>(무료)</span></label>
+                                </div>
+                                <div class="radio-box2">
+                                    <input type="radio" id="simtype2" name="simtype" class="blind" value="sim1-2">
+                                    <label for="simtype2">NFC유심<span>(7,700원)</span></label>
+                                </div>
+                                <div class="radio-box2">
+                                    <input type="radio" id="simtype3" name="simtype" class="blind" value="sim1-3">
+                                    <label for="simtype3">eSIM<span>(2,750원)</span></label>
+                                </div>
+                            </div>
+
+                            <div class="msg-wrapper">
+                                <div class="msg-wrap" id="sim1-1">
+                                    <p class="desc">일반유심은 통신 서비스만 이용 가능<br> (교통카드, 일부 본인 인증 서비스 이용 불가)</p>
+                                </div>
+                                <div class="msg-wrap" id="sim1-2" style="display: none;">
+                                    <p class="desc">통신 서비스, 교통카드, 본인 인증 서비스 등 이용 가능(이마트24, B마트 원칩 유심)</p>
+                                </div>
+                                <div class="msg-wrap" id="sim1-3" style="display: none;">
+                                    <p class="title pink">하나의 휴대폰에 두 개의 번호를 동시에 이용할 수 있는 서비스</p>
+                                    <p class="desc">ㄴ 물리적 삽입이나 교체 필요 없이 휴대폰에 가입자 정보를 다운로드하는 방식</p>
+                                    <p class="desc">ㄴ eSIM 다운로드 비용 2,750원(부가세포함) 다음달 요금에 합산 청구</p>
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="msg-wrap" id="sim1-2">
-                            <p class="desc">통신 서비스, 교통카드, 본인 인증 서비스 등 이용 가능(이마트24, B마트 원칩 유심)</p>
-                        </div>
-                        <div class="msg-wrap" id="sim1-3">
-                            <p class="title pink">하나의 휴대폰에 두 개의 번호를 동시에 이용할 수 있는 서비스</p>
-                            <p class="desc">ㄴ 물리적 삽입이나 교체 필요 없이 휴대폰에 가입자 정보를 다운로드하는 방식</p>
-                            <p class="desc">ㄴ eSIM 다운로드 비용 2,750원(부가세포함) 다음달 요금에 합산 청구</p>
+                        <div class="wrap wrap4" id="has1-2" style="display:none">
+                            <h4>유심유형</h4>
+
+                            <div class="radio-wrap2">
+                                <div class="radio-box2">
+                                    <input type="radio" id="simtype1-1" name="simtype2" value="sim2-1" class="blind" checked>
+                                    <label for="simtype1-1">일반유심<span>(무료)</span></label>
+                                </div>
+                                <div class="radio-box2">
+                                    <input type="radio" id="simtype1-2" name="simtype2" value="sim2-2" class="blind">
+                                    <label for="simtype1-2">NFC유심, 원칩</label>
+                                </div>
+                                <div class="radio-box2">
+                                    <input type="radio" id="simtype1-3" name="simtype2" value="sim2-3" class="blind">
+                                    <label for="simtype1-3">eSIM<span>(2,750원)</span></label>
+                                </div>
+                            </div>
+                            <div class="msg-wrapper">
+                                <div class="msg-wrap" id="sim2-1">
+                                    <p class="desc">일반유심은 통신 서비스만 이용 가능(교통카드, 일부 본인 인증 서비스 이용 불가)</p>
+                                    <p class="desc">이마트24, B마트 유심(원칩)은 NFC유심을 선택해주세요.</p>
+                                </div>
+                                <div class="msg-wrap" id="sim2-2">
+                                    <p class="desc">통신 서비스, 교통카드, 본인 인증 서비스 등 이용 가능(이마트24, B마트 원칩 유심)</p>
+                                </div>
+                                <div class="msg-wrap" id="sim2-3">
+                                    <p class="pink">하나의 휴대폰에 두 개의 번호를 동시에 이용할 수 있는 서비스</p>
+                                    <p class="desc">ㄴ 물리적 삽입이나 교체 필요 없이 휴대폰에 가입자 정보를 다운로드하는 방식</p>
+                                    <p class="desc">ㄴ eSIM 다운로드 비용 2,750원(부가세포함) 다음달 요금에 합산 청구</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="wrap wrap4" id="has1-2" style="display:none">
-                        <h4>유심유형</h4>
 
-                        <div class="radio-wrap2">
-                            <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind" checked>
-                                <label for="">일반유심<span>(무료)</span></label>
-                            </div>
-                            <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind">
-                                <label for="">NFC유심, 원칩</label>
-                            </div>
-                            <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind">
-                                <label for="">eSIM<span>(2,750원)</span></label>
-                            </div>
-                        </div>
-
-                        <div class="msg-wrap" id="sim2-1">
-                            <p class="desc">일반유심은 통신 서비스만 이용 가능(교통카드, 일부 본인 인증 서비스 이용 불가)</p>
-                            <p class="desc">이마트24, B마트 유심(원칩)은 NFC유심을 선택해주세요.</p>
-                        </div>
-                        <div class="msg-wrap" id="sim2-2">
-                            <p class="desc">통신 서비스, 교통카드, 본인 인증 서비스 등 이용 가능(이마트24, B마트 원칩 유심)</p>
-                        </div>
-                        <div class="msg-wrap" id="sim2-3">
-                            <p class="pink">하나의 휴대폰에 두 개의 번호를 동시에 이용할 수 있는 서비스</p>
-                            <p>ㄴ 물리적 삽입이나 교체 필요 없이 휴대폰에 가입자 정보를 다운로드하는 방식</p>
-                            <p>ㄴ eSIM 다운로드 비용 2,750원(부가세포함) 다음달 요금에 합산 청구</p>
-                        </div>
-                    </div>
                     <div class="wrap wrap5">
                         <div class="head">
                             <h4>요금제 선택</h4>
@@ -150,9 +159,9 @@
                         <div class="frame">
                             <strong>내맘대로(200분+15GB+)(5G)</strong>
                             <ul>
-                                <li><img src="../assets/images/icon_cost01.png" alt="">3GB (+ 최대 1Mbps  무제한)</li>
-                                <li><img src="../assets/images/icon_cost02.png" alt="">집/이동전화 무제한 (부가통화 300분)</li>
-                                <li><img src="../assets/images/icon_cost03.png" alt="">무제한</li>
+                                <li><img src="../assets/images/ic-data1.svg" alt="">3GB (+ 최대 1Mbps  무제한)</li>
+                                <li><img src="../assets/images/ic-data2.svg" alt="">집/이동전화 무제한 (부가통화 300분)</li>
+                                <li><img src="../assets/images/ic-data3.svg" alt="">무제한</li>
                             </ul>
                             <div class="price">
                                 <strong><em class="pink">6,600</em>원</strong>
@@ -169,16 +178,16 @@
 
                         <div class="radio-wrap2">
                             <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind" checked>
-                                <label for="">없음</label>
+                                <input type="radio" id="card1" name="card" class="blind" checked>
+                                <label for="card1">없음</label>
                             </div>
                             <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind">
-                                <label for="">롯데 롤라카드</label>
+                                <input type="radio" id="card2" name="card" class="blind">
+                                <label for="card2">롯데 롤라카드</label>
                             </div>
                             <div class="radio-box2">
-                                <input type="radio" id="" name="" class="blind">
-                                <label for="">U+파트너스<br> 삼성카드</label>
+                                <input type="radio" id="card3" name="card" class="blind">
+                                <label for="card3">U+파트너스<br> 삼성카드</label>
                             </div>
                         </div>
                         <p class="wrap-area"> <a href="" class="link-pink1">카드 신청하기</a></p>
@@ -189,11 +198,11 @@
                             <p class="desc">ㄴ 전월 실적 70만원 이상 사용 시 최대 22,000원 할인</p>
                         </div>
                         <div class="caution-box first">
-                            <strong>개통에 필요한 정보누락 혹은 오입력시,<br>상담원이 전화를 드릴 수 있습니다.</strong>
+                            <strong><span>개통에 필요한 정보누락 혹은 오입력시,<br>상담원이 전화를 드릴 수 있습니다.</span></strong>
                             <p class="desc">(미수신시 개통취소 될 수 있습니다.)</p>
                         </div>
                         <div class="caution-box">
-                            <strong>프로모션(이벤트) 안내</strong>
+                            <strong><span>프로모션(이벤트) 안내</span></strong>
                             <p class="desc">프로모션 기간 내, 접수에서 개통까지 <br>
                                 모두 완료되어야지만 해당월의 요금할인 및 기타<br>
                                 사은품혜택을 받으실 수 있습니다.</p>

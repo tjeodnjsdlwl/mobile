@@ -63,35 +63,60 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="info-area3">
+                        <div class="info-area3 identity">
                             <h3>본인인증 </h3>
                             <div class="radio-wrap">
                                 <div class="radio-box">
-                                    <input type="radio" name="" id="auth1" class="blind">
+                                    <input type="radio" name="method1" id="auth1" class="blind" value="credit" >
                                     <label for="auth1">신용카드 인증</label>
                                 </div>
                                 <div class="radio-box">
-                                    <input type="radio" name="" id="auth2" class="blind">
+                                    <input type="radio" name="method1" id="auth2" class="blind" value="universal" >
                                     <label for="auth2">범용공인 인증</label>
                                 </div>
                                 <div class="radio-box">
-                                    <input type="radio" name="" id="auth3" class="blind" checked>
+                                    <input type="radio" name="method1" id="auth3" class="blind" value="electronic" checked>
                                     <label for="auth3">전자서명 인증</label>
                                 </div>
                             </div>
-                            <input type="text" placeholder="휴대폰 번호  예)010-1234-5678" class="input1">
-                            <p class="msg">※ 전자서명을 위한 휴대폰 번호를 입력해주세요</p>
-                            <button class="btn">본인인증하기</button>
+
+
+                            <div class="con-box">
+                                <div id="credit" class="con">
+                                    <ul class="msg-box2">
+                                        <li>위 카드사 중 본인 명의의 개인 신용 카드로만 본인 확인이 가능합니다.</li>
+                                        <li>본인인증 시 체크카드는 인증이 불가합니다. 신용카드로 본인인증 해주시기 바랍니다.</li>
+                                        <li>법인카드, 가족카드, 선불카드는 본인확인이 불가합니다.</li>
+                                        <li>고객님의 개인정보는 암호화롤 안전하게 처리되며, 본인 인증 시 별도의 비용이 발생하지 않습니다.</li>
+                                    </ul>
+                                </div>
+                                <div id="universal" class="con">
+                                    <ul class="msg-box2">
+                                        <li>본인명의의 범용공인인증서만 인증이 가능합니다.</li>
+                                        <li>한국전자인증, 한국정보인증, 코스콤에서 발급받은 인증서 (4,000원/연간)로 사용 가능합니다.</li>
+                                        <li>범용 외 용도 제한이 있는 인증서의 경우, 본인 인증이 불가합니다.</li>
+                                    </ul>
+                                </div>
+                                <div id="electronic" class="con active">
+                                    <input type="text" placeholder="휴대폰 번호  예)010-1234-5678" class="input1">
+                                    <p class="msg">※ 전자서명을 위한 휴대폰 번호를 입력해주세요</p>
+                                </div>
+                                <button class="btn">본인인증하기</button>
+                            </div>
+                          
+
+
+
                         </div>
                         <div class="info-area4">
                             <h3>납부방법 선택</h3>
                             <div class="radio-wrap">
                                 <div class="radio-box">
-                                    <input type="radio" name="" id="method1" class="blind">
+                                    <input type="radio" name="method2" id="method1" class="blind">
                                     <label for="method1">신용/체크카드</label>
                                 </div>
                                 <div class="radio-box ready">
-                                    <input type="radio" name="" id="method2" class="blind">
+                                    <input type="radio" name="method2" id="method2" class="blind">
                                     <label for="method2">네이버 페이 (준비중)</label>
                                 </div>
                             </div>
@@ -114,9 +139,9 @@
                             <div class="input-wrap">
                                 <label for="" class="title">카드 유효기간</label>
                                 <div class="input-box box2">
-                                    <input type="text" class="input1">
+                                    <input type="text" class="input1" placeholder="MM">
                                     <span>/</span>
-                                    <input type="text" class="input1">
+                                    <input type="text" class="input1" placeholder="YY">
                                 </div>
                             </div>
                             <div class="input-wrap">
@@ -135,7 +160,7 @@
                                     <div class="msg">※ 5만원 이상인 경우 선택 가능</div>
                                 </div>
                                 <div class="input-wrap">
-                                    <select name="" id="" >
+                                    <select name="" id="" class="select2">
                                         <option value="">일시불</option>
                                     </select>
                                 </div>
@@ -153,11 +178,6 @@
                         </div> 
                     </fieldset>
                 </form>
-
-
-                .
-
-
             </div>
            
     </section>

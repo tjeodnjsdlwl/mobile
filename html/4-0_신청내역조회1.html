@@ -35,12 +35,12 @@
                             <span class="title"><i>*</i>인증방법 </span>
                             <div class="area radio-wrap">
                                 <div class="radio-box">
-                                    <input type="radio" name="method" id="method1" checked class="blind">
-                                    <label for="" id="method1">휴대폰</label>
+                                    <input type="radio" name="method" id="method1" value="phone" checked class="blind">
+                                    <label for="method1" id="">휴대폰</label>
                                 </div>
                                 <div class="radio-box">
-                                    <input type="radio" name="method" id="method2" class="blind">
-                                    <label for="" id="method2">이메일</label>
+                                    <input type="radio" name="method" id="method2" value="email" class="blind">
+                                    <label for="method2" id="">이메일</label>
                                 </div>
                             </div>     
                         </div>
@@ -52,16 +52,31 @@
                             </div>     
                         </div> 
 
-                        <div class="flex">
+                        <div class="flex" id="phone">
                             <span class="title"><i>*</i>휴대폰번호 </span>
                             <div class="area">
                                 <div class="tel-box1">
-                                    <select name="" id="">
+                                    <select name="" id="" class="select2">
                                         <option value="010">010</option>
                                         <option value="010">001</option>
                                     </select>-
                                     <input type="text" class="input1"><i>-</i>
                                     <input type="text" class="input1">
+                                    <button class="btn1">인증요청</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex" id="mail" style="display: none;">
+                            <span class="title"><i>*</i>이메일 </span>
+                            <div class="area">
+                                <div class="mail-box1">
+                                    <div class="wrap">
+                                        <input type="text" class="input1"><i>@</i>
+                                        <select name="" id="" class="select2">
+                                            <option value="">직접입력</option>
+                                            <option value="010">001</option>
+                                        </select>
+                                    </div>
                                     <button class="btn1">인증요청</button>
                                 </div>
                             </div>

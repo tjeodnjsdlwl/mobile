@@ -29,12 +29,12 @@
                 <div class="img-area">
                     <div class="swiper">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="/assets/images/phone_thumb01.png" alt=""></div>
-                            <div class="swiper-slide"><img src="/assets/images/phone_thumb01.png" alt=""></div>
-                            <div class="swiper-slide"><img src="/assets/images/phone_thumb01.png" alt=""></div>
-                            <div class="swiper-slide"><img src="/assets/images/phone_thumb01.png" alt=""></div>
-                            <div class="swiper-slide"><img src="/assets/images/phone_thumb01.png" alt=""></div>
-                            <div class="swiper-slide"><img src="/assets/images/phone_thumb01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/images/phone_thumb01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/images/phone_thumb01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/images/phone_thumb01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/images/phone_thumb01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/images/phone_thumb01.png" alt=""></div>
+                            <div class="swiper-slide"><img src="../assets/images/phone_thumb01.png" alt=""></div>
                         </div>
                         <div class="swiper-pagination"></div>
                     </div>
@@ -96,13 +96,13 @@
                         </div>
                         <ul class="plan-list">
                             <li>
-                                <img src="/assets/images/icon_cost01.png" alt="">3GB (+ 최대 1Mbps  무제한)
+                                <img src="../assets/images/icon_cost01.png" alt="">3GB (+ 최대 1Mbps  무제한)
                             </li>
                             <li>
-                                <img src="/assets/images/icon_cost02.png" alt="">집/이동전화 무제한 (부가통화 300분)
+                                <img src="../assets/images/icon_cost02.png" alt="">집/이동전화 무제한 (부가통화 300분)
                             </li>
                             <li>
-                                <img src="/assets/images/icon_cost03.png" alt="">무제한
+                                <img src="../assets/images/icon_cost03.png" alt="">무제한
                             </li>
                         </ul>
                     </div>
@@ -180,58 +180,70 @@
         </div>
 
         <div class="content2">
-            <div class="group-nav">
-                <a href="">상품안내</a>            
-                <a href="" class="active">스팩</a>            
-                <a href="">가입안내</a>            
+            <div class="group-nav tab-nav">
+                <a href="" data-target="#tabDetail">상품안내</a>            
+                <a href="" data-target="#tabSpec" class="active">스팩</a>            
+                <a href="" data-target="#tabIntro">가입안내</a>            
             </div>
-            <table class="table1">
-                <tr>
-                    <th>크기</th>
-                    <td>161.9 x 76.4 x 8.8 mm</td>
-                </tr>
-                <tr>
-                    <th>배터리</th>
-                    <td>4,000mAh</td>
-                </tr>
-                <tr>
-                    <th>색상</th>
-                    <td>라벤더 퍼플, 미드나잇 블랙, 메탈릭 코퍼</td>
-                </tr>
-                <tr>
-                    <th>CPU</th>
-                    <td>Octa-Core (2.7 GHz, 1.7 GHz)</td>
-                </tr>
-                <tr>
-                    <th>메모리</th>
-                    <td>6GB RAM/128GB</td>
-                </tr>
-                <tr>
-                    <th>디스플레이</th>
-                    <td>Infinity Display</td>
-                </tr>
-                <tr>
-                    <th>카메라</th>
-                    <td>후면 : 1,200만 화소 / 전면 : 800만 화소</td>
-                </tr>
-                <tr>
-                    <th>기타 (옵션)</th>
-                    <td>빅스비, 홍채인식, 지문인식, 삼성페이, 
-                        방수방진 (IP68), 스테레오 스피커</td>
-                </tr>
-                <tr>
-                    <th>무게</th>
-                    <td>201g</td>
-                </tr>
-                <tr>
-                    <th>OS</th>
-                    <td>Android</td>
-                </tr>
-                <tr>
-                    <th>출시일</th>
-                    <td>2022.10.23</td>
-                </tr>
-            </table>
+            <div class="tab-con">
+                <div class="con" id="tabDetail">
+                    <img src="../assets/images/dummy/detail.jpg" alt="">
+                </div>
+                <div class="con active" id="tabSpec">
+                    <table class="table1">
+                        <tr>
+                            <th>크기</th>
+                            <td>161.9 x 76.4 x 8.8 mm</td>
+                        </tr>
+                        <tr>
+                            <th>배터리</th>
+                            <td>4,000mAh</td>
+                        </tr>
+                        <tr>
+                            <th>색상</th>
+                            <td>라벤더 퍼플, 미드나잇 블랙, 메탈릭 코퍼</td>
+                        </tr>
+                        <tr>
+                            <th>CPU</th>
+                            <td>Octa-Core (2.7 GHz, 1.7 GHz)</td>
+                        </tr>
+                        <tr>
+                            <th>메모리</th>
+                            <td>6GB RAM/128GB</td>
+                        </tr>
+                        <tr>
+                            <th>디스플레이</th>
+                            <td>Infinity Display</td>
+                        </tr>
+                        <tr>
+                            <th>카메라</th>
+                            <td>후면 : 1,200만 화소 / 전면 : 800만 화소</td>
+                        </tr>
+                        <tr>
+                            <th>기타 (옵션)</th>
+                            <td>빅스비, 홍채인식, 지문인식, 삼성페이, 
+                                방수방진 (IP68), 스테레오 스피커</td>
+                        </tr>
+                        <tr>
+                            <th>무게</th>
+                            <td>201g</td>
+                        </tr>
+                        <tr>
+                            <th>OS</th>
+                            <td>Android</td>
+                        </tr>
+                        <tr>
+                            <th>출시일</th>
+                            <td>2022.10.23</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="con" id="tabIntro">
+                    <img src="../assets/images/dummy/detail.jpg" alt="">
+                </div>
+            </div>
+
+            
         </div>
     </section>
 
@@ -242,6 +254,14 @@
                 el: ".swiper-pagination",
                 },
             });
+
+            $('#used2 .tab-nav a').click(function(e){
+                e.preventDefault();
+                target = $(this).data('target');
+                $(this).addClass('active').siblings().removeClass('active');
+                $(target).addClass('active').siblings().removeClass('active');
+
+            })
 
         });
     </script>

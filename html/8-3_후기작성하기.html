@@ -38,17 +38,29 @@
                 <fieldset>
                     <legend class="blind">후기작성</legend>  
 
-                    <div class="input-wrap recm">
+                    <div class="input-wrap recm bb1">
                         <label for="">추천정도</label>
+
+
                         <div class="grade">
+                            <!-- <span class="on">★</span>
                             <span class="on">★</span>
                             <span class="on">★</span>
                             <span class="on">★</span>
-                            <span class="on">★</span>
-                            <span>★</span>
+                            <span>★</span> -->
+
+                            <span class="star">
+                                ★★★★★
+                                <span>★★★★★</span>
+                                <input type="range" oninput="drawStar(this)" value="1" step="1" min="0" max="10">
+                              </span>
+                              
                         </div>
+
+
+
                     </div>
-                    <div class="input-wrap">
+                    <div class="input-wrap bb1">
                         <label for="">후기작성</label>
                         <p>휴대폰 번호</p>
                         <select name="" id="">
@@ -56,19 +68,19 @@
                             <option value="">선택하세요1</option>
                         </select>
                     </div>
-                    <div class="input-wrap rev">
+                    <div class="input-wrap rev pb0">
                         <label for="">사용후기</label>
                         <div class="textarea">
                             <textarea name="" id="" cols="30" rows="10"placeholder="※ 사용 후기는 가입 고객만 작성 가능합니다.&#13;&#10;※ 욕설/비방/광고성 글이나 부적절한 내용의 경우 삭제될 수 있습니다."></textarea>
                             <span class="byte">0/800</span>
                         </div>
                     </div>
-                    <div class="input-wrap sns_url">
+                    <div class="input-wrap sns_url bb1">
                         <label for="">SNS 공유 URL <span>(선택)</span></label>
                         <input type="text" id="sns_url" placeholder="공유된 후기의 url을 입력 해주세요.">
                     </div>
                     <div class="input-wrap img_upload">
-                        <label for="">이미지 업로드 <span>(필수)</span></label>
+                        <label for="" class="pb10">이미지 업로드 <span>(필수)</span></label>
                        <div class="upload_wrap">
                         <label for="file1"><span>사진<br>0/2</span></label> 
                         <input type="file" id="file1">
@@ -80,9 +92,15 @@
 
                     <button class="btn-submit">등록하기</button>
                 </fieldset>
-           </form>
+           </form> 
         </div>
 
     </section>
+
+    <script>
+         const drawStar = (target) => {
+            document.querySelector(`.star span`).style.width = `${target.value * 10}%`;
+        }
+    </script>
 </body>
 </html>

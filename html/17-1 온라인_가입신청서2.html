@@ -104,7 +104,9 @@
                 </ul>
             </div>
         </div>
+    </section>
 
+    <section  id="joinFormWrap">
 
         <div class="group-write">
             <div class="area1">
@@ -116,317 +118,812 @@
                 </div>
             </div>
 
-
             <div class="group-nav2">
-                <a href="" class="active">일반회원<br> (만 19세 이상)</a>
-                <a href="">미성년자회원<br> (만 19세 미만)</a>
-                <a href="">외국인 (foreigner)</a>
+                <a href="#" data-target=".tab1" class="active">일반회원<br> (만 19세 이상)</a>
+                <a href="#" data-target=".tab2">미성년자회원<br> (만 19세 미만)</a>
+                <a href="#" data-target=".tab3">외국인 (foreigner)</a>
             </div>
-            <!-- form -->
-            <div class="inner">
-                <div class="info info1">
-                    <div class="wrap">
-                        <label for="" class="title"><i>*</i>신청자명</label>
-                        <input type="text" class="input1">
-                    </div>
-                    <div class="wrap">
-                        <label for="" class="title"><i>*</i>주민등록번호</label>
-                        <div class="input-wrap">
-                            <input type="text" class="input1" ><i>-</i>
-                            <input type="text" class="input1" placeholder="주민등록번호 뒤 7자리">
-                        </div>
-                    </div>
-                    <div class="wrap wrap1">
-                        <div class="head1">
-                            <span class="title"><i>*</i>실명 확인 증빙 자료</span>
-                            <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">주민등록증</label>
-                            </div>
-                            <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">운전면허증</label>
-                            </div>
-                        </div>
-                        <input type="text" class="input1" placeholder="발급일자 입력 예)20180813">
-                        <ul class="msg-box2">
-                            <li>부정 가입 방지를 위해 신분증 진위 여부 확인 과정이 필요합니다.</li>
-                            <li>정확한 정보를 입력해 주세요.</li>
-                        </ul>
-                        <div class="ex">
-                            <div class="img-box">
-                                <img src="../assets/images/ex-pic1.jpg" alt="">
-                                <span>· 주민등록증 예시</span>
-                            </div>
-                            <div class="img-box">
-                                <img src="../assets/images/ex-pic2.jpg" alt="">
-                                <span>· 운전면허증 예시</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrap wrap2">
-                        <span class="title"><i>*</i>본인인증 방법</span>
-                        <div class="flex">
-                            <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">신용카드 인증</label>
-                            </div>
-                            <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">신용카드 인증</label>
-                            </div>
-                            <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">신용카드 인증</label>
-                            </div>
-                        </div>
-                        <ul class="msg-box2">
-                            <li>본인명의의 신용카드(체크카드 불가) / 범용공인인증으로만 본인인증이 가능합니다. (은행개인용 인증서 불가)</li>
-                            <li>모바일환경에서는 범용공인인증이 불가합니다.</li>
-                            <li>미성년자 고객의 경우, 법정대리인이 직접 본인인증 해주셔야 합니다.</li>
-                            <li>법인카드, 가족카드, 선불카드는 본인확인이 불가능합니다.</li>
-                        </ul>
-                    </div>
-                    <button class="btn">본인인증하기</button>
-                </div>
-            </div>
-            <div class="caution">
-                <h4>유의사항</h4>
-                <ul class="msg-box1">
-                    <li>방송통신위원회고시 (영업상 목적을 위하여 이용자의 주민등록번호 수집, 이용이 불가피한 정보통신 서비스 제공자)에 의해 주민등록번호는 영업상 목적으로만 사용됩니다.   </li>
-                    <li>전자상거래법 제5조 2항에 의거, 본 온라인 신청서 상에서 고객님이 신용카드 인증을 통하여 전자서명하신 이후에는 특별한 사정없는 한 그 내용이 변경되지않습니다.</li>
-                    <li>고객님의 개인 정보는 항상 암호화되어 처리되고 본인인증으로만 사용되며, 보관하지 않습니다.</li>
-                    <li>개정 ‘주민등록법’에 의해 타인의 주민등록번호를 도용하는 경우 3년 이하의 징역 또는 1천만원 이하의 벌금이 부과될 수 있습니다.   </li>
-                    <li class="pink">관련법률 : 주민등록법 제 37조 (벌칙) 제 10조 (시행일 2009.04.01)</li>
-                </ul>
-            </div>
-            <div class="inner">
-                <div class="info info2">
-                    <div class="head">
-                        <h4>번호이동 정보</h4>
-                        <p>현재 사용중인 휴대폰 번호와 통신사 정보를 입력 해주세요.</p>
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>기존 통신사</span>
-                        <div class="flex">
-                            <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">SKT</label>
-                            </div>
-                            <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">KT</label>
-                            </div>
-                            <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">LG U+</label>
-                            </div>
-                            <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">알뜰폰</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>번호 이동 할 번호</span>
-                        <div class="input-wrap">
-                            <input type="text" class="input1"><i>-</i>
-                            <input type="text" class="input1"><i>-</i>
+
+            <!--@일반회원-->
+            <section id="joinForm01" class="tab1 tab-con on" >
+                <div class="inner">
+                    <div class="info info1">
+                        <div class="wrap">
+                            <label for="" class="title"><i>*</i>신청자명</label>
                             <input type="text" class="input1">
                         </div>
-                    </div>
-                    <div class="wrap wrap3">
-                        <span class="title"><i>*</i>번호 이동 인증정보</span>
-                        <div class="flex">
-                            <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">계좌이체</label>
-                            </div>
-                            <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">신용카드</label>
-                            </div>
-                            <div class="radio-box">
-                                <input type="radio" class="blind">
-                                <label for="">지로</label>
+                        <div class="wrap">
+                            <label for="" class="title"><i>*</i>주민등록번호</label>
+                            <div class="input-wrap">
+                                <input type="text" class="input1" ><i>-</i>
+                                <input type="text" class="input1" placeholder="주민등록번호 뒤 7자리">
                             </div>
                         </div>
-                        <input type="text" class="input1" placeholder="뒤 4자리 입력">
-                        <ul class="msg-box2">
-                            <li class="bold">현재 이용 중인 통신사 납부방법 확인 후  입력 </li>
-                            <li>계좌 로 납부 중 = 계좌번호 끝 번호 숫자 4자리 입력</li>
-                            <li>카드 로 납부 중 = 카드번호 끝 번호 숫자 4자리 입력</li>
-                            <li>정보가 일치하지 않을 경우 개통 업무가 지연될 수 있습니다.</li>
+                        <div class="wrap wrap1">
+                            <div class="head1 id-radio1">
+                                <span class="title"><i>*</i>실명 확인 증빙 자료</span>
+                                <div class="radio-box">
+                                    <input type="radio" name="userId" id="userId1" class="blind" value="id01" checked>
+                                    <label for="userId1">주민등록증</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="userId" id="userId2" class="blind" value="id02">
+                                    <label for="userId2">운전면허증</label>
+                                </div>
+                            </div>
+                            <div class="wrapper">
+                                <div id="id01">
+                                    <input type="text" class="input1" placeholder="발급일자 입력 예)20180813">
+                                </div>
+                                <div id="id02" style="display: none;">
+                                    <input type="text" class="input1" placeholder="운전면허 번호 예)21-19-174133-01">
+                                    <input type="text" class="input1 mt10" placeholder="발급일자 입력 예)20180813">
+                                </div>
+                            </div>
+
+
+
+
+                            <ul class="msg-box2">
+                                <li>부정 가입 방지를 위해 신분증 진위 여부 확인 과정이 필요합니다.</li>
+                                <li>정확한 정보를 입력해 주세요.</li>
+                            </ul>
+                            <div class="ex">
+                                <div class="img-box">
+                                    <img src="../assets/images/ex-pic1.jpg" alt="">
+                                    <span>· 주민등록증 예시</span>
+                                </div>
+                                <div class="img-box">
+                                    <img src="../assets/images/ex-pic2.jpg" alt="">
+                                    <span>· 운전면허증 예시</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap wrap2">
+                            <span class="title"><i>*</i>본인인증 방법</span>
+                            <div class="flex auth1-chk">
+                                <div class="radio-box">
+                                    <input type="radio" id="auth1" name="auth" class="blind" value="authbox1" checked>
+                                    <label for="auth1">신용카드 인증</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="auth2" name="auth" class="blind" value="authbox2">
+                                    <label for="auth2">범용공인 인증</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="auth3" name="auth" class="blind" value="authbox3">
+                                    <label for="auth3">전자서명 인증</label>
+                                </div>
+                            </div>
+                            <div class="wrapper">
+                                <div id="authbox1">
+                                    <ul class="msg-box2">
+                                        <li>본인명의의 신용카드(체크카드 불가) / 범용공인인증으로만 본인인증이 가능합니다. (은행개인용 인증서 불가)</li>
+                                        <li>모바일환경에서는 범용공인인증이 불가합니다.</li>
+                                        <li>미성년자 고객의 경우, 법정대리인이 직접 본인인증 해주셔야 합니다.</li>
+                                        <li>법인카드, 가족카드, 선불카드는 본인확인이 불가능합니다.</li>
+                                    </ul>
+                                </div>
+                                <div id="authbox2" style="display: none;">
+                                    <ul class="msg-box2 bt1 pt10">
+                                        <li>본인명의의 범용공인인증서만 인증이 가능합니다.</li>
+                                        <li>한국전자인증, 한국정보인증, 코스콤에서 발급받은 인증서 (4,000원/연간)로 사용 가능합니다.</li>
+                                        <li>범용 외 용도 제한이 있는 인증서의 경우, 본인 인증이 불가합니다.</li>
+                                    </ul>
+                                </div>
+                                <div id="authbox3" style="display: none;">
+                                    <input type="text" class="input1 mt10" placeholder="휴대폰 번호  예)010-1234-5678">
+                                    <ul class="msg-box2">
+                                        <li>전자서명을 위한 휴대폰 번호를 입력해주세요</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <button class="btn">본인인증하기</button>
+                    </div>
+                </div>
+                <div class="caution">
+                    <h4>유의사항</h4>
+                    <ul class="msg-box1">
+                        <li>방송통신위원회고시 (영업상 목적을 위하여 이용자의 주민등록번호 수집, 이용이 불가피한 정보통신 서비스 제공자)에 의해 주민등록번호는 영업상 목적으로만 사용됩니다.   </li>
+                        <li>전자상거래법 제5조 2항에 의거, 본 온라인 신청서 상에서 고객님이 신용카드 인증을 통하여 전자서명하신 이후에는 특별한 사정없는 한 그 내용이 변경되지않습니다.</li>
+                        <li>고객님의 개인 정보는 항상 암호화되어 처리되고 본인인증으로만 사용되며, 보관하지 않습니다.</li>
+                        <li>개정 ‘주민등록법’에 의해 타인의 주민등록번호를 도용하는 경우 3년 이하의 징역 또는 1천만원 이하의 벌금이 부과될 수 있습니다.   </li>
+                        <li class="pink">관련법률 : 주민등록법 제 37조 (벌칙) 제 10조 (시행일 2009.04.01)</li>
+                    </ul>
+                </div>
+            </section>
+            <!--//일반회원 -->
+
+            <!--@미성년자 법정 대리인  -->
+            <section id="joinForm2" class="tab2 tab-con">
+                <div class="group-write pt0">
+                    <!-- form -->
+                    <div class="inner">
+                        <div class="info">
+                            <div class="wrap">
+                                <label for="" class="title"><i>*</i>이름</label>
+                                <input type="text" class="input1">
+                            </div>
+                            <div class="wrap">
+                                <label for="" class="title"><i>*</i>주민등록번호</label>
+                                <div class="input-wrap">
+                                    <input type="text"  class="input1"><i>-</i>
+                                    <input type="text" class="input1" placeholder="주민등록번호 뒤 7자리">
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <label for="" class="title"><i>*</i>법정대리인 이름</label>
+                                <input type="text" class="input1">
+                            </div>
+                            <div class="wrap">
+                                <label for="" class="title"><i>*</i>법정대리인 주민등록번호</label>
+                                <div class="input-wrap">
+                                    <input type="text"  class="input1"><i>-</i>
+                                    <input type="text" class="input1" placeholder="주민등록번호 뒤 7자리">
+                                </div>
+                            </div>
+                            <div class="wrap">
+                                <label for="" class="title"><i>*</i>법정대리인 연락처</label>
+                                <div class="input-wrap">
+                                    <input type="text"  class="input1"><i>-</i>
+                                    <input type="text"  class="input1"><i>-</i>
+                                    <input type="text" class="input1" >
+                                </div>
+                            </div>
+                            <div class="wrap agree-area1">
+        
+                                <div class="head">
+                                    <span class="title"><i>*</i>법정대리인 동의</span>
+                                    <div class="label-box">
+                                        <input type="checkbox" name="" id="chk" class="blind">
+                                        <label for="chk">동의</label>
+                                    </div>
+                                </div>
+                                <ul class="msg-box2">
+                                    <li>본인은 위 미성년자가 당사의 서비스이용계약 (이동전화서비스(데이터서비스포함), 단말기(할부매매) 등) 가입계약을 체결하는데 있어 본 신청서, 이용약관, 의무약정 등의 제반 사항을 확인하고 이에 동의합니다.</li>
+                                    <li>서비스 가입 및 이용 중 발생하는 요금, 할부금 등 채무에 대하여 연대보증책임을 지도록 하겠습니다.</li>
+                                    <li>만 14세가 안 된 가입자 대신 개인정보활용 동의서의 제반사항을 확인하고 이에 동의합니다.</li>
+                                    <li>필요에 따라 추가 서류를 요청할 수 있으며, 이를 제공하는데 동의합니다.</li>
+                                </ul>
+                            </div>
+
+
+                            
+        
+        
+        
+                            <div class="wrap agree-area2">
+
+                                <div class="head1 id-radio2">
+                                    <span class="title"><i>*</i>법정대리인 신분증</span>
+                                    <div class="radio-box">
+                                        <input type="radio" name="userId1-1" id="userId1-1" class="blind" value="id01-1" checked>
+                                        <label for="userId1-1">주민등록증</label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input type="radio" name="userId1-1" id="userId2-1" class="blind" value="id02-1">
+                                        <label for="userId2-1">운전면허증</label>
+                                    </div>
+                                </div>
+                                <div class="wrapper">
+                                    <div id="id01-1">
+                                        <input type="text" class="input1" placeholder="발급일자 입력 예)20180813">
+                                    </div>
+                                    <div id="id02-1" style="display: none;">
+                                        <input type="text" class="input1" placeholder="운전면허 번호 예)21-19-174133-01">
+                                        <input type="text" class="input1 mt10" placeholder="발급일자 입력 예)20180813">
+                                    </div>
+                                </div>
+
+                              
+        
+                                <ul class="msg-box2">
+                                    <li>부정 가입 방지를 위해 신분증 진위 여부 확인 과정이 필요합니다.</li>
+                                    <li>정확한 정보를 입력해 주세요.</li>
+                                </ul>
+        
+                                <div class="ex">
+                                    <div class="img-box">
+                                        <img src="../assets/images/ex-pic1.jpg" alt="">
+                                        <span>· 주민등록증 예시</span>
+                                    </div>
+                                    <div class="img-box">
+                                        <img src="../assets/images/ex-pic2.jpg" alt="">
+                                        <span>· 운전면허증 예시</span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="wrap agree-area3">
+                                <span class="title"><i>*</i>본인인증 방법</span>
+                                <div class="flex sb auth2-chk">
+                                    <div class="radio-box">
+                                        <input type="radio" id="auth1-1" name="auth1" value="authbox1-1" checked>
+                                        <label for="auth1-1">신용카드 인증</label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input type="radio" id="auth1-2" name="auth1" value="authbox2-1">
+                                        <label for="auth1-2">범용공인 인증</label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input type="radio" id="auth1-3" name="auth1" value="authbox3-1">
+                                        <label for="auth1-3">전자서명 인증</label>
+                                    </div>
+                                </div>
+                                <div class="wrapper">
+                                    <div id="authbox1-1" >
+                                        <ul class="msg-box2 bt1 pt10" >
+                                            <li>전자서명을 위한 휴대폰 번호를 입력해주세요.</li>
+                                            <li>본인명의의 신용카드(체크카드 불가) / 범용공인인증으로만 본인인증이 가능합니다. (은행개인용 인증서 불가)</li>
+                                            <li>모바일환경에서는 범용공인인증이 불가합니다.</li>
+                                            <li>미성년자 고객의 경우, 법정대리인이 직접 본인인증 해주셔야 합니다.</li>
+                                            <li>법인카드, 가족카드, 선불카드는 본인확인이 불가능합니다.</li>
+                                        </ul>
+                                    </div>
+                                    <div id="authbox2-1" style="display: none;">
+                                        <ul class="msg-box2 bt1 pt10">
+                                            <li>위 카드사 중 본인 명의의 개인 신용 카드로만 본인 확인이 가능합니다.</li>
+                                            <li>본인인증 시 체크카드는 인증이 불가합니다. 신용카드로 본인인증 해주시기 바랍니다.</li>
+                                            <li>법인카드, 가족카드, 선불카드는 본인확인이 불가합니다.</li>
+                                            <li>고객님의 개인정보는 암호화롤 안전하게 처리되며, 본인 인증 시 별도의 비용이 발생하지 않습니다.</li>
+                                        </ul>
+                                    </div>
+                                    <div id="authbox3-1" style="display: none;">
+                                        <input type="text" class="input1 mt10" placeholder="휴대폰 번호  예)010-1234-5678">
+                                        <ul class="msg-box2">
+                                            <li>본인명의의 범용공인인증서만 인증이 가능합니다.</li>
+                                            <li>한국전자인증, 한국정보인증, 코스콤에서 발급받은 인증서 (4,000원/연간)로 사용 가능합니다.</li>
+                                            <li>범용 외 용도 제한이 있는 인증서의 경우, 본인 인증이 불가합니다.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="btn">본인인증하기</button>
+                        </div>
+        
+        
+        
+        
+        
+                        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+                    </div>
+        
+                    <!--// form -->
+                    <div class="caution">
+                        <h4>유의사항</h4>
+                        <ul class="msg-box1">
+                            <li>방송통신위원회고시 (영업상 목적을 위하여 이용자의 주민등록번호 수집, 이용이 불가피한 정보통신 서비스 제공자)에 의해 주민등록번호는 영업상 목적으로만 사용됩니다.   </li>
+                            <li>전자상거래법 제5조 2항에 의거, 본 온라인 신청서 상에서 고객님이 신용카드 인증을 통하여 전자서명하신 이후에는 특별한 사정없는 한 그 내용이 변경되지않습니다.</li>
+                            <li>고객님의 개인 정보는 항상 암호화되어 처리되고 본인인증으로만 사용되며, 보관하지 않습니다.</li>
+                            <li>개정 ‘주민등록법’에 의해 타인의 주민등록번호를 도용하는 경우 3년 이하의 징역 또는 1천만원 이하의 벌금이 부과될 수 있습니다.   </li>
+                            <li class="pink">관련법률 : 주민등록법 제 37조 (벌칙) 제 10조 (시행일 2009.04.01)</li>
                         </ul>
                     </div>
+  
                 </div>
-                <div class="info info2">
-                    <div class="head">
-                        <h4>휴대폰 정보</h4>
-                        <p>휴대폰 정보를 입력해주세요.</p>
-                    </div>
-                    <div class="wrap wrap4">
-                        <span class="title"><i>*</i>휴대폰 정보 확인</span>
-                        <div class="flex">
-                            <div class="radio-box box1">
-                                <input type="radio" class="blind">
-                                <label for="">자사폰 (LG U+ 향)</label>
+            </section>
+            <!--//미성년자 법정 대리인  -->
+
+            <!-- @외국인 -->
+            <section id="joinForm2"class="tab3 tab-con">
+                <div class="group-write pt0">
+                    <!-- form -->
+                    <div class="inner">
+                        <div class="info">
+                            <div class="wrap">
+                                <label for="" class="title"><i>*</i>이름</label>
+                                <input type="text" class="input1">
                             </div>
-                            <div class="radio-box box2">
-                                <input type="radio" class="blind">
-                                <label for="">타사폰 (SK향, KT향)</label>
+                            <div class="wrap">
+                                <label for="" class="title"><i>*</i>외국인 번호</label>
+                                <div class="input-wrap">
+                                    <input type="text" class="input1" placeholder="외국인 번호 앞 6자리"><i>-</i>
+                                    <input type="text" class="input1" placeholder="외국인 번호 뒤 7자리">
+                                </div>
                             </div>
-                            <div class="radio-box box3">
-                                <input type="radio" class="blind">
-                                <label for="">자급제폰</label>
+                            <div class="wrap">
+                                <label for="" class="title"><i>*</i>국적</label>
+                                <input type="text" placeholder="국적을 입력해주세요." class="input1">
                             </div>
-                            <div class="radio-box box4">
-                                <input type="radio" class="blind">
-                                <label for="">아이폰</label>
+                            <div class="wrap">
+
+                                <div class="head1 id-radio3">
+                                    <span class="title"><i>*</i>실명 확인 증빙 자료</span>
+                                    <div class="radio-box">
+                                        <input type="radio" name="userId1" id="userId1-2" class="blind" value="id01-2" checked>
+                                        <label for="userId1-2">주민등록증</label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input type="radio" name="userId1" id="userId2-2" class="blind" value="id02-2">
+                                        <label for="userId2-2">운전면허증</label>
+                                    </div>
+                                </div>
+                                <div class="wrapper">
+                                    <div id="id01-2">
+                                        <input type="text" class="input1" placeholder="발급일자 입력 예)20180813">
+                                    </div>
+                                    <div id="id02-2" style="display: none;">
+                                        <input type="text" class="input1" placeholder="운전면허 번호 예)21-19-174133-01">
+                                        <input type="text" class="input1 mt10" placeholder="발급일자 입력 예)20180813">
+                                    </div>
+                                </div>
+
+
+                              
+
+
+
+
+                                <ul class="msg-box2 mt10 gray">
+                                    <li>부정 가입 방지를 위해 신분증 진위 여부 확인 과정이 필요합니다.</li>
+                                    <li>정확한 정보를 입력해 주세요.</li>
+                                </ul>
+                                <div class="ex ex1">
+                                    <div class="img-box">
+                                        <img src="../assets/images/ex-pic3.png" alt="">
+                                        <span>· 외국인등록증 예시</span>
+                                    </div>
+                                </div> 
                             </div>
-                            <div class="radio-box box5">
-                                <input type="radio" class="blind">
-                                <label for="">외산폰</label>
+                            <div class="wrap bb0">
+                                <span class="title"><i>*</i>본인인증 방법</span>
+                               
+                                <div class="flex sb auth2-chk">
+                                    <div class="radio-box">
+                                        <input type="radio" id="auth2-1" name="auth1" value="authbox1-2" checked>
+                                        <label for="auth2-1">신용카드 인증</label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input type="radio" id="auth2-2" name="auth1" value="authbox2-2">
+                                        <label for="auth2-2">범용공인 인증</label>
+                                    </div>
+                                    <div class="radio-box">
+                                        <input type="radio" id="auth2-3" name="auth1" value="authbox3-2" >
+                                        <label for="auth2-3">전자서명 인증</label>
+                                    </div>
+                                </div>
+                                <div class="wrapper gray mt10">
+                                    <div id="authbox1-2" >
+                                        <ul class="msg-box2 bt1 pt10" >
+                                           <li>본인명의의 신용카드(체크카드 불가) / 범용공인인증으로만 본인인증이 가능합니다. (은행개인용 인증서 불가)</li>
+                                            <li>모바일환경에서는 범용공인인증이 불가합니다.</li>
+                                            <li>미성년자 고객의 경우, 법정대리인이 직접 본인인증 해주셔야 합니다.</li>
+                                            <li>법인카드, 가족카드, 선불카드는 본인확인이 불가능합니다.</li>
+                                        </ul>
+                                    </div>
+                                    <div id="authbox2-2" style="display: none;">
+                                        <ul class="msg-box2 bt1 pt10">
+                                            <li>본인명의의 범용공인인증서만 인증이 가능합니다.</li>
+                                            <li>한국전자인증, 한국정보인증, 코스콤에서 발급받은 인증서 (4,000원/연간)로 사용 가능합니다.</li>
+                                            <li>범용 외 용도 제한이 있는 인증서의 경우, 본인 인증이 불가합니다.</li>
+                                        </ul>
+                                    </div>
+                                    <div id="authbox3-2" style="display: none;">
+                                        <input type="text" class="input1 mt10" placeholder="휴대폰 번호  예)010-1234-5678">
+                                        <ul class="msg-box2 mt10">
+                                            <li>전자서명을 위한 휴대폰 번호를 입력해주세요</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--  -->
+
+                                
                             </div>
-                            <div class="radio-box box6">
-                                <input type="radio" class="blind">
-                                <label for="">확인 불가 (사용할 휴대폰 유형을 정확히 모를 경우)</label>
-                            </div>
+                            <button class="btn">본인인증하기</button>
                         </div>
                     </div>
-                    <div class="phone-area">
-                        <span class="title">휴대폰 모델번호 (선택)</span>
-                        <input type="text" class="input1" placeholder="예시) SM-G986N (선택 입력)">
-                        <ul class="msg-box2">
-                            <li>휴대폰 모델번호 확인 방법은 휴대폰 설정 > 휴대전화 (디바이스) 정보에서  확인 하실 수 있습니다.</li>
-                            <li>휴대폰 출시 일자가 2015년 이후인 기종 (ex. 갤럭시 노트5, 아이폰6s)은 유심 호환이 가능합니다.</li>
-                            <li>휴대폰 출시 일자가 2015년 이전 기종은 LG U+용 LTE 기기만 호환됩니다.</li>
-                            <li>해외에서  구매하신 휴대폰의 경우 국내 제조사 기기기라도 호환이 되지 않습니다. (단, NEXUS X5 제외)</li>
-                            <li>휴대폰 유형 정보가 정확하지 않은 경우 정상 개통이 되지 않으며, 가까운 LG U+ 직영 대리점 방문하여 POS개통 (유심정보를 전산에 물리적으로 읽혀주는 작업)을 진행해야 합니다.</li>
-                        </ul>
-                    </div>
+                    <!--// form -->
                 </div>
-                <div class="info info3">
-                    <div class="head">
-                        <h4>유심 수령 정보</h4>
-                        <p>입력된 정보는 우편물에 발송에 사용됩니다.</p>
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>받는분 이름</span>
-                        <div class="flex name-area">
-                            <input type="text" class="input1">
-                            <div class="label-box">
-                                <input type="checkbox" name="" id="" class="blind">
-                                <label for="">고객정보와 동일</label>
-                            </div>
+        
+                <div class="caution">
+                    <h4>유의사항</h4>
+                    <ul class="msg-box1">
+                        <li>방송통신위원회고시 (영업상 목적을 위하여 이용자의 주민등록번호 수집, 이용이 불가피한 정보통신 서비스 제공자)에 의해 주민등록번호는 영업상 목적으로만 사용됩니다.   </li>
+                        <li>전자상거래법 제5조 2항에 의거, 본 온라인 신청서 상에서 고객님이 신용카드 인증을 통하여 전자서명하신 이후에는 특별한 사정없는 한 그 내용이 변경되지않습니다.</li>
+                        <li>고객님의 개인 정보는 항상 암호화되어 처리되고 본인인증으로만 사용되며, 보관하지 않습니다.</li>
+                        <li>개정 ‘주민등록법’에 의해 타인의 주민등록번호를 도용하는 경우 3년 이하의 징역 또는 1천만원 이하의 벌금이 부과될 수 있습니다.   </li>
+                        <li class="pink">관련법률 : 주민등록법 제 37조 (벌칙) 제 10조 (시행일 2009.04.01)</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- //외국인 -->
+
+
+            <section id="joinFormData">
+                <div class="inner">
+
+                    <!-- ←가입하기 1에서
+                    가입유형을 신규 가입으로
+                    선택한사람은 번호이동 정보 자리에
+                    이게 떠야합니다. -->
+                     <div class="info new-area1">
+                        <div class="head">
+                            <h4>신규가입 정보</h4>
+                            <p>희망번호 뒤 4자리를 입력해주세요. (최대 3개)</p>
                         </div>
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>받는분 전화번호</span>
+                        <span class="title"><i>*</i>신규 가입 희망번호</span>
                         <div class="input-wrap">
-                            <input type="text" class="input1"><i>-</i>
-                            <input type="text" class="input1"><i>-</i>
+                            <input type="text" placeholder="1순위" class="input1"><span>-</span>
+                            <input type="text" placeholder="1순위" class="input1"><span>-</span>
+                            <input type="text" placeholder="1순위" class="input1">
+                        </div>
+                        <p class="msg mt8">※ 3개의 희망번호 모두 불가시 번호가 임의로 지정될 수 있습니다.</p>
+                    </div>
+
+
+                    <div class="info info2">
+                        <div class="head">
+                            <h4>번호이동 정보</h4>
+                            <p>현재 사용중인 휴대폰 번호와 통신사 정보를 입력 해주세요.</p>
+                        </div>
+                        <div class="wrap">
+                            <span class="title"><i>*</i>기존 통신사</span>
+                            <div class="flex">
+                                <div class="radio-box">
+                                    <input type="radio" id="agency1" name="agency" class="blind">
+                                    <label for="agency1">SKT</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="agency2" name="agency" class="blind">
+                                    <label for="agency2">KT</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="agency3" name="agency" class="blind">
+                                    <label for="agency3">LG U+</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="agency4" name="agency" class="blind">
+                                    <label for="agency4">알뜰폰</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <span class="title"><i>*</i>번호 이동 할 번호</span>
+                            <div class="input-wrap">
+                                <input type="text" class="input1"><i>-</i>
+                                <input type="text" class="input1"><i>-</i>
+                                <input type="text" class="input1">
+                            </div>
+                        </div>
+                        <div class="wrap wrap3">
+                            <span class="title"><i>*</i>번호 이동 인증정보</span>
+                            <div class="flex">
+                                <div class="radio-box">
+                                    <input type="radio" id="authInfo1" name="authInfo" class="blind">
+                                    <label for="authInfo1">계좌이체</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="authInfo2" name="authInfo" class="blind">
+                                    <label for="authInfo2">신용카드</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="authInfo3" name="authInfo" class="blind">
+                                    <label for="authInfo3">지로</label>
+                                </div>
+                            </div>
+                            <input type="text" class="input1" placeholder="뒤 4자리 입력">
+                            <ul class="msg-box2">
+                                <li class="bold">현재 이용 중인 통신사 납부방법 확인 후  입력 </li>
+                                <li>계좌 로 납부 중 = 계좌번호 끝 번호 숫자 4자리 입력</li>
+                                <li>카드 로 납부 중 = 카드번호 끝 번호 숫자 4자리 입력</li>
+                                <li>정보가 일치하지 않을 경우 개통 업무가 지연될 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="info info2">
+                        <div class="head">
+                            <h4>휴대폰 정보</h4>
+                            <p>휴대폰 정보를 입력해주세요.</p>
+                        </div>
+                        <div class="wrap wrap4">
+                            <span class="title"><i>*</i>휴대폰 정보 확인</span>
+                            <div class="flex">
+                                <div class="radio-box box1">
+                                    <input type="radio" id="sort1" name="sort" class="blind">
+                                    <label for="sort1">자사폰 (LG U+ 향)</label>
+                                </div>
+                                <div class="radio-box box2">
+                                    <input type="radio" id="sort2" name="sort" class="blind">
+                                    <label for="sort2">타사폰 (SK향, KT향)</label>
+                                </div>
+                                <div class="radio-box box3">
+                                    <input type="radio" id="sort3" name="sort" class="blind">
+                                    <label for="sort3">자급제폰</label>
+                                </div>
+                                <div class="radio-box box4">
+                                    <input type="radio" id="sort4" name="sort" class="blind">
+                                    <label for="sort4">아이폰</label>
+                                </div>
+                                <div class="radio-box box5">
+                                    <input type="radio" id="sort5" name="sort" class="blind">
+                                    <label for="sort5">외산폰</label>
+                                </div>
+                                <div class="radio-box box6">
+                                    <input type="radio" id="sort6" name="sort" class="blind">
+                                    <label for="sort6">확인 불가 (사용할 휴대폰 유형을 정확히 모를 경우)</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="phone-area">
+                            <span class="title">휴대폰 모델번호 (선택)</span>
+                            <input type="text" class="input1" placeholder="예시) SM-G986N (선택 입력)">
+                            <ul class="msg-box2">
+                                <li>휴대폰 모델번호 확인 방법은 휴대폰 설정 > 휴대전화 (디바이스) 정보에서  확인 하실 수 있습니다.</li>
+                                <li>휴대폰 출시 일자가 2015년 이후인 기종 (ex. 갤럭시 노트5, 아이폰6s)은 유심 호환이 가능합니다.</li>
+                                <li>휴대폰 출시 일자가 2015년 이전 기종은 LG U+용 LTE 기기만 호환됩니다.</li>
+                                <li>해외에서  구매하신 휴대폰의 경우 국내 제조사 기기기라도 호환이 되지 않습니다. (단, NEXUS X5 제외)</li>
+                                <li>휴대폰 유형 정보가 정확하지 않은 경우 정상 개통이 되지 않으며, 가까운 LG U+ 직영 대리점 방문하여 POS개통 (유심정보를 전산에 물리적으로 읽혀주는 작업)을 진행해야 합니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- ←가입하기 1에서
+                    유심유형을 eSIM으로
+                    선택한 사람은 휴대폰정보 자리에
+                    이게 떠야합니다. -->
+                    <div class="info sim-area" >
+                        <div class="head">
+                            <h4>휴대폰 정보</h4>
+                            <p>eSIM</p>
+                        </div>
+                        <div class="wrap wrap1">
+                            <span class="title"><i>*</i>휴대폰 정보 확인</span>
+                            <div class="flex">
+                                <div class="radio-box">
+                                    <input type="radio" id="phone1" name="phone">
+                                    <label for="phone1">애플</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="phone2" name="phone">
+                                    <label for="phone2">삼성</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <span class="title"><i>*</i>휴대폰 모델명</span>
+                            <input type="text" class="input1" placeholder="예시) 아이폰12Pro Max">
+                        </div>
+                        <div class="wrap">
+                            <span class="title"><i>*</i>휴대폰 용량</span>
+                            <input type="text" class="input1" placeholder="예시) 128GB">
+                        </div>
+                        <div class="wrap wrap2">
+                            <span class="title"><i>*</i>휴대폰 일련번호</span>
+                            <input type="text" class="input1">
+                            <p class="msg-4 mt8"><span class="pink">[아이폰 일련번호 확인 방법]</span> 설정 > 일반 > 정보 > 일련번호</p>
+                            <p class="msg-4"><span class="pink">[갤럭시 일련번호 확인 방법]</span> 설정 > 휴대전화정보 > 규제정보 (일련번호)</p>
+                        </div>
+                        <div class="wrap">
+                            <span class="title"><i>*</i>휴대폰 IMEI 1</span>
                             <input type="text" class="input1">
                         </div>
-                        <p class="pink desc">우편물 수령시 택배사와 연락가능한 번호를 추가로 입력 부탁드립니다.</p>
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>받는분 주소</span>
-                        <div class="addr-box">
-                            <div><input type="text" class="input1"><button class="btn1">우편번호찾기</button></div>
-                            <div><input type="text" class="input1"></div>
-                            <div><input type="text" class="input1" placeholder="상세주소 입력"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="info info2">
-                    <div class="head">
-                        <h4>납부정보</h4>
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>납부 방법</span>
-                        <div class="flex no-sb method-area">
-                            <div class="radio-box">
-                                <input type="radio" name="" id="" class="blind">
-                                <label for="">계좌이체</label>
-                            </div>
-                            <div class="radio-box">
-                                <input type="radio" name="" id="" class="blind">
-                                <label for="">카드납부</label>
-                            </div>
-                        </div>
-                    </div> 
-                    <div class="wrap">
-                        <span class="title"><i>*</i>예금주</span>
-                        <input type="text" class="input1">
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>주민등록번호</span>
-                        <div class="input-wrap">
-                            <input type="text" class="input1" placeholder="주민등록번호 앞 6자리"> <i>-</i>
-                            <input type="text" class="input1" placeholder="주민등록번호 뒤 7자리">
-                        </div>
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>은행명</span>
-                        <select name="" id="">
-                            <option value="">선택하세요</option>
-                        </select>
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>계좌번호</span>
-                        <input type="text" class="input1" placeholder="‘-’ 없이 입력해주세요.">
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>가입자와의 관계</span>
-                        <div class="flex">
-                            <div class="radio-box">
-                                <input type="radio" name="" id="" class="blind">
-                                <label for="">본인</label>
-                            </div>
-                            <div class="radio-box">
-                                <input type="radio" name="" id="" class="blind">
-                                <label for="">부모</label>
-                            </div>
-                            <div class="radio-box">
-                                <input type="radio" name="" id="" class="blind">
-                                <label for="">자녀</label>
-                            </div>
-                            <div class="radio-box">
-                                <input type="radio" name="" id="" class="blind">
-                                <label for="">배우자</label>
-                            </div>
-                        </div>
-                        <div class="label-box2">
-                            <input type="checkbox" name="" id="chk">
-                            <label for="chk">본인(예금주 또는 회원)은 납부하여야 할 요금에 대해 별도의 통지 없이
-                                위 본인의 지정계좌 (카드번호)에서 지정된 출금(결제)일에 인출(결제)
-                                되는것에 동의합니다.</label>
-                        </div>
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>명세서 수령방법</span>
-                        <div class="radio-box">
-                            <input type="radio" name="" id="" class="blind">
-                            <label for="">e-mail 명세서</label>
-                        </div>
-                    </div>
-                    <div class="wrap">
-                        <span class="title"><i>*</i>이메일</span>
-                        <div class="email-wrap">
+                        <div class="wrap">
+                            <span class="title"><i>*</i>휴대폰 IMEI 2</span>
                             <input type="text" class="input1">
-                            <span>@</span>
-                            <select name="" id="">
-                                <option value="">직접입력</option>
-                            </select>
+                        </div>
+                        <div class="wrap">
+                            <span class="title"><i>*</i>eSIM ID (EID)</span>
+                            <input type="text" class="input1">
+                        </div>
+                        <div class="wrap wrap3">
+                            <p class="first">※ IMEI, EID 간편 확인방법</p>
+                            <p class="child">1.전화번호 키패드에 <span class="pink">[*#06#]</span>을 입력해주세요.</p>
+                            <p class="child">2.나오는 화면을 확인 후 정확한 정보를 입력해주세요.</p>
+                            <p class="pink">※ 정확한 정보를 입력하셔야 eSIM 개통이 가능합니다.</p>
                         </div>
                     </div>
-                </div>
-                <button class="btn mt30 ">다 음</button>
-                </div>
-            <!--// form -->
-        </div>
+
+
+                    <div class="info info3">
+                        <div class="head">
+                            <h4>유심 수령 정보</h4>
+                            <p>입력된 정보는 우편물에 발송에 사용됩니다.</p>
+                        </div>
+                        <div class="wrap">
+                            <span class="title"><i>*</i>받는분 이름</span>
+                            <div class="flex name-area">
+                                <input type="text" class="input1">
+                                <div class="label-box">
+                                    <input type="checkbox" name="" id="chk1" class="blind">
+                                    <label for="chk1">고객정보와 동일</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <span class="title"><i>*</i>받는분 전화번호</span>
+                            <div class="input-wrap">
+                                <input type="text" class="input1"><i>-</i>
+                                <input type="text" class="input1"><i>-</i>
+                                <input type="text" class="input1">
+                            </div>
+                            <p class="pink desc">우편물 수령시 택배사와 연락가능한 번호를 추가로 입력 부탁드립니다.</p>
+                        </div>
+                        <div class="wrap">
+                            <span class="title"><i>*</i>받는분 주소</span>
+                            <div class="addr-box">
+                                <div><input type="text" class="input1"><button class="btn1">우편번호찾기</button></div>
+                                <div><input type="text" class="input1"></div>
+                                <div><input type="text" class="input1" placeholder="상세주소 입력"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info info2">
+                        <div class="head">
+                            <h4>납부정보</h4>
+                            <p>가입 신청 완료 시 납부 방법을 선택 및 입력해주세요.</p>
+                        </div>
+                        <div class="wrap">
+                            <span class="title"><i>*</i>납부 방법</span>
+                            <div class="flex no-sb method-area">
+                                <div class="radio-box">
+                                    <input type="radio" id="method1" name="method" class="blind" checked value="methodbox1">
+                                    <label for="method1">계좌이체</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="method2" name="method" class="blind" value="methodbox2">
+                                    <label for="method2">카드납부</label>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <div class="wrapper">
+                            <div id="methodbox1">
+                                <div class="wrap">
+                                    <span class="title"><i>*</i>예금주</span>
+                                    <input type="text" class="input1">
+                                </div>
+                                <div class="wrap">
+                                    <span class="title"><i>*</i>주민등록번호</span>
+                                    <div class="input-wrap">
+                                        <input type="text" class="input1" placeholder="주민등록번호 앞 6자리"> <i>-</i>
+                                        <input type="text" class="input1" placeholder="주민등록번호 뒤 7자리">
+                                    </div>
+                                </div>
+                                <div class="wrap">
+                                    <span class="title"><i>*</i>은행명</span>
+                                    <select name="" id="" class="select3">
+                                        <option value="">선택하세요</option>
+                                    </select>
+                                </div>
+                                <div class="wrap">
+                                    <span class="title"><i>*</i>계좌번호</span>
+                                    <input type="text" class="input1" placeholder="‘-’ 없이 입력해주세요.">
+                                </div>
+        
+                            </div>
+                            <div id="methodbox2" style="display: none;">
+                                <div class="wrap">
+                                    <span class="title"><i>*</i>카드 소유자명</span>
             
+                                    <div class="flex name-area">
+                                        <input type="text" class="input1">
+                                        <div class="label-box">
+                                            <input type="checkbox" name="" id="chk1-1" class="blind">
+                                            <label for="chk1-1">고객정보와 동일</label>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                                <div class="wrap">
+                                    <span class="title"><i>*</i>카드 소유자 주민등록번호</span>
+                                    <div class="input-wrap">
+                                        <input type="text" class="input1" placeholder="주민등록번호 앞 6자리"><i>-</i>
+                                        <input type="text" class="input1" placeholder="주민등록번호 뒤 7자리">
+                                    </div>
+                                </div>
+                                <div class="wrap">
+                                    <span class="title"><i>*</i>카드사</span>
+                                    <div class="input-wrap">
+                                        <select name="" id="" class="w141">
+                                            <option value="">선택하세요.</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="wrap">
+                                    <span class="title"><i>*</i>카드 번호</span>
+                                    <div class="input-wrap gap5">
+                                        <input type="text" class="input1"><i>-</i>
+                                        <input type="text" class="input1"><i>-</i>
+                                        <input type="text" class="input1"><i>-</i>
+                                        <input type="text" class="input1">
+                                    </div>
+                                </div>
+                                <div class="wrap">
+                                    <span class="title"><i>*</i>유효기간</span>
+                                    <div class="input-wrap">
+                                        <input type="text" class="input1 w68" placeholder="MM"><i>/</i>
+                                        <input type="text" class="input1 w68" placeholder="YY">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                     
+
+
+
+
+
+
+                        <div class="wrap">
+                            <span class="title"><i>*</i>가입자와의 관계</span>
+                            <div class="flex">
+                                <div class="radio-box">
+                                    <input type="radio" name="relate" id="relate1" class="blind">
+                                    <label for="relate1">본인</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="relate" id="relate2" class="blind">
+                                    <label for="relate2">부모</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="relate" id="relate3" class="blind">
+                                    <label for="relate3">자녀</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" name="relate" id="relate4" class="blind">
+                                    <label for="relate4">배우자</label>
+                                </div>
+                            </div>
+                            <div class="label-box2">
+                                <input type="checkbox" name="" id="chk">
+                                <label for="chk">본인(예금주 또는 회원)은 납부하여야 할 요금에 대해 별도의 통지 없이
+                                    위 본인의 지정계좌 (카드번호)에서 지정된 출금(결제)일에 인출(결제)
+                                    되는것에 동의합니다.</label>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <span class="title"><i>*</i>명세서 수령방법</span>
+                            <div class="radio-box">
+                                <input type="radio" name="" id="email" class="blind">
+                                <label for="email">e-mail 명세서</label>
+                            </div>
+                        </div>
+                        <div class="wrap">
+                            <span class="title"><i>*</i>이메일</span>
+                            <div class="email-wrap">
+                                <input type="text" class="input1">
+                                <span>@</span>
+                                <select name="" id="" class="select2">
+                                    <option value="">직접입력</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn mt30 ">다 음</button>
+                </div>  
+            </section>
+
+
+
+        </div>
     </section>
+
+
+
+
+
+
+
+
 </body>
 </html>
